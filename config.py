@@ -72,6 +72,23 @@ class Settings(BaseSettings):
     scan_interval_seconds: int = Field(default=300, alias="SCAN_INTERVAL_SECONDS")
     max_concurrent_llm_calls: int = Field(default=2, alias="MAX_CONCURRENT_LLM_CALLS")
 
+    # Telegram notifications
+    telegram_bot_token: str = Field(default="", alias="TELEGRAM_BOT_TOKEN")
+    telegram_chat_ids: str = Field(
+        default="",
+        alias="TELEGRAM_CHAT_IDS",
+        description="Comma-separated list of chat IDs to notify",
+    )
+
+    # Hugging Face inference (free/open LLM backstop)
+    huggingface_api_token: str = Field(default="", alias="HUGGINGFACE_API_TOKEN")
+    huggingface_model: str = Field(
+        default="mistralai/Mistral-7B-Instruct-v0.3", alias="HUGGINGFACE_MODEL"
+    )
+    huggingface_api_url: str = Field(
+        default="https://api-inference.huggingface.co/models", alias="HUGGINGFACE_API_URL"
+    )
+
 
 # Global settings instance
 settings = Settings()
