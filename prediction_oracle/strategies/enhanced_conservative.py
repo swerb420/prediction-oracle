@@ -10,6 +10,7 @@ from ..config import settings
 from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Market
 from ..risk import BankrollManager
+from .base_strategy import BaseStrategy, TradeDecision
 
 logger = logging.getLogger(__name__)
 
@@ -49,50 +50,86 @@ class SignalConfluence:
         return 0.3
 
 
-class EnhancedConservativeStrategy:
+class EnhancedConservativeStrategy(BaseStrategy):
     """
     Conservative strategy with signal confluence.
     Only bets when multiple signals agree + LLM shows edge.
     """
     
-    def __init__(self, config: dict, bankroll_manager: BankrollManager):
+    def __init__(
+        self,
+        config: dict,
+        bankroll_manager: BankrollManager,
+        oracle: Optional[EnhancedOracle] = None,
+    ):
         """Initialize strategy."""
-        self.config = config
+        strategy_config = config.get("strategies", config).get("conservative", {})
+        super().__init__("conservative", strategy_config)
+
+        self.full_config = config
         self.bankroll = bankroll_manager
-        self.oracle = EnhancedOracle(config)
-        
+        self.oracle = oracle or EnhancedOracle(config)
+
         # Strategy settings
-        self.min_edge = config.get("conservative", {}).get("min_edge", 0.04)
-        self.min_prob = config.get("conservative", {}).get("min_prob_range", [0.3, 0.8])[0]
-        self.max_prob = config.get("conservative", {}).get("min_prob_range", [0.3, 0.8])[1]
-        self.min_liquidity = config.get("conservative", {}).get("min_liquidity", 500)
-        self.max_spread = config.get("conservative", {}).get("max_spread", 0.05)
-        
+        self.min_edge = strategy_config.get("min_edge", 0.04)
+        prob_range = strategy_config.get("min_prob_range", [0.3, 0.8])
+        self.min_prob = prob_range[0]
+        self.max_prob = prob_range[1]
+        self.min_liquidity = strategy_config.get(
+            "min_liquidity", strategy_config.get("min_liquidity_usd", 500)
+        )
+        self.max_spread = strategy_config.get("max_spread", 0.05)
+
         # Enhanced settings
         self.min_confluence_score = 0.15  # Must have positive confluence
         self.min_confluence_confidence = 0.6
-        
+
         logger.info(
             f"EnhancedConservative initialized - "
             f"min_edge={self.min_edge}, "
             f"min_confluence={self.min_confluence_score}"
         )
-    
-    async def evaluate_markets(self, markets: list[Market]) -> list[dict]:
+
+    async def select_markets(self, all_markets: list[Market]) -> list[Market]:
+        """Filter candidate markets for the enhanced conservative approach."""
+        selected: list[Market] = []
+
+        for market in all_markets:
+            for outcome in market.outcomes:
+                if outcome.price < self.min_prob or outcome.price > self.max_prob:
+                    continue
+
+                if outcome.liquidity and outcome.liquidity < self.min_liquidity:
+                    continue
+
+                selected.append(market)
+                break
+
+        # Apply quick filter to reduce LLM spend if enabled
+        if settings.enable_quick_filter and len(selected) > 20:
+            filtered_ids = await self.oracle.quick_filter_markets(selected, top_n=20)
+            selected = [m for m in selected if m.market_id in filtered_ids]
+            logger.info(
+                f"EnhancedConservative quick filtered to {len(selected)} markets"
+            )
+
+        return selected
+
+    async def evaluate_markets(
+        self,
+        markets: list[Market],
+        oracle_results: Optional[dict[str, list]] = None,
+    ) -> list[dict]:
         """Evaluate markets and return bet recommendations."""
         if not markets:
             return []
-        
+
         logger.info(f"Evaluating {len(markets)} markets with enhanced strategy")
-        
-        # Quick filter if enabled
-        if settings.enable_quick_filter and len(markets) > 20:
-            filtered_ids = await self.oracle.quick_filter_markets(markets, top_n=20)
-            markets = [m for m in markets if m.market_id in filtered_ids]
-            logger.info(f"Quick filter reduced to {len(markets)} markets")
-        
-        # Get enhanced oracle results
-        oracle_results = await self.oracle.evaluate_markets_enhanced(markets, model_group="conservative")
+
+        if oracle_results is None:
+            oracle_results = await self.oracle.evaluate_markets_enhanced(
+                markets, model_group=self.name
+            )
         
         # Gather signals for confluence
         news_signals = {}
@@ -220,8 +257,40 @@ class EnhancedConservativeStrategy:
             f"Found {len(recommendations)} opportunities "
             f"from {len(markets)} markets"
         )
-        
+
         return recommendations
+
+    async def evaluate(
+        self, markets: list[Market], oracle_results: dict
+    ) -> list[TradeDecision]:
+        """Adapter to scheduler interface returning TradeDecision objects."""
+        recommendations = await self.evaluate_markets(markets, oracle_results)
+
+        decisions: list[TradeDecision] = []
+        for rec in recommendations:
+            result = rec["oracle_result"]
+            direction = "BUY" if result.edge >= 0 else "SELL"
+
+            decisions.append(
+                TradeDecision(
+                    venue=rec["market"].venue,
+                    market_id=rec["market"].market_id,
+                    outcome_id=result.outcome_id,
+                    direction=direction,
+                    size_usd=rec["bet_size"],
+                    p_true=result.mean_p_true,
+                    implied_p=result.implied_p,
+                    edge=result.edge,
+                    confidence=result.avg_confidence,
+                    inter_model_disagreement=result.inter_model_disagreement,
+                    rule_risks=result.rule_risks,
+                    strategy_name=self.name,
+                    rationale=rec.get("rationale", ""),
+                    models_used=result.models_used,
+                )
+            )
+
+        return decisions
     
     def _passes_basic_filters(self, market: Market, result) -> bool:
         """Check basic quality filters."""

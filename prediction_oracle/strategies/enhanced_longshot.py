@@ -10,6 +10,7 @@ from ..config import settings
 from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Market
 from ..risk import BankrollManager
+from .base_strategy import BaseStrategy, TradeDecision
 
 logger = logging.getLogger(__name__)
 
@@ -33,30 +34,40 @@ class LongshotSignal:
         )
 
 
-class EnhancedLongshotStrategy:
+class EnhancedLongshotStrategy(BaseStrategy):
     """
     Longshot strategy with news velocity filtering.
     Looks for underpriced outcomes with breaking news catalyst.
     """
     
-    def __init__(self, config: dict, bankroll_manager: BankrollManager):
+    def __init__(
+        self,
+        config: dict,
+        bankroll_manager: BankrollManager,
+        oracle: Optional[EnhancedOracle] = None,
+    ):
         """Initialize strategy."""
-        self.config = config
+        strategy_config = config.get("strategies", config).get("longshot", {})
+        super().__init__("longshot", strategy_config)
+
+        self.full_config = config
         self.bankroll = bankroll_manager
-        self.oracle = EnhancedOracle(config)
-        
+        self.oracle = oracle or EnhancedOracle(config)
+
         # Strategy settings
-        self.max_price = config.get("longshot", {}).get("max_price", 0.15)
-        self.min_upside = config.get("longshot", {}).get("min_upside_multiplier", 3.0)
-        self.bet_size = config.get("longshot", {}).get("bet_size", 5.0)
-        self.max_bets_per_day = config.get("longshot", {}).get("max_bets_per_day", 3)
-        
+        self.max_price = strategy_config.get("max_price", strategy_config.get("price_range", [0.0, 0.15])[1])
+        self.min_upside = strategy_config.get("min_upside_multiplier", 3.0)
+        self.bet_size = strategy_config.get("bet_size", strategy_config.get("fixed_bet_usd", 5.0))
+        self.max_bets_per_day = strategy_config.get(
+            "max_bets_per_day", strategy_config.get("max_daily_longshot_bets", 3)
+        )
+
         # Enhanced settings
         self.min_news_velocity = 0.3  # Need breaking news
         self.min_opportunity_score = 0.25
-        
+
         self.bets_today = 0
-        
+
         logger.info(
             f"EnhancedLongshot initialized - "
             f"max_price={self.max_price}, "
@@ -64,19 +75,46 @@ class EnhancedLongshotStrategy:
             f"min_news_velocity={self.min_news_velocity}"
         )
     
-    async def evaluate_markets(self, markets: list[Market]) -> list[dict]:
+    async def select_markets(self, all_markets: list[Market]) -> list[Market]:
+        """Filter longshot candidates before enhanced evaluation."""
+        selected: list[Market] = []
+
+        for market in all_markets:
+            for outcome in market.outcomes:
+                if outcome.price > self.max_price:
+                    continue
+
+                selected.append(market)
+                break
+
+        # Quick filter to focus on most promising catalysts
+        if settings.enable_quick_filter and len(selected) > 20:
+            filtered_ids = await self.oracle.quick_filter_markets(selected, top_n=20)
+            selected = [m for m in selected if m.market_id in filtered_ids]
+            logger.info(f"EnhancedLongshot quick filtered to {len(selected)} markets")
+
+        return selected
+
+    async def evaluate_markets(
+        self,
+        markets: list[Market],
+        oracle_results: Optional[dict[str, list]] = None,
+    ) -> list[dict]:
         """Evaluate markets for longshot opportunities."""
         if not markets:
             return []
-        
+
         if self.bets_today >= self.max_bets_per_day:
             logger.info(f"Daily limit reached ({self.bets_today}/{self.max_bets_per_day})")
             return []
-        
+
         logger.info(f"Evaluating {len(markets)} markets for longshots")
-        
+
         # Get enhanced oracle results
-        oracle_results = await self.oracle.evaluate_markets_enhanced(markets, model_group="longshot")
+        if oracle_results is None:
+            oracle_results = await self.oracle.evaluate_markets_enhanced(
+                markets, model_group=self.name
+            )
         
         # Gather signals (focus on news velocity)
         news_signals = {}
@@ -203,8 +241,40 @@ class EnhancedLongshotStrategy:
             f"Found {len(recommendations)} longshot opportunities "
             f"from {len(markets)} markets"
         )
-        
+
         return recommendations
+
+    async def evaluate(
+        self, markets: list[Market], oracle_results: dict
+    ) -> list[TradeDecision]:
+        """Adapter to scheduler interface returning TradeDecision objects."""
+        recommendations = await self.evaluate_markets(markets, oracle_results)
+
+        decisions: list[TradeDecision] = []
+        for rec in recommendations:
+            result = rec["oracle_result"]
+            direction = "BUY" if result.edge >= 0 else "SELL"
+
+            decisions.append(
+                TradeDecision(
+                    venue=rec["market"].venue,
+                    market_id=rec["market"].market_id,
+                    outcome_id=result.outcome_id,
+                    direction=direction,
+                    size_usd=rec["bet_size"],
+                    p_true=result.mean_p_true,
+                    implied_p=result.implied_p,
+                    edge=result.edge,
+                    confidence=result.avg_confidence,
+                    inter_model_disagreement=result.inter_model_disagreement,
+                    rule_risks=result.rule_risks,
+                    strategy_name=self.name,
+                    rationale=rec.get("rationale", ""),
+                    models_used=result.models_used,
+                )
+            )
+
+        return decisions
     
     def _passes_basic_filters(self, market: Market, result) -> bool:
         """Check basic quality filters."""
