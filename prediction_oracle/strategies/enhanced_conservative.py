@@ -104,6 +104,9 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
             oracle_results = await self.oracle.evaluate_markets_enhanced(
                 markets, model_group="conservative"
             )
+
+        # Expose for downstream logging/backtests
+        self._oracle_results = oracle_results
         
         # Gather signals for confluence
         news_signals = {}

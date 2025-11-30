@@ -5,6 +5,7 @@ import asyncio
 import json
 import logging
 from datetime import datetime
+from hashlib import sha256
 
 import numpy as np
 
@@ -26,6 +27,9 @@ class EnhancedOracle:
         """Initialize with config."""
         self.config = config
         self.providers = {}
+        self.cache: dict[str, tuple[float, dict[str, list]] | None] = {}
+        self.cache_ttl = config.get("llm_cache_ttl", 300)
+        self.daily_spend = 0.0
         
         # Initialize providers
         for group_name, group_config in config.get("llm_groups", {}).items():
@@ -116,15 +120,25 @@ class EnhancedOracle:
             smart_money=smart_money if smart_money else None,
             social_buzz=social_buzz if social_buzz else None,
         )
-        
+
+        prompt_key = sha256(prompt.encode()).hexdigest()
+        cached = self.cache.get(prompt_key)
+        now_ts = datetime.utcnow().timestamp()
+        if cached and now_ts - cached[0] < self.cache_ttl:
+            logger.info("Serving enhanced oracle results from cache")
+            return cached[1]
+
         # Get providers for this group
         group_config = self.config.get("llm_groups", {}).get(model_group, {})
         provider_names = group_config.get("providers", ["openai_gpt"])
         
         all_results: dict[str, list] = {}
-        
+
         # Query each provider
         for provider_name in provider_names:
+            if self.daily_spend >= settings.llm_daily_budget:
+                logger.warning("Daily LLM budget reached; skipping remaining providers")
+                break
             provider = self.providers.get(provider_name)
             if not provider:
                 continue
@@ -136,17 +150,21 @@ class EnhancedOracle:
                     temperature=0.3,
                     max_tokens=3000,
                 )
-                
+
                 responses = await provider.generate([query])
                 
                 if responses and responses[0].parsed_json:
                     parsed = self._parse_response(responses[0].parsed_json)
                     for item in parsed:
+                        item["provider"] = provider_name
                         market_id = item.get("market_id")
                         if market_id not in all_results:
                             all_results[market_id] = []
                         all_results[market_id].append(item)
-                        
+
+                # Track spend heuristically
+                self.daily_spend += settings.max_cost_per_query
+
             except Exception as e:
                 logger.error(f"Provider {provider_name} failed: {e}")
         
@@ -178,7 +196,9 @@ class EnhancedOracle:
                     if market.market_id not in final_results:
                         final_results[market.market_id] = []
                     final_results[market.market_id].append(aggregated)
-        
+
+        self.cache[prompt_key] = (now_ts, final_results)
+
         return final_results
     
     async def quick_filter_markets(self, markets: list, top_n: int = 10) -> list[str]:
@@ -232,12 +252,25 @@ class EnhancedOracle:
     
     def _aggregate_results(self, results: list[dict], market, outcome) -> OracleResult:
         """Aggregate results from multiple models."""
-        p_values = [r.get("p_true", 0.5) for r in results]
-        confidences = [r.get("confidence", 0.5) for r in results]
-        
-        mean_p = float(np.mean(p_values))
+        weights = []
+        p_values = []
+        confidences = []
+        for r in results:
+            p_values.append(r.get("p_true", 0.5))
+            confidences.append(r.get("confidence", 0.5))
+
+            provider = r.get("provider", "")
+            # Penalize providers that disagree sharply with consensus
+            disagreement_penalty = abs(r.get("p_true", 0.5) - outcome.price)
+            weight = max(0.1, 1.0 - disagreement_penalty)
+            # Lightly boost confidence when provider name is present
+            if provider:
+                weight *= 1.05
+            weights.append(weight)
+
+        mean_p = float(np.average(p_values, weights=weights)) if p_values else outcome.price
         std_p = float(np.std(p_values)) if len(p_values) > 1 else 0.0
-        
+
         all_risks = []
         for r in results:
             all_risks.extend(r.get("rule_risks", []))

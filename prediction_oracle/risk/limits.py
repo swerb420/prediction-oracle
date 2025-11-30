@@ -37,10 +37,11 @@ class RiskManager:
         """
         self.config = config
         self.bankroll = bankroll
-        
+
         # Track positions by venue
         self.venue_exposure: dict[str, float] = defaultdict(float)
         self.position_count = 0
+        self.strategy_allocation: dict[str, float] = defaultdict(float)
         
         logger.info("RiskManager initialized")
 
@@ -62,6 +63,7 @@ class RiskManager:
         max_venue_exposure_pct = self.config.get("max_venue_exposure_pct", 0.20)
         max_daily_drawdown_pct = self.config.get("max_daily_drawdown_pct", 0.05)
         max_open_positions = self.config.get("max_open_positions", 20)
+        max_strategy_allocation_pct = self.config.get("strategy_daily_allocation_pct", 0.20)
         
         bankroll_state = self.bankroll.get_state()
         results = []
@@ -84,6 +86,13 @@ class RiskManager:
             max_position_size = bankroll_state.total * max_position_size_pct
             if decision.size_usd > max_position_size:
                 results.append((decision, RejectionReason.POSITION_TOO_LARGE))
+                continue
+
+            # Per-strategy allocation guardrails
+            strategy_key = decision.strategy_name
+            strategy_cap = bankroll_state.total * max_strategy_allocation_pct
+            if self.strategy_allocation[strategy_key] + decision.size_usd > strategy_cap:
+                results.append((decision, RejectionReason.OVER_EXPOSURE))
                 continue
             
             # Check available funds
@@ -116,6 +125,7 @@ class RiskManager:
         venue_key = decision.venue.value
         self.venue_exposure[venue_key] += decision.size_usd
         self.position_count += 1
+        self.strategy_allocation[decision.strategy_name] += decision.size_usd
         
         logger.debug(
             f"Position opened: {venue_key} exposure now ${self.venue_exposure[venue_key]:.2f}"
