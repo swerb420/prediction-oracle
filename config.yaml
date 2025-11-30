@@ -1,0 +1,62 @@
+llm_groups:
+  conservative:
+    providers:
+      - openai_gpt
+      - claude_sonnet
+    batch_size: 10
+    cache_ttl_seconds: 600
+  
+  longshot:
+    providers:
+      - grok
+      - openai_gpt
+    batch_size: 8
+    cache_ttl_seconds: 300
+
+strategies:
+  conservative:
+    enabled: true
+    min_edge: 0.04
+    max_disagreement: 0.08
+    min_liquidity_usd: 500
+    max_spread: 0.05
+    implied_prob_range: [0.20, 0.75]
+    position_size_pct: 0.01
+    kelly_fraction: 0.25
+    max_rule_risk_count: 0
+  
+  longshot:
+    enabled: true
+    min_edge: 0.10
+    max_disagreement: 0.12
+    min_confidence: 0.60
+    price_range: [0.01, 0.10]
+    fixed_bet_usd: 3.0
+    max_bet_usd: 5.0
+    max_daily_longshot_bets: 10
+    max_longshot_exposure_pct: 0.05
+
+risk:
+  max_open_positions: 20
+  max_position_size_pct: 0.01
+  max_venue_exposure_pct: 0.20
+  max_daily_drawdown_pct: 0.05
+  max_correlated_positions: 3
+  min_time_to_close_hours: 24
+
+markets:
+  kalshi:
+    enabled: true
+    min_volume_24h: 100
+    excluded_categories: []
+  
+  polymarket:
+    enabled: true
+    min_volume_24h: 100
+    excluded_tags: []
+
+logging:
+  level: INFO
+  file: logs/oracle.log
+  max_bytes: 10485760
+  backup_count: 5

@@ -1,0 +1,1902 @@
+[2025-11-27 22:19:06] ⏳ Pending: 36 trades, $510.00 at risk
+[2025-11-27 22:19:30] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:19:30] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:19:34] ⏳ 39 open trades. Next closes in 0.4h
+nohup: ignoring input
+[2025-11-27 22:20:25] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:20:25] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:20:25] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:20:25] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:20:30] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:20:30] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:20:52] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:20:52] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:20:57] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:24:45] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:24:45] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:24:51] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:29:56] ⏳ 39 open trades. Next closes in 0.4h
+nohup: ignoring input
+[2025-11-27 22:32:15] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:32:15] 
+🚀 Resolution Monitor Started
+[2025-11-27 22:32:15] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:32:15] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-27 22:32:20] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:32:20] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:37:25] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:37:25] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:42:30] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:42:30] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:47:39] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:47:39] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:52:44] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:52:44] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:57:49] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 22:57:49] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:02:53] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:02:53] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:07:59] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:07:59] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:13:04] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:13:04] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:18:10] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:18:10] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:23:16] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:23:16] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:28:21] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:28:21] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:33:26] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:33:26] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:38:31] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:38:31] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:43:36] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:43:36] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:48:41] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:48:41] ⏳ 39 open trades. Next closes in 0.4h
+[2025-11-27 23:53:46] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-27 23:53:46] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-27 23:58:52] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-27 23:58:52] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:03:57] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:03:57] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:09:04] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:09:04] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:14:09] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:14:09] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:19:15] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:19:15] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:24:20] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:24:20] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:29:25] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:29:25] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:34:31] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:34:31] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:39:36] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:39:36] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:44:42] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:44:42] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:49:48] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:49:48] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:54:53] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:54:53] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:59:59] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 00:59:59] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:05:06] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:05:06] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:10:11] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:10:11] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:15:16] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:15:16] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:20:22] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:20:22] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 01:25:28] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:25:28] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:30:34] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:30:34] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:35:39] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:35:39] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:40:45] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:40:45] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:45:51] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:45:51] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:50:58] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:50:58] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:56:04] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 01:56:04] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:01:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:01:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:06:16] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:06:16] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:11:22] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:11:22] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:16:28] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:16:28] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:21:34] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:21:34] ⏳ 43 open trades. Next closes in 0.4h
+nohup: ignoring input
+[2025-11-28 02:23:40] 
+🚀 Resolution Monitor Started
+[2025-11-28 02:23:40] 
+🚀 Resolution Monitor Started
+[2025-11-28 02:23:40] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-28 02:23:40] Checking every 5 minutes... Press Ctrl+C to stop
+
+[2025-11-28 02:23:46] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:23:46] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:28:52] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:28:52] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:33:59] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:33:59] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:39:04] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:39:04] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:44:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:44:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 02:49:16] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 02:49:16] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 02:54:21] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 02:54:21] ⏳ 41 open trades. Next closes in 0.4h
+[2025-11-28 02:59:27] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 02:59:27] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:04:33] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:04:33] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:09:39] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:09:39] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:14:45] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:14:45] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:19:51] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:19:51] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:24:57] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:24:57] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:30:04] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:30:04] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:35:11] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:35:11] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:40:18] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:40:18] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:45:24] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:45:24] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:50:29] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:50:29] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:55:37] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 03:55:37] ⏳ 42 open trades. Next closes in 0.4h
+[2025-11-28 04:00:44] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:00:44] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:05:50] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:05:50] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:10:55] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:10:55] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:16:02] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:16:02] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:21:09] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:21:09] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:26:14] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:26:14] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:31:21] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:31:21] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:36:27] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:36:27] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:41:33] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:41:33] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:46:39] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:46:39] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:51:45] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:51:45] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:56:52] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 04:56:52] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:01:59] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:01:59] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:07:05] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:07:05] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:12:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:12:10] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:17:16] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:17:16] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:22:23] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:22:23] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:27:29] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:27:29] ⏳ 43 open trades. Next closes in 0.4h
+[2025-11-28 05:32:35] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:32:35] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:37:41] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:37:41] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:42:47] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:42:47] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:47:53] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:47:53] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:52:59] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:52:59] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:58:05] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 05:58:05] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 06:03:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:03:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:08:17] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:08:17] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:13:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:13:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:18:30] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:18:30] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:23:36] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:23:36] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:28:42] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:28:42] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:33:48] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:33:48] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:38:54] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:38:54] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:44:00] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:44:00] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:49:06] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:49:06] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:54:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:54:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:59:17] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 06:59:17] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:04:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:04:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:09:29] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:09:29] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:14:35] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:14:35] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:19:41] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:19:41] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:24:48] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:24:48] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:29:53] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:29:53] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:34:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:34:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:40:06] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:40:06] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:45:12] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:45:12] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:50:18] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:50:18] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:55:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 07:55:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:00:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:00:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:05:36] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:05:36] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:10:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:10:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:15:49] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:15:49] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:20:55] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:20:55] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:26:02] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:26:02] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:31:08] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:31:08] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:36:13] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:36:13] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:41:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:41:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:46:25] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:46:25] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:51:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:51:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:56:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 08:56:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 09:01:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 09:01:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 09:06:49] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:06:49] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:11:55] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:11:55] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:17:02] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:17:02] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:22:08] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:22:08] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:27:15] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:27:15] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:32:20] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:32:20] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:37:27] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:37:27] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:42:33] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:42:33] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:47:39] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:47:39] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:52:45] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:52:45] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:57:51] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 09:57:51] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:02:57] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:02:57] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:08:03] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:08:03] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:13:09] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:13:09] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:18:16] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:18:16] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:23:22] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:23:22] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:28:28] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:28:28] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:33:34] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:33:34] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:38:41] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:38:41] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:43:47] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:43:47] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:48:55] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:48:55] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:54:02] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:54:02] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:59:09] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 10:59:09] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:04:14] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:04:14] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:09:21] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:09:21] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:14:27] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:14:27] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:19:34] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:19:34] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:24:40] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:24:40] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:29:47] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:29:47] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:34:53] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:34:53] ⏳ 46 open trades. Next closes in 0.4h
+[2025-11-28 11:39:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:39:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:45:05] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:45:05] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:50:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:50:11] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:55:18] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 11:55:18] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:00:24] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:00:24] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:05:30] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:05:30] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:10:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:10:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:15:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:15:43] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:20:49] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:20:49] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:25:55] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:25:55] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:31:01] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:31:01] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:36:07] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:36:07] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:41:13] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:41:13] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:46:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:46:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:51:25] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:51:25] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:56:32] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 12:56:32] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:01:38] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:01:38] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:06:48]   Error checking Manifold qyqzgcZqzc: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/qyqzgcZqzc']' timed out after 10 seconds
+[2025-11-28 13:06:48]   Error checking Manifold qyqzgcZqzc: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/qyqzgcZqzc']' timed out after 10 seconds
+[2025-11-28 13:06:58]   Error checking Manifold s86LsNZNuU: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/s86LsNZNuU']' timed out after 10 seconds
+[2025-11-28 13:06:58]   Error checking Manifold s86LsNZNuU: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/s86LsNZNuU']' timed out after 10 seconds
+[2025-11-28 13:07:08]   Error checking Manifold uQEzNP99An: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/uQEzNP99An']' timed out after 10 seconds
+[2025-11-28 13:07:08]   Error checking Manifold uQEzNP99An: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/uQEzNP99An']' timed out after 10 seconds
+[2025-11-28 13:07:19]   Error checking Manifold SsgIP9E26O: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/SsgIP9E26O']' timed out after 10 seconds
+[2025-11-28 13:07:19]   Error checking Manifold SsgIP9E26O: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/SsgIP9E26O']' timed out after 10 seconds
+[2025-11-28 13:07:29]   Error checking Manifold 0cnCznOEPz: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/0cnCznOEPz']' timed out after 10 seconds
+[2025-11-28 13:07:29]   Error checking Manifold 0cnCznOEPz: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/0cnCznOEPz']' timed out after 10 seconds
+[2025-11-28 13:07:40]   Error checking Manifold Ww1TPW9vTWlDYoLnWCPY: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/Ww1TPW9vTWlDYoLnWCPY']' timed out after 10 seconds
+[2025-11-28 13:07:40]   Error checking Manifold Ww1TPW9vTWlDYoLnWCPY: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/Ww1TPW9vTWlDYoLnWCPY']' timed out after 10 seconds
+[2025-11-28 13:07:51]   Error checking Manifold jz1jwy4dqf: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/jz1jwy4dqf']' timed out after 10 seconds
+[2025-11-28 13:07:51]   Error checking Manifold jz1jwy4dqf: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/jz1jwy4dqf']' timed out after 10 seconds
+[2025-11-28 13:08:02]   Error checking Manifold cLQlpCOEqd: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/cLQlpCOEqd']' timed out after 10 seconds
+[2025-11-28 13:08:02]   Error checking Manifold cLQlpCOEqd: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/cLQlpCOEqd']' timed out after 10 seconds
+[2025-11-28 13:08:12]   Error checking Manifold 5OAO0CgZO5: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/5OAO0CgZO5']' timed out after 10 seconds
+[2025-11-28 13:08:12]   Error checking Manifold 5OAO0CgZO5: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/5OAO0CgZO5']' timed out after 10 seconds
+[2025-11-28 13:08:23]   Error checking Manifold RtUU0RdplI: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/RtUU0RdplI']' timed out after 10 seconds
+[2025-11-28 13:08:23]   Error checking Manifold RtUU0RdplI: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/RtUU0RdplI']' timed out after 10 seconds
+[2025-11-28 13:08:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:08:23] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:13:28] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:13:28] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:18:34] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:18:34] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:23:40] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:23:40] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:28:46] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:28:46] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:33:53] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:33:53] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:39:00] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:39:00] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 13:44:05] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:44:05] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:49:11] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:49:11] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:54:17] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:54:17] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:59:23] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 13:59:23] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 14:04:28] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 14:04:28] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 14:09:35] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 14:09:35] ⏳ 44 open trades. Next closes in 0.4h
+[2025-11-28 14:14:40] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:14:40] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:19:46] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:19:46] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:24:52] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:24:52] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:29:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:29:59] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:35:05] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:35:05] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:40:12] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:40:12] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:45:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:45:19] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:50:24] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:50:24] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:55:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 14:55:31] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:00:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:00:37] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:05:44] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:05:44] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:10:51] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:10:51] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:15:57] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:15:57] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:21:03] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:21:03] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:26:09] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:26:09] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:31:16] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:31:16] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:36:22] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:36:22] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:41:27] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:41:27] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:46:35] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:46:35] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:51:41] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:51:41] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:56:47] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 15:56:47] ⏳ 45 open trades. Next closes in 0.4h
+[2025-11-28 16:01:53] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:01:53] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:06:59] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:06:59] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:12:06] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:12:06] ⏳ 52 open trades. Next closes in 0.4h
+[2025-11-28 16:17:12] ⏳ 50 open trades. Next closes in 0.4h
+[2025-11-28 16:17:12] ⏳ 50 open trades. Next closes in 0.4h
+[2025-11-28 16:22:19] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:22:19] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:27:24] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:27:24] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:32:32] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:32:32] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:37:37] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:37:37] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:42:45] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:42:45] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:47:51] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:47:51] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:52:57] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:52:57] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 16:57:59] ✅ RESOLVED: ChatGPT Shopping finds my new TV?...
+[2025-11-28 16:57:59] ✅ RESOLVED: ChatGPT Shopping finds my new TV?...
+[2025-11-28 16:57:59]    Outcome: NO | Our bet: NO | P&L: $+5.85
+[2025-11-28 16:57:59]    Outcome: NO | Our bet: NO | P&L: $+5.85
+[2025-11-28 16:57:59]    Grok: NO ✓ | GPT: SKIP ✗
+[2025-11-28 16:57:59]    Grok: NO ✓ | GPT: SKIP ✗
+[2025-11-28 16:57:59]    Category: ENTERTAINMENT
+[2025-11-28 16:57:59]    Category: ENTERTAINMENT
+[2025-11-28 16:58:03] 
+📢 1 trades resolved! Session P&L: $+5.85
+[2025-11-28 16:58:03] 
+📢 1 trades resolved! Session P&L: $+5.85
+[2025-11-28 16:58:03] ==================================================
+[2025-11-28 16:58:03] ==================================================
+[2025-11-28 16:58:03] 📊 PERFORMANCE SUMMARY
+[2025-11-28 16:58:03] 📊 PERFORMANCE SUMMARY
+[2025-11-28 16:58:03]    Resolved: 5 | Wins: 4 (80%)
+[2025-11-28 16:58:03]    Resolved: 5 | Wins: 4 (80%)
+[2025-11-28 16:58:03]    Total P&L: $-29.15
+[2025-11-28 16:58:03]    Total P&L: $-29.15
+[2025-11-28 16:58:03]    Grok: 4/5 (80%)
+[2025-11-28 16:58:03]    Grok: 4/5 (80%)
+[2025-11-28 16:58:03]    GPT:  3/5 (60%)
+[2025-11-28 16:58:03]    GPT:  3/5 (60%)
+[2025-11-28 16:58:03] 
+📈 BY CATEGORY:
+[2025-11-28 16:58:03] 
+📈 BY CATEGORY:
+[2025-11-28 16:58:03]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-28 16:58:03]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-28 16:58:03]    SPORTS: 3/3 wins, $+15.00, Grok 3/3, GPT 3/3
+[2025-11-28 16:58:03]    SPORTS: 3/3 wins, $+15.00, Grok 3/3, GPT 3/3
+[2025-11-28 16:58:03]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-28 16:58:03]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-28 16:58:03] ==================================================
+[2025-11-28 16:58:03] ==================================================
+[2025-11-28 16:58:03] ⏳ Pending: 61 trades, $830.00 at risk
+[2025-11-28 16:58:03] ⏳ Pending: 61 trades, $830.00 at risk
+[2025-11-28 17:03:05] ❌ RESOLVED: Free Lottery...
+[2025-11-28 17:03:05] ❌ RESOLVED: Free Lottery...
+[2025-11-28 17:03:05]    Outcome: MKT | Our bet: NO | P&L: $-5.00
+[2025-11-28 17:03:05]    Outcome: MKT | Our bet: NO | P&L: $-5.00
+[2025-11-28 17:03:05]    Grok: SKIP ✗ | GPT: NO ✗
+[2025-11-28 17:03:05]    Grok: SKIP ✗ | GPT: NO ✗
+[2025-11-28 17:03:05]    Category: OTHER
+[2025-11-28 17:03:05]    Category: OTHER
+[2025-11-28 17:03:09] 
+📢 1 trades resolved! Session P&L: $-5.00
+[2025-11-28 17:03:09] 
+📢 1 trades resolved! Session P&L: $-5.00
+[2025-11-28 17:03:09] ==================================================
+[2025-11-28 17:03:09] ==================================================
+[2025-11-28 17:03:09] 📊 PERFORMANCE SUMMARY
+[2025-11-28 17:03:09] 📊 PERFORMANCE SUMMARY
+[2025-11-28 17:03:09]    Resolved: 6 | Wins: 4 (67%)
+[2025-11-28 17:03:09]    Resolved: 6 | Wins: 4 (67%)
+[2025-11-28 17:03:09]    Total P&L: $-34.15
+[2025-11-28 17:03:09]    Total P&L: $-34.15
+[2025-11-28 17:03:09]    Grok: 4/6 (67%)
+[2025-11-28 17:03:09]    Grok: 4/6 (67%)
+[2025-11-28 17:03:09]    GPT:  3/6 (50%)
+[2025-11-28 17:03:09]    GPT:  3/6 (50%)
+[2025-11-28 17:03:09] 
+📈 BY CATEGORY:
+[2025-11-28 17:03:09] 
+📈 BY CATEGORY:
+[2025-11-28 17:03:09]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-28 17:03:09]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-28 17:03:09]    OTHER: 0/1 wins, $-5.00, Grok 0/1, GPT 0/1
+[2025-11-28 17:03:09]    OTHER: 0/1 wins, $-5.00, Grok 0/1, GPT 0/1
+[2025-11-28 17:03:09]    SPORTS: 3/3 wins, $+15.00, Grok 3/3, GPT 3/3
+[2025-11-28 17:03:09]    SPORTS: 3/3 wins, $+15.00, Grok 3/3, GPT 3/3
+[2025-11-28 17:03:09]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-28 17:03:09]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-28 17:03:09] ==================================================
+[2025-11-28 17:03:09] ==================================================
+[2025-11-28 17:03:09] ⏳ Pending: 60 trades, $825.00 at risk
+[2025-11-28 17:03:09] ⏳ Pending: 60 trades, $825.00 at risk
+[2025-11-28 17:08:14] ⏳ 60 open trades. Next closes in 0.4h
+[2025-11-28 17:08:14] ⏳ 60 open trades. Next closes in 0.4h
+[2025-11-28 17:13:19] ⏳ 60 open trades. Next closes in 0.4h
+[2025-11-28 17:13:19] ⏳ 60 open trades. Next closes in 0.4h
+[2025-11-28 17:18:25] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:18:25] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:23:30] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:23:30] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:28:36] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:28:36] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:33:42] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:33:42] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:38:49] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:38:49] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:43:55] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:43:55] ⏳ 62 open trades. Next closes in 0.4h
+[2025-11-28 17:49:01] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 17:49:01] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 17:54:07] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 17:54:07] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 17:59:14] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 17:59:14] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:04:20] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:04:20] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:09:26] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:09:26] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:14:32] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:14:32] ⏳ 64 open trades. Next closes in 0.4h
+[2025-11-28 18:19:38] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:19:38] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:24:45] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:24:45] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:29:51] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:29:51] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:34:57] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:34:57] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:40:03] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:40:03] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:45:10] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:45:10] ⏳ 65 open trades. Next closes in 0.4h
+[2025-11-28 18:50:17] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 18:50:17] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 18:55:24] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 18:55:24] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:00:31] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:00:31] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:05:37] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:05:37] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:10:44] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:10:44] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:15:50] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:15:50] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:20:56] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:20:56] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:26:03] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:26:03] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:31:09] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:31:09] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:36:16] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:36:16] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:41:22] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:41:22] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:46:29] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:46:29] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:51:36] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:51:36] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-28 19:56:43] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 19:56:43] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:01:50] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:01:50] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:06:56] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:06:56] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:12:02] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:12:02] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:17:09] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:17:09] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:22:18] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:22:18] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:27:25] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:27:25] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:32:32] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:32:32] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:37:40] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:37:40] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:42:46] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:42:46] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:47:54] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:47:54] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:53:01] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:53:01] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:58:07] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 20:58:07] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:03:14] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:03:14] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:08:21] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:08:21] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:13:27] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:13:27] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:18:34] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:18:34] ⏳ 68 open trades. Next closes in 0.4h
+[2025-11-28 21:23:40] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:23:40] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:28:47] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:28:47] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:33:54] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:33:54] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:39:00] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:39:00] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:44:07] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:44:07] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:49:15] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:49:15] ⏳ 69 open trades. Next closes in 0.4h
+[2025-11-28 21:54:21] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 21:54:21] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 21:59:28] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 21:59:28] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:04:34] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:04:34] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:09:41] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:09:41] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:14:47] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:14:47] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:19:54] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:19:54] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:25:00] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:25:00] ⏳ 70 open trades. Next closes in 0.1h
+[2025-11-28 22:30:09] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:30:09] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:35:16] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:35:16] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:40:22] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:40:22] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:45:29] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:45:29] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:50:36] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:50:36] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:55:43] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 22:55:43] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:00:50] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:00:50] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:05:56] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:05:56] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:11:03] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:11:03] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:16:10] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:16:10] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:21:17] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:21:17] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:26:24] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:26:24] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:31:31] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:31:31] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:36:38] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:36:38] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:41:44] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:41:44] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:46:51] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:46:51] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:51:58] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:51:58] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:57:05] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-28 23:57:05] ⏳ 71 open trades. Next closes in 0.1h
+[2025-11-29 00:02:12] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:02:12] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:07:20] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:07:20] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:12:27] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:12:27] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:17:36] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:17:36] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:22:43] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:22:43] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:27:50] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:27:50] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:33:05] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:33:05] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:38:13] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:38:13] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:43:21] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:43:21] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:48:28] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:48:28] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:53:35] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:53:35] ⏳ 74 open trades. Next closes in 0.1h
+[2025-11-29 00:58:43] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 00:58:43] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:03:50] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:03:50] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:09:02] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:09:02] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:14:10] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:14:10] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:19:18] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:19:18] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:24:26] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:24:26] ⏳ 76 open trades. Next closes in 0.1h
+[2025-11-29 01:29:32] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:29:32] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:34:41] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:34:41] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:39:49] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:39:49] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:44:56] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:44:56] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:50:04] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:50:04] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:55:11] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 01:55:11] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:00:20] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:00:20] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:05:28] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:05:28] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:10:36] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:10:36] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:15:44] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:15:44] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:20:51] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:20:51] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:25:59] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:25:59] ⏳ 72 open trades. Next closes in 0.1h
+[2025-11-29 02:31:08] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:31:08] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:36:12]   Error checking Manifold n5RCzqudQS: Expecting value: line 1 column 1 (char 0)
+[2025-11-29 02:36:12]   Error checking Manifold n5RCzqudQS: Expecting value: line 1 column 1 (char 0)
+[2025-11-29 02:36:16] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:36:16] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:41:24] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:41:24] ⏳ 73 open trades. Next closes in 0.1h
+[2025-11-29 02:46:33] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 02:46:33] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 02:51:41] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 02:51:41] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 02:56:48] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 02:56:48] ⏳ 70 open trades. Next closes in 0.4h
+[2025-11-29 03:01:55] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:01:55] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:07:04] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:07:04] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:12:12] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:12:12] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:17:20] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:17:20] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:22:28] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:22:28] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:27:39] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:27:39] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:32:47] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:32:47] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:37:55] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:37:55] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:43:03] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:43:03] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:48:12] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:48:12] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:53:20] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:53:20] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:58:29] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 03:58:29] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:03:38] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:03:38] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:08:46] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:08:46] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:13:54] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:13:54] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:19:02] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:19:02] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:24:11] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:24:11] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:29:19] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:29:19] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:34:27] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:34:27] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:39:35] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:39:35] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:44:44] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:44:44] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:49:52] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:49:52] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:55:00] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 04:55:00] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 05:00:10] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 05:00:10] ⏳ 71 open trades. Next closes in 0.4h
+[2025-11-29 05:05:18] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:05:18] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:10:26] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:10:26] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:15:35] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:15:35] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:20:44] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:20:44] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:25:53] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:25:53] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:31:01] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:31:01] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:36:09] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:36:09] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:41:19] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:41:19] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:46:26] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:46:26] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:51:34] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:51:34] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:56:42] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 05:56:42] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:01:50] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:01:50] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:06:58] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:06:58] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:12:06] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:12:06] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:17:13] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:17:13] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:22:22] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:22:22] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:27:31] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:27:31] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:32:39] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:32:39] ⏳ 72 open trades. Next closes in 0.4h
+[2025-11-29 06:37:46] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:37:46] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:42:54] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:42:54] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:48:01] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:48:01] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:53:09] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:53:09] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:58:17] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 06:58:17] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:03:26] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:03:26] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:08:34] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:08:34] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:13:42] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:13:42] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:18:50] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:18:50] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:23:57] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:23:57] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:29:05] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:29:05] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:34:12] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:34:12] ⏳ 73 open trades. Next closes in 0.4h
+[2025-11-29 07:39:20] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:39:20] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:44:29] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:44:29] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:49:37] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:49:37] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:54:44] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:54:44] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:59:52] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 07:59:52] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:05:00] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:05:00] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:10:08] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:10:08] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:15:16] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:15:16] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:20:24] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:20:24] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:25:32] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:25:32] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:30:40] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:30:40] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:35:48] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:35:48] ⏳ 74 open trades. Next closes in 0.4h
+[2025-11-29 08:40:56] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:40:56] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:46:04] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:46:04] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:51:12] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:51:12] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:56:21] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 08:56:21] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:01:28] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:01:28] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:06:36] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:06:36] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:11:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:11:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:16:54] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:16:54] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:22:02] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:22:02] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:27:10] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:27:10] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:32:18] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:32:18] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:37:26] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:37:26] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:42:35] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:42:35] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:47:42] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:47:42] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:52:51] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:52:51] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:57:59] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 09:57:59] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:03:08] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:03:08] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:08:17] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:08:17] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:13:25] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:13:25] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:18:33] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:18:33] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:23:41] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:23:41] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:28:49] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:28:49] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:33:58] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:33:58] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:39:06] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:39:06] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:44:14] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:44:14] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:49:22] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:49:22] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:54:31] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:54:31] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:59:39] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 10:59:39] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:04:48] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:04:48] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:09:57] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:09:57] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:15:05] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:15:05] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:20:13] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:20:13] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:25:21] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:25:21] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:30:30] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:30:30] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:35:38] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:35:38] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:40:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:40:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:45:54] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:45:54] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:51:02] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:51:02] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:56:10] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 11:56:10] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:01:18] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:01:18] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:06:27] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:06:27] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:11:35] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:11:35] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:16:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:16:45] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:21:52] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:21:52] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:27:01] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:27:01] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:32:09] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:32:09] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:37:16] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:37:16] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:42:25] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:42:25] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:47:34] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:47:34] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:52:41] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:52:41] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:57:50] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 12:57:50] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:02:58] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:02:58] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:08:06] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:08:06] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:13:14] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:13:14] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:18:23] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:18:23] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:23:30] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:23:30] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:28:39] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:28:39] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:33:48] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:33:48] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:38:55] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:38:55] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:44:04] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:44:04] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:49:12] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:49:12] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:54:20] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:54:20] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:59:29] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 13:59:29] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 14:04:37] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 14:04:37] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 14:09:46] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 14:09:46] ⏳ 75 open trades. Next closes in 0.4h
+[2025-11-29 14:14:54] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-29 14:14:54] ⏳ 66 open trades. Next closes in 0.4h
+[2025-11-29 14:20:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:20:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:25:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:25:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:30:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:30:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:35:29] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:35:29] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:40:37] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:40:37] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:45:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:45:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:50:54] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:50:54] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:56:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 14:56:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:01:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:01:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:06:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:06:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:11:28] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:11:28] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:16:36] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:16:36] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:21:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:21:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:26:54] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:26:54] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:32:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:32:03] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:37:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:37:12] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:42:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:42:20] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:47:29] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:47:29] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:52:37] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:52:37] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:57:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 15:57:45] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:03:00] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:03:00] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:08:09] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:08:09] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:13:17] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:13:17] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:18:26] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:18:26] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:23:35] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:23:35] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:28:44] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:28:44] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:33:52] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:33:52] ⏳ 67 open trades. Next closes in 0.4h
+[2025-11-29 16:39:00] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:39:00] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:44:10] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:44:10] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:49:18] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:49:18] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 16:54:27] ⏳ 78 open trades. Next closes in 0.4h
+[2025-11-29 16:54:27] ⏳ 78 open trades. Next closes in 0.4h
+[2025-11-29 16:59:29] ❌ RESOLVED: Free Lottery...
+[2025-11-29 16:59:29] ❌ RESOLVED: Free Lottery...
+[2025-11-29 16:59:29]    Outcome: MKT | Our bet: YES | P&L: $-10.00
+[2025-11-29 16:59:29]    Outcome: MKT | Our bet: YES | P&L: $-10.00
+[2025-11-29 16:59:29]    Grok: SKIP ✗ | GPT: NO ✗
+[2025-11-29 16:59:29]    Grok: SKIP ✗ | GPT: NO ✗
+[2025-11-29 16:59:29]    Category: OTHER
+[2025-11-29 16:59:29]    Category: OTHER
+[2025-11-29 16:59:35] 
+📢 1 trades resolved! Session P&L: $-10.00
+[2025-11-29 16:59:35] 
+📢 1 trades resolved! Session P&L: $-10.00
+[2025-11-29 16:59:35] ==================================================
+[2025-11-29 16:59:35] ==================================================
+[2025-11-29 16:59:35] 📊 PERFORMANCE SUMMARY
+[2025-11-29 16:59:35] 📊 PERFORMANCE SUMMARY
+[2025-11-29 16:59:35]    Resolved: 21 | Wins: 10 (48%)
+[2025-11-29 16:59:35]    Resolved: 21 | Wins: 10 (48%)
+[2025-11-29 16:59:35]    Total P&L: $-108.12
+[2025-11-29 16:59:35]    Total P&L: $-108.12
+[2025-11-29 16:59:35]    Grok: 10/21 (48%)
+[2025-11-29 16:59:35]    Grok: 10/21 (48%)
+[2025-11-29 16:59:35]    GPT:  7/21 (33%)
+[2025-11-29 16:59:35]    GPT:  7/21 (33%)
+[2025-11-29 16:59:35] 
+📈 BY CATEGORY:
+[2025-11-29 16:59:35] 
+📈 BY CATEGORY:
+[2025-11-29 16:59:35]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-29 16:59:35]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-29 16:59:35]    OTHER: 0/2 wins, $-15.00, Grok 0/2, GPT 0/2
+[2025-11-29 16:59:35]    OTHER: 0/2 wins, $-15.00, Grok 0/2, GPT 0/2
+[2025-11-29 16:59:35]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-29 16:59:35]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-29 16:59:35]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-29 16:59:35]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-29 16:59:35] ==================================================
+[2025-11-29 16:59:35] ==================================================
+[2025-11-29 16:59:35] ⏳ Pending: 77 trades, $1570.00 at risk
+[2025-11-29 16:59:35] ⏳ Pending: 77 trades, $1570.00 at risk
+[2025-11-29 17:04:44] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:04:44] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:09:52] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:09:52] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:15:01] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:15:01] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:20:10] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:20:10] ⏳ 77 open trades. Next closes in 0.4h
+[2025-11-29 17:25:19] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:25:19] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:30:27] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:30:27] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:35:36] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:35:36] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:40:46] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:40:46] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:45:54] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:45:54] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:51:03] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:51:03] ⏳ 79 open trades. Next closes in 0.4h
+[2025-11-29 17:56:12] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 17:56:12] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:01:22] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:01:22] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:06:35] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:06:35] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:11:46] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:11:46] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:16:56] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:16:56] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:22:05] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:22:05] ⏳ 80 open trades. Next closes in 0.4h
+[2025-11-29 18:27:14] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:27:14] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:32:24] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:32:24] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:37:33] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:37:33] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:42:42] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:42:42] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:47:51] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:47:51] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:53:01] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:53:01] ⏳ 81 open trades. Next closes in 0.4h
+[2025-11-29 18:58:10] ⏳ 83 open trades. Next closes in 0.4h
+[2025-11-29 18:58:10] ⏳ 83 open trades. Next closes in 0.4h
+[2025-11-29 19:03:19] ⏳ 83 open trades. Next closes in 0.4h
+[2025-11-29 19:03:19] ⏳ 83 open trades. Next closes in 0.4h
+[2025-11-29 19:08:29] ⏳ 84 open trades. Next closes in 0.4h
+[2025-11-29 19:08:29] ⏳ 84 open trades. Next closes in 0.4h
+[2025-11-29 19:13:38] ⏳ 89 open trades. Next closes in 0.4h
+[2025-11-29 19:13:38] ⏳ 89 open trades. Next closes in 0.4h
+[2025-11-29 19:18:49] ⏳ 89 open trades. Next closes in 0.4h
+[2025-11-29 19:18:49] ⏳ 89 open trades. Next closes in 0.4h
+[2025-11-29 19:24:00] ⏳ 94 open trades. Next closes in 0.4h
+[2025-11-29 19:24:00] ⏳ 94 open trades. Next closes in 0.4h
+[2025-11-29 19:29:11] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:29:11] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:34:22] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:34:22] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:39:34] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:39:34] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:44:46] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:44:46] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:49:58] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:49:58] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:55:09] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 19:55:09] ⏳ 99 open trades. Next closes in 0.4h
+[2025-11-29 20:00:21] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:00:21] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:05:32] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:05:32] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:10:43] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:10:43] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:15:54] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:15:54] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:21:06] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:21:06] ⏳ 112 open trades. Next closes in 0.4h
+[2025-11-29 20:26:17] ⏳ 113 open trades. Next closes in 0.4h
+[2025-11-29 20:26:17] ⏳ 113 open trades. Next closes in 0.4h
+[2025-11-29 20:31:30] ⏳ 115 open trades. Next closes in 0.4h
+[2025-11-29 20:31:30] ⏳ 115 open trades. Next closes in 0.4h
+[2025-11-29 20:36:42] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:36:42] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:41:55] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:41:55] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:47:07] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:47:07] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:52:19] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:52:19] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:57:31] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 20:57:31] ⏳ 116 open trades. Next closes in 0.4h
+[2025-11-29 21:02:44] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:02:44] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:07:57] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:07:57] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:13:11] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:13:11] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:18:22] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:18:22] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:23:36] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:23:36] ⏳ 117 open trades. Next closes in 0.4h
+[2025-11-29 21:28:49] ⏳ 118 open trades. Next closes in 0.4h
+[2025-11-29 21:28:49] ⏳ 118 open trades. Next closes in 0.4h
+[2025-11-29 21:34:01] ⏳ 118 open trades. Next closes in 0.4h
+[2025-11-29 21:34:01] ⏳ 118 open trades. Next closes in 0.4h
+[2025-11-29 21:39:14] ⏳ 119 open trades. Next closes in 0.4h
+[2025-11-29 21:39:14] ⏳ 119 open trades. Next closes in 0.4h
+[2025-11-29 21:44:29] ⏳ 121 open trades. Next closes in 0.4h
+[2025-11-29 21:44:29] ⏳ 121 open trades. Next closes in 0.4h
+[2025-11-29 21:49:42] ⏳ 122 open trades. Next closes in 0.4h
+[2025-11-29 21:49:42] ⏳ 122 open trades. Next closes in 0.4h
+[2025-11-29 21:54:54] ⏳ 123 open trades. Next closes in 0.4h
+[2025-11-29 21:54:54] ⏳ 123 open trades. Next closes in 0.4h
+[2025-11-29 22:00:08] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:00:08] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:05:20] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:05:20] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:10:34] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:10:34] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:15:48] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:15:48] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:21:00] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:21:00] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:26:13] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:26:13] ⏳ 125 open trades. Next closes in 0.4h
+[2025-11-29 22:31:26] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:31:26] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:36:40] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:36:40] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:41:53] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:41:53] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:47:07] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:47:07] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:52:18] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:52:18] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:57:31] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 22:57:31] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:02:44] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:02:44] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:07:57] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:07:57] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:13:10] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:13:10] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:18:23] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:18:23] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:23:39] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:23:39] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:28:57] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:28:57] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-29 23:34:11] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:34:11] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:39:24] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:39:24] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:44:37] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:44:37] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:49:50] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:49:50] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:55:03] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-29 23:55:03] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:00:18] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:00:18] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:05:31] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:05:31] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:10:45] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:10:45] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:15:59] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:15:59] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:21:03] ❌ RESOLVED: I manage to publish one blog post daily in Novembe...
+[2025-11-30 00:21:03] ❌ RESOLVED: I manage to publish one blog post daily in Novembe...
+[2025-11-30 00:21:03]    Outcome: YES | Our bet: NO | P&L: $-10.00
+[2025-11-30 00:21:03]    Outcome: YES | Our bet: NO | P&L: $-10.00
+[2025-11-30 00:21:03]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 00:21:03]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 00:21:03]    Category: AI_TECH
+[2025-11-30 00:21:03]    Category: AI_TECH
+[2025-11-30 00:21:14] 
+📢 1 trades resolved! Session P&L: $-10.00
+[2025-11-30 00:21:14] 
+📢 1 trades resolved! Session P&L: $-10.00
+[2025-11-30 00:21:14] ==================================================
+[2025-11-30 00:21:14] ==================================================
+[2025-11-30 00:21:14] 📊 PERFORMANCE SUMMARY
+[2025-11-30 00:21:14] 📊 PERFORMANCE SUMMARY
+[2025-11-30 00:21:14]    Resolved: 22 | Wins: 10 (45%)
+[2025-11-30 00:21:14]    Resolved: 22 | Wins: 10 (45%)
+[2025-11-30 00:21:14]    Total P&L: $-118.12
+[2025-11-30 00:21:14]    Total P&L: $-118.12
+[2025-11-30 00:21:14]    Grok: 10/22 (45%)
+[2025-11-30 00:21:14]    Grok: 10/22 (45%)
+[2025-11-30 00:21:14]    GPT:  7/22 (32%)
+[2025-11-30 00:21:14]    GPT:  7/22 (32%)
+[2025-11-30 00:21:14] 
+📈 BY CATEGORY:
+[2025-11-30 00:21:14] 
+📈 BY CATEGORY:
+[2025-11-30 00:21:14]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 00:21:14]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 00:21:14]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 00:21:14]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 00:21:14]    OTHER: 0/2 wins, $-15.00, Grok 0/2, GPT 0/2
+[2025-11-30 00:21:14]    OTHER: 0/2 wins, $-15.00, Grok 0/2, GPT 0/2
+[2025-11-30 00:21:14]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 00:21:14]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 00:21:14]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 00:21:14]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 00:21:14] ==================================================
+[2025-11-30 00:21:14] ==================================================
+[2025-11-30 00:21:14] ⏳ Pending: 126 trades, $4335.00 at risk
+[2025-11-30 00:21:14] ⏳ Pending: 126 trades, $4335.00 at risk
+[2025-11-30 00:26:28] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:26:28] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:31:44] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:31:44] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:36:59] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:36:59] ⏳ 126 open trades. Next closes in 0.4h
+[2025-11-30 00:42:12] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:42:12] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:47:25] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:47:25] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:52:39] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:52:39] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:57:53] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 00:57:53] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:03:07] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:03:07] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:08:21] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:08:21] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:13:35] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:13:35] ⏳ 127 open trades. Next closes in 0.4h
+[2025-11-30 01:18:50] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:18:50] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:24:04] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:24:04] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:29:19] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:29:19] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:34:34] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:34:34] ⏳ 128 open trades. Next closes in 0.4h
+[2025-11-30 01:39:47] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:39:47] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:45:01] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:45:01] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:50:16] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:50:16] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:55:30] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 01:55:30] ⏳ 129 open trades. Next closes in 0.4h
+[2025-11-30 02:00:45] ⏳ 131 open trades. Next closes in 0.4h
+[2025-11-30 02:00:45] ⏳ 131 open trades. Next closes in 0.4h
+[2025-11-30 02:06:00] ⏳ 133 open trades. Next closes in 0.4h
+[2025-11-30 02:06:00] ⏳ 133 open trades. Next closes in 0.4h
+[2025-11-30 02:11:14] ⏳ 134 open trades. Next closes in 0.4h
+[2025-11-30 02:11:14] ⏳ 134 open trades. Next closes in 0.4h
+[2025-11-30 02:16:28] ⏳ 134 open trades. Next closes in 0.4h
+[2025-11-30 02:16:28] ⏳ 134 open trades. Next closes in 0.4h
+[2025-11-30 02:21:42] ⏳ 135 open trades. Next closes in 0.4h
+[2025-11-30 02:21:42] ⏳ 135 open trades. Next closes in 0.4h
+[2025-11-30 02:26:57] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:26:57] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:32:20] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:32:20] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:37:34] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:37:34] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:42:54]   Error checking Manifold zNoByniwWvzOA9Kq4a1R: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/zNoByniwWvzOA9Kq4a1R']' timed out after 10 seconds
+[2025-11-30 02:42:54]   Error checking Manifold zNoByniwWvzOA9Kq4a1R: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/zNoByniwWvzOA9Kq4a1R']' timed out after 10 seconds
+[2025-11-30 02:42:58] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:42:58] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:48:13] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:48:13] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:53:27] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:53:27] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:58:42] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 02:58:42] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 03:03:58] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 03:03:58] ⏳ 136 open trades. Next closes in 0.4h
+[2025-11-30 03:09:12] ⏳ 137 open trades. Next closes in 0.4h
+[2025-11-30 03:09:12] ⏳ 137 open trades. Next closes in 0.4h
+[2025-11-30 03:14:29] ⏳ 137 open trades. Next closes in 0.4h
+[2025-11-30 03:14:29] ⏳ 137 open trades. Next closes in 0.4h
+[2025-11-30 03:19:44] ⏳ 138 open trades. Next closes in 0.4h
+[2025-11-30 03:19:44] ⏳ 138 open trades. Next closes in 0.4h
+[2025-11-30 03:24:58] ⏳ 138 open trades. Next closes in 0.4h
+[2025-11-30 03:24:58] ⏳ 138 open trades. Next closes in 0.4h
+[2025-11-30 03:30:15] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:30:15] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:35:30] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:35:30] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:40:47] ⏳ 142 open trades. Next closes in 0.4h
+[2025-11-30 03:40:47] ⏳ 142 open trades. Next closes in 0.4h
+[2025-11-30 03:46:03] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:46:03] ⏳ 141 open trades. Next closes in 0.4h
+[2025-11-30 03:51:19] ⏳ 142 open trades. Next closes in 0.4h
+[2025-11-30 03:51:19] ⏳ 142 open trades. Next closes in 0.4h
+[2025-11-30 03:56:35] ⏳ 143 open trades. Next closes in 0.4h
+[2025-11-30 03:56:35] ⏳ 143 open trades. Next closes in 0.4h
+[2025-11-30 04:01:51] ⏳ 143 open trades. Next closes in 0.4h
+[2025-11-30 04:01:51] ⏳ 143 open trades. Next closes in 0.4h
+[2025-11-30 04:07:08] ⏳ 158 open trades. Next closes in 0.4h
+[2025-11-30 04:07:08] ⏳ 158 open trades. Next closes in 0.4h
+[2025-11-30 04:12:26] ⏳ 171 open trades. Next closes in 0.4h
+[2025-11-30 04:12:26] ⏳ 171 open trades. Next closes in 0.4h
+[2025-11-30 04:17:43] ⏳ 173 open trades. Next closes in 0.4h
+[2025-11-30 04:17:43] ⏳ 173 open trades. Next closes in 0.4h
+[2025-11-30 04:23:01] ⏳ 173 open trades. Next closes in 0.4h
+[2025-11-30 04:23:01] ⏳ 173 open trades. Next closes in 0.4h
+[2025-11-30 04:28:20] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:28:20] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:33:38] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:33:38] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:38:57] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:38:57] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:44:03] ✅ RESOLVED: Is Polymarket more accurate than Manifold at p<0.0...
+[2025-11-30 04:44:03] ✅ RESOLVED: Is Polymarket more accurate than Manifold at p<0.0...
+[2025-11-30 04:44:03]    Outcome: NO | Our bet: NO | P&L: $+6.14
+[2025-11-30 04:44:03]    Outcome: NO | Our bet: NO | P&L: $+6.14
+[2025-11-30 04:44:03]    Grok: NO ✓ | GPT: NO ✓
+[2025-11-30 04:44:03]    Grok: NO ✓ | GPT: NO ✓
+[2025-11-30 04:44:03]    Category: ECONOMICS
+[2025-11-30 04:44:03]    Category: ECONOMICS
+[2025-11-30 04:44:03] ✅ RESOLVED: I resolve linked market by November 30th?...
+[2025-11-30 04:44:03] ✅ RESOLVED: I resolve linked market by November 30th?...
+[2025-11-30 04:44:03]    Outcome: YES | Our bet: YES | P&L: $+79.66
+[2025-11-30 04:44:03]    Outcome: YES | Our bet: YES | P&L: $+79.66
+[2025-11-30 04:44:03]    Grok: YES ✓ | GPT: YES ✓
+[2025-11-30 04:44:03]    Grok: YES ✓ | GPT: YES ✓
+[2025-11-30 04:44:03]    Category: OTHER
+[2025-11-30 04:44:03]    Category: OTHER
+[2025-11-30 04:44:16] 
+📢 2 trades resolved! Session P&L: $+85.80
+[2025-11-30 04:44:16] 
+📢 2 trades resolved! Session P&L: $+85.80
+[2025-11-30 04:44:16] ==================================================
+[2025-11-30 04:44:16] ==================================================
+[2025-11-30 04:44:16] 📊 PERFORMANCE SUMMARY
+[2025-11-30 04:44:16] 📊 PERFORMANCE SUMMARY
+[2025-11-30 04:44:16]    Resolved: 25 | Wins: 12 (48%)
+[2025-11-30 04:44:16]    Resolved: 25 | Wins: 12 (48%)
+[2025-11-30 04:44:16]    Total P&L: $-82.32
+[2025-11-30 04:44:16]    Total P&L: $-82.32
+[2025-11-30 04:44:16]    Grok: 12/25 (48%)
+[2025-11-30 04:44:16]    Grok: 12/25 (48%)
+[2025-11-30 04:44:16]    GPT:  10/25 (40%)
+[2025-11-30 04:44:16]    GPT:  10/25 (40%)
+[2025-11-30 04:44:16] 
+📈 BY CATEGORY:
+[2025-11-30 04:44:16] 
+📈 BY CATEGORY:
+[2025-11-30 04:44:16]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 04:44:16]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 04:44:16]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 04:44:16]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 04:44:16]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 04:44:16]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 04:44:16]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 04:44:16]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 04:44:16]    OTHER: 1/3 wins, $+64.66, Grok 1/3, GPT 1/3
+[2025-11-30 04:44:16]    OTHER: 1/3 wins, $+64.66, Grok 1/3, GPT 1/3
+[2025-11-30 04:44:16]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 04:44:16]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 04:44:16]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 04:44:16]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 04:44:16] ==================================================
+[2025-11-30 04:44:16] ==================================================
+[2025-11-30 04:44:16] ⏳ Pending: 174 trades, $5125.00 at risk
+[2025-11-30 04:44:16] ⏳ Pending: 174 trades, $5125.00 at risk
+[2025-11-30 04:49:20] ❌ RESOLVED: 2025 NCAA 🏈 Will Florida defeat Florida State?...
+[2025-11-30 04:49:20] ❌ RESOLVED: 2025 NCAA 🏈 Will Florida defeat Florida State?...
+[2025-11-30 04:49:20]    Outcome: YES | Our bet: NO | P&L: $-25.00
+[2025-11-30 04:49:20]    Outcome: YES | Our bet: NO | P&L: $-25.00
+[2025-11-30 04:49:20]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 04:49:20]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 04:49:20]    Category: OTHER
+[2025-11-30 04:49:20]    Category: OTHER
+[2025-11-30 04:49:36] 
+📢 1 trades resolved! Session P&L: $-25.00
+[2025-11-30 04:49:36] 
+📢 1 trades resolved! Session P&L: $-25.00
+[2025-11-30 04:49:36] ==================================================
+[2025-11-30 04:49:36] ==================================================
+[2025-11-30 04:49:36] 📊 PERFORMANCE SUMMARY
+[2025-11-30 04:49:36] 📊 PERFORMANCE SUMMARY
+[2025-11-30 04:49:36]    Resolved: 26 | Wins: 12 (46%)
+[2025-11-30 04:49:36]    Resolved: 26 | Wins: 12 (46%)
+[2025-11-30 04:49:36]    Total P&L: $-107.32
+[2025-11-30 04:49:36]    Total P&L: $-107.32
+[2025-11-30 04:49:36]    Grok: 12/26 (46%)
+[2025-11-30 04:49:36]    Grok: 12/26 (46%)
+[2025-11-30 04:49:36]    GPT:  10/26 (38%)
+[2025-11-30 04:49:36]    GPT:  10/26 (38%)
+[2025-11-30 04:49:36] 
+📈 BY CATEGORY:
+[2025-11-30 04:49:36] 
+📈 BY CATEGORY:
+[2025-11-30 04:49:36]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 04:49:36]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 04:49:36]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 04:49:36]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 04:49:36]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 04:49:36]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 04:49:36]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 04:49:36]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 04:49:36]    OTHER: 1/4 wins, $+39.66, Grok 1/4, GPT 1/4
+[2025-11-30 04:49:36]    OTHER: 1/4 wins, $+39.66, Grok 1/4, GPT 1/4
+[2025-11-30 04:49:36]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 04:49:36]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 04:49:36]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 04:49:36]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 04:49:36] ==================================================
+[2025-11-30 04:49:36] ==================================================
+[2025-11-30 04:49:36] ⏳ Pending: 173 trades, $5100.00 at risk
+[2025-11-30 04:49:36] ⏳ Pending: 173 trades, $5100.00 at risk
+[2025-11-30 04:54:53] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 04:54:53] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 05:00:12] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 05:00:12] ⏳ 176 open trades. Next closes in 0.4h
+[2025-11-30 05:05:29] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:05:29] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:10:47] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:10:47] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:16:03] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:16:03] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:21:20] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:21:20] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:26:37] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:26:37] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:31:55] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:31:55] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:37:13] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:37:13] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:42:30] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:42:30] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:47:48] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:47:48] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:53:04] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:53:04] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:58:30] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 05:58:30] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 06:03:47] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 06:03:47] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 06:09:05] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 06:09:05] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 06:14:23] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:14:23] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:19:40] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:19:40] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:24:58] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:24:58] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:30:14] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:30:14] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:35:32] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:35:32] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:40:50] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:40:50] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:46:07] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:46:07] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:51:24] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:51:24] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:56:40] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 06:56:40] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:01:59] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:01:59] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:07:16] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:07:16] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:12:32] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:12:32] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:17:48] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:17:48] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:23:06] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:23:06] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:28:23] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:28:23] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:33:39] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:33:39] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:38:55] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:38:55] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:44:11] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:44:11] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:49:30] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:49:30] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:54:45] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 07:54:45] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:00:03] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:00:03] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:05:21] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 08:05:21] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 08:10:37] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 08:10:37] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 08:15:54] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:15:54] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:21:12] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:21:12] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:26:29] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:26:29] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:31:44] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:31:44] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:37:01] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:37:01] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:42:20] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:42:20] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:47:36] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:47:36] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:52:52] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:52:52] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:58:10] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 08:58:10] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:03:27] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:03:27] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:08:42] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:08:42] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:13:58] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:13:58] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:19:15] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:19:15] ⏳ 178 open trades. Next closes in 0.4h
+[2025-11-30 09:24:32] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:24:32] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:29:48] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:29:48] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:35:04] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:35:04] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:40:21] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:40:21] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:45:38] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:45:38] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:50:56] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:50:56] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:56:12] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 09:56:12] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 10:01:31] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 10:01:31] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 10:06:48] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 10:06:48] ⏳ 179 open trades. Next closes in 0.4h
+[2025-11-30 10:12:05] ⏳ 180 open trades. Next closes in 0.4h
+[2025-11-30 10:12:05] ⏳ 180 open trades. Next closes in 0.4h
+[2025-11-30 10:17:22] ⏳ 180 open trades. Next closes in 0.4h
+[2025-11-30 10:17:22] ⏳ 180 open trades. Next closes in 0.4h
+[2025-11-30 10:22:39] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:22:39] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:27:56] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:27:56] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:33:13] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:33:13] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:38:31] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:38:31] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:43:48] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:43:48] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:49:04] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:49:04] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:54:21] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:54:21] ⏳ 181 open trades. Next closes in 0.4h
+[2025-11-30 10:59:40] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 10:59:40] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 11:04:59] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 11:04:59] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 11:10:16] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 11:10:16] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 11:15:35] ⏳ 183 open trades. Next closes in 0.4h
+[2025-11-30 11:15:35] ⏳ 183 open trades. Next closes in 0.4h
+[2025-11-30 11:20:52] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:20:52] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:26:08] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:26:08] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:31:25] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:31:25] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:36:42] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:36:42] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:42:09]   Error checking Manifold pztyCsz6hA: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/pztyCsz6hA']' timed out after 10 seconds
+[2025-11-30 11:42:09]   Error checking Manifold pztyCsz6hA: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/pztyCsz6hA']' timed out after 10 seconds
+[2025-11-30 11:42:11] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:42:11] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:47:30] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:47:30] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:52:47] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:52:47] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:58:04] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 11:58:04] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:03:22] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:03:22] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:08:39] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:08:39] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:13:56] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:13:56] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 12:19:01] ❌ RESOLVED: Will I finish Inkhaven successfully?...
+[2025-11-30 12:19:01] ❌ RESOLVED: Will I finish Inkhaven successfully?...
+[2025-11-30 12:19:01]    Outcome: YES | Our bet: NO | P&L: $-50.00
+[2025-11-30 12:19:01]    Outcome: YES | Our bet: NO | P&L: $-50.00
+[2025-11-30 12:19:01]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 12:19:01]    Grok: NO ✗ | GPT: NO ✗
+[2025-11-30 12:19:01]    Category: OTHER
+[2025-11-30 12:19:01]    Category: OTHER
+[2025-11-30 12:19:14] 
+📢 1 trades resolved! Session P&L: $-50.00
+[2025-11-30 12:19:14] 
+📢 1 trades resolved! Session P&L: $-50.00
+[2025-11-30 12:19:14] ==================================================
+[2025-11-30 12:19:14] ==================================================
+[2025-11-30 12:19:14] 📊 PERFORMANCE SUMMARY
+[2025-11-30 12:19:14] 📊 PERFORMANCE SUMMARY
+[2025-11-30 12:19:14]    Resolved: 28 | Wins: 12 (43%)
+[2025-11-30 12:19:14]    Resolved: 28 | Wins: 12 (43%)
+[2025-11-30 12:19:14]    Total P&L: $-162.32
+[2025-11-30 12:19:14]    Total P&L: $-162.32
+[2025-11-30 12:19:14]    Grok: 12/28 (43%)
+[2025-11-30 12:19:14]    Grok: 12/28 (43%)
+[2025-11-30 12:19:14]    GPT:  10/28 (36%)
+[2025-11-30 12:19:14]    GPT:  10/28 (36%)
+[2025-11-30 12:19:14] 
+📈 BY CATEGORY:
+[2025-11-30 12:19:14] 
+📈 BY CATEGORY:
+[2025-11-30 12:19:14]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 12:19:14]    AI_TECH: 0/1 wins, $-10.00, Grok 0/1, GPT 0/1
+[2025-11-30 12:19:14]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 12:19:14]    CRYPTO: 0/1 wins, $-50.00, Grok 0/1, GPT 1/1
+[2025-11-30 12:19:14]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 12:19:14]    ECONOMICS: 1/1 wins, $+6.14, Grok 1/1, GPT 1/1
+[2025-11-30 12:19:14]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 12:19:14]    ENTERTAINMENT: 1/1 wins, $+5.85, Grok 1/1, GPT 0/1
+[2025-11-30 12:19:14]    OTHER: 1/6 wins, $-15.34, Grok 1/6, GPT 1/6
+[2025-11-30 12:19:14]    OTHER: 1/6 wins, $-15.34, Grok 1/6, GPT 1/6
+[2025-11-30 12:19:14]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 12:19:14]    SPORTS: 9/17 wins, $-48.97, Grok 9/17, GPT 7/17
+[2025-11-30 12:19:14]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 12:19:14]    URGENT: 0/1 wins, $-50.00, Grok None/1, GPT None/1
+[2025-11-30 12:19:14] ==================================================
+[2025-11-30 12:19:14] ==================================================
+[2025-11-30 12:19:14] ⏳ Pending: 186 trades, $5230.00 at risk
+[2025-11-30 12:19:14] ⏳ Pending: 186 trades, $5230.00 at risk
+[2025-11-30 12:24:31] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:24:31] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:29:47] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:29:47] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:35:04] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:35:04] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:40:21] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:40:21] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:45:38] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:45:38] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:50:55] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:50:55] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:56:11] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 12:56:11] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 13:01:28] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 13:01:28] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 13:06:45] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 13:06:45] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 13:12:02] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:12:02] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:17:19] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:17:19] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:22:36] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:22:36] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:27:53] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:27:53] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:33:12]   Error checking Manifold Ww1TPW9vTWlDYoLnWCPY: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/Ww1TPW9vTWlDYoLnWCPY']' timed out after 10 seconds
+[2025-11-30 13:33:12]   Error checking Manifold Ww1TPW9vTWlDYoLnWCPY: Command '['curl', '-s', 'https://api.manifold.markets/v0/market/Ww1TPW9vTWlDYoLnWCPY']' timed out after 10 seconds
+[2025-11-30 13:33:21] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:33:21] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:38:38] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:38:38] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:43:55] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:43:55] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:49:12] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:49:12] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:54:29] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:54:29] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:59:45] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 13:59:45] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:05:02] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:05:02] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:10:19] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:10:19] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:15:37] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:15:37] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:20:54] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:20:54] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:26:11] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:26:11] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:31:27] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:31:27] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:36:46] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:36:46] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:42:03] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:42:03] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:47:20] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:47:20] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:52:37] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:52:37] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:57:54] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 14:57:54] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:03:11] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:03:11] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:08:28] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:08:28] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:13:44] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:13:44] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:19:00] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:19:00] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:24:17] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:24:17] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:29:34] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:29:34] ⏳ 185 open trades. Next closes in 0.4h
+[2025-11-30 15:34:51] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:34:51] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:40:08] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:40:08] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:45:25] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:45:25] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:50:42] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:50:42] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:55:58] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 15:55:58] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 16:01:17] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 16:01:17] ⏳ 186 open trades. Next closes in 0.4h
+[2025-11-30 16:06:34] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 16:06:34] ⏳ 177 open trades. Next closes in 0.4h
+[2025-11-30 16:11:50] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 16:11:50] ⏳ 182 open trades. Next closes in 0.4h
+[2025-11-30 16:17:20] ⏳ 184 open trades. Next closes in 0.4h
+[2025-11-30 16:17:20] ⏳ 184 open trades. Next closes in 0.4h
+[2025-11-30 16:22:37] ⏳ 184 open trades. Next closes in 0.4h
+[2025-11-30 16:22:37] ⏳ 184 open trades. Next closes in 0.4h
+[2025-11-30 16:27:55] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 16:27:55] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 16:33:12] ⏳ 187 open trades. Next closes in 0.4h
+[2025-11-30 16:33:12] ⏳ 187 open trades. Next closes in 0.4h
