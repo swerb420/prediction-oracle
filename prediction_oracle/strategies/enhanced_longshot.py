@@ -1,16 +1,14 @@
 """
 Enhanced Longshot Strategy with news velocity filtering.
 """
-import asyncio
 import logging
 from dataclasses import dataclass
-from typing import Optional
 
 from ..config import settings
 from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Market
 from ..risk import BankrollManager
-from .base_strategy import BaseStrategy, TradeDecision
+from .base_strategy import EnhancedStrategy, TradeDecision
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +32,7 @@ class LongshotSignal:
         )
 
 
-class EnhancedLongshotStrategy(BaseStrategy):
+class EnhancedLongshotStrategy(EnhancedStrategy):
     """
     Longshot strategy with news velocity filtering.
     Looks for underpriced outcomes with breaking news catalyst.
@@ -47,13 +45,9 @@ class EnhancedLongshotStrategy(BaseStrategy):
         oracle: Optional[EnhancedOracle] = None,
     ):
         """Initialize strategy."""
-        strategy_config = config.get("strategies", config).get("longshot", {})
-        super().__init__("longshot", strategy_config)
-
-        self.full_config = config
-        self.bankroll = bankroll_manager
-        self.oracle = oracle or EnhancedOracle(config)
-
+        super().__init__("longshot", config, bankroll_manager)
+        self.oracle = EnhancedOracle(config)
+        
         # Strategy settings
         self.max_price = strategy_config.get("max_price", strategy_config.get("price_range", [0.0, 0.15])[1])
         self.min_upside = strategy_config.get("min_upside_multiplier", 3.0)
@@ -75,30 +69,8 @@ class EnhancedLongshotStrategy(BaseStrategy):
             f"min_news_velocity={self.min_news_velocity}"
         )
     
-    async def select_markets(self, all_markets: list[Market]) -> list[Market]:
-        """Filter longshot candidates before enhanced evaluation."""
-        selected: list[Market] = []
-
-        for market in all_markets:
-            for outcome in market.outcomes:
-                if outcome.price > self.max_price:
-                    continue
-
-                selected.append(market)
-                break
-
-        # Quick filter to focus on most promising catalysts
-        if settings.enable_quick_filter and len(selected) > 20:
-            filtered_ids = await self.oracle.quick_filter_markets(selected, top_n=20)
-            selected = [m for m in selected if m.market_id in filtered_ids]
-            logger.info(f"EnhancedLongshot quick filtered to {len(selected)} markets")
-
-        return selected
-
     async def evaluate_markets(
-        self,
-        markets: list[Market],
-        oracle_results: Optional[dict[str, list]] = None,
+        self, markets: list[Market], oracle_results: dict | None
     ) -> list[dict]:
         """Evaluate markets for longshot opportunities."""
         if not markets:
@@ -109,11 +81,11 @@ class EnhancedLongshotStrategy(BaseStrategy):
             return []
 
         logger.info(f"Evaluating {len(markets)} markets for longshots")
-
-        # Get enhanced oracle results
+        
+        # Get enhanced oracle results when not precomputed
         if oracle_results is None:
             oracle_results = await self.oracle.evaluate_markets_enhanced(
-                markets, model_group=self.name
+                markets, model_group="longshot"
             )
         
         # Gather signals (focus on news velocity)
@@ -244,37 +216,33 @@ class EnhancedLongshotStrategy(BaseStrategy):
 
         return recommendations
 
-    async def evaluate(
-        self, markets: list[Market], oracle_results: dict
-    ) -> list[TradeDecision]:
-        """Adapter to scheduler interface returning TradeDecision objects."""
-        recommendations = await self.evaluate_markets(markets, oracle_results)
+    def _recommendation_to_decision(self, recommendation: dict) -> TradeDecision | None:
+        """Convert enhanced longshot recommendation to trade decision."""
+        oracle_result = recommendation.get("oracle_result")
+        market = recommendation.get("market")
+        outcome = recommendation.get("outcome")
+        rationale = recommendation.get("rationale", "")
+        bet_size = recommendation.get("bet_size")
 
-        decisions: list[TradeDecision] = []
-        for rec in recommendations:
-            result = rec["oracle_result"]
-            direction = "BUY" if result.edge >= 0 else "SELL"
+        if not (oracle_result and market and outcome and bet_size):
+            return None
 
-            decisions.append(
-                TradeDecision(
-                    venue=rec["market"].venue,
-                    market_id=rec["market"].market_id,
-                    outcome_id=result.outcome_id,
-                    direction=direction,
-                    size_usd=rec["bet_size"],
-                    p_true=result.mean_p_true,
-                    implied_p=result.implied_p,
-                    edge=result.edge,
-                    confidence=result.avg_confidence,
-                    inter_model_disagreement=result.inter_model_disagreement,
-                    rule_risks=result.rule_risks,
-                    strategy_name=self.name,
-                    rationale=rec.get("rationale", ""),
-                    models_used=result.models_used,
-                )
-            )
-
-        return decisions
+        return TradeDecision(
+            venue=market.venue,
+            market_id=market.market_id,
+            outcome_id=outcome.id,
+            direction="BUY",
+            size_usd=float(bet_size),
+            p_true=oracle_result.mean_p_true,
+            implied_p=oracle_result.implied_p,
+            edge=oracle_result.edge,
+            confidence=oracle_result.avg_confidence,
+            inter_model_disagreement=oracle_result.inter_model_disagreement,
+            rule_risks=oracle_result.rule_risks,
+            strategy_name=self.name,
+            rationale=rationale,
+            models_used=oracle_result.models_used,
+        )
     
     def _passes_basic_filters(self, market: Market, result) -> bool:
         """Check basic quality filters."""
