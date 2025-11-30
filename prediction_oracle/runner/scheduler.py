@@ -9,6 +9,7 @@ import yaml
 
 from ..execution import ExecutionRouter
 from ..llm import LLMOracle
+from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Venue
 from ..markets.router import MarketRouter
 from ..risk import BankrollManager, RiskManager
@@ -62,7 +63,10 @@ class OracleScheduler:
         self.market_router = MarketRouter(mock_mode=self.mock_mode)
         
         # LLM Oracle
-        self.oracle = LLMOracle(self.config)
+        if settings.enable_enhanced_strategies:
+            self.oracle = EnhancedOracle(self.config)
+        else:
+            self.oracle = LLMOracle(self.config)
         
         # Strategies (use enhanced if enabled)
         self.strategies = []
@@ -79,7 +83,11 @@ class OracleScheduler:
             if settings.enable_enhanced_strategies:
                 logger.info("Using EnhancedConservativeStrategy")
                 self.strategies.append(
-                    EnhancedConservativeStrategy(self.config["strategies"], self.bankroll)
+                    EnhancedConservativeStrategy(
+                        self.config,
+                        self.bankroll,
+                        oracle=self.oracle if isinstance(self.oracle, EnhancedOracle) else None,
+                    )
                 )
             else:
                 logger.info("Using basic ConservativeStrategy")
@@ -91,7 +99,11 @@ class OracleScheduler:
             if settings.enable_enhanced_strategies:
                 logger.info("Using EnhancedLongshotStrategy")
                 self.strategies.append(
-                    EnhancedLongshotStrategy(self.config["strategies"], self.bankroll)
+                    EnhancedLongshotStrategy(
+                        self.config,
+                        self.bankroll,
+                        oracle=self.oracle if isinstance(self.oracle, EnhancedOracle) else None,
+                    )
                 )
             else:
                 logger.info("Using basic LongshotStrategy")

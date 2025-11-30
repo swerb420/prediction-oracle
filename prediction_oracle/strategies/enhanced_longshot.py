@@ -38,23 +38,30 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
     Looks for underpriced outcomes with breaking news catalyst.
     """
     
-    def __init__(self, config: dict, bankroll_manager: BankrollManager):
+    def __init__(
+        self,
+        config: dict,
+        bankroll_manager: BankrollManager,
+        oracle: Optional[EnhancedOracle] = None,
+    ):
         """Initialize strategy."""
         super().__init__("longshot", config, bankroll_manager)
         self.oracle = EnhancedOracle(config)
         
         # Strategy settings
-        self.max_price = config.get("longshot", {}).get("max_price", 0.15)
-        self.min_upside = config.get("longshot", {}).get("min_upside_multiplier", 3.0)
-        self.bet_size = config.get("longshot", {}).get("bet_size", 5.0)
-        self.max_bets_per_day = config.get("longshot", {}).get("max_bets_per_day", 3)
-        
+        self.max_price = strategy_config.get("max_price", strategy_config.get("price_range", [0.0, 0.15])[1])
+        self.min_upside = strategy_config.get("min_upside_multiplier", 3.0)
+        self.bet_size = strategy_config.get("bet_size", strategy_config.get("fixed_bet_usd", 5.0))
+        self.max_bets_per_day = strategy_config.get(
+            "max_bets_per_day", strategy_config.get("max_daily_longshot_bets", 3)
+        )
+
         # Enhanced settings
         self.min_news_velocity = 0.3  # Need breaking news
         self.min_opportunity_score = 0.25
-        
+
         self.bets_today = 0
-        
+
         logger.info(
             f"EnhancedLongshot initialized - "
             f"max_price={self.max_price}, "
@@ -68,11 +75,11 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
         """Evaluate markets for longshot opportunities."""
         if not markets:
             return []
-        
+
         if self.bets_today >= self.max_bets_per_day:
             logger.info(f"Daily limit reached ({self.bets_today}/{self.max_bets_per_day})")
             return []
-        
+
         logger.info(f"Evaluating {len(markets)} markets for longshots")
         
         # Get enhanced oracle results when not precomputed
@@ -206,7 +213,7 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
             f"Found {len(recommendations)} longshot opportunities "
             f"from {len(markets)} markets"
         )
-        
+
         return recommendations
 
     def _recommendation_to_decision(self, recommendation: dict) -> TradeDecision | None:

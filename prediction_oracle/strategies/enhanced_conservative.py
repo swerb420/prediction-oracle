@@ -54,22 +54,30 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
     Only bets when multiple signals agree + LLM shows edge.
     """
     
-    def __init__(self, config: dict, bankroll_manager: BankrollManager):
+    def __init__(
+        self,
+        config: dict,
+        bankroll_manager: BankrollManager,
+        oracle: Optional[EnhancedOracle] = None,
+    ):
         """Initialize strategy."""
         super().__init__("conservative", config, bankroll_manager)
         self.oracle = EnhancedOracle(config)
         
         # Strategy settings
-        self.min_edge = config.get("conservative", {}).get("min_edge", 0.04)
-        self.min_prob = config.get("conservative", {}).get("min_prob_range", [0.3, 0.8])[0]
-        self.max_prob = config.get("conservative", {}).get("min_prob_range", [0.3, 0.8])[1]
-        self.min_liquidity = config.get("conservative", {}).get("min_liquidity", 500)
-        self.max_spread = config.get("conservative", {}).get("max_spread", 0.05)
-        
+        self.min_edge = strategy_config.get("min_edge", 0.04)
+        prob_range = strategy_config.get("min_prob_range", [0.3, 0.8])
+        self.min_prob = prob_range[0]
+        self.max_prob = prob_range[1]
+        self.min_liquidity = strategy_config.get(
+            "min_liquidity", strategy_config.get("min_liquidity_usd", 500)
+        )
+        self.max_spread = strategy_config.get("max_spread", 0.05)
+
         # Enhanced settings
         self.min_confluence_score = 0.15  # Must have positive confluence
         self.min_confluence_confidence = 0.6
-        
+
         logger.info(
             f"EnhancedConservative initialized - "
             f"min_edge={self.min_edge}, "
@@ -82,7 +90,7 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
         """Evaluate markets and return bet recommendations."""
         if not markets:
             return []
-        
+
         logger.info(f"Evaluating {len(markets)} markets with enhanced strategy")
         
         # Quick filter if we need to pull fresh oracle results
@@ -223,7 +231,7 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
             f"Found {len(recommendations)} opportunities "
             f"from {len(markets)} markets"
         )
-        
+
         return recommendations
 
     def _recommendation_to_decision(self, recommendation: dict) -> TradeDecision | None:
