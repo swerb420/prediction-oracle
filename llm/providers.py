@@ -281,6 +281,67 @@ class GrokProvider(LLMProvider):
         )
 
 
+class HuggingFaceProvider(LLMProvider):
+    """Hugging Face Inference API provider (free-tier friendly)."""
+
+    def __init__(self):
+        super().__init__("huggingface")
+        self.api_token = settings.huggingface_api_token
+        self.model = settings.huggingface_model
+        self.base_url = settings.huggingface_api_url.rstrip("/")
+
+    async def generate(self, queries: list[LLMQuery]) -> list[LLMResponse]:
+        """Generate responses via the hosted Inference API."""
+
+        if not self.api_token:
+            logger.warning("Hugging Face API token not configured, returning empty responses")
+            return [
+                LLMResponse(id=q.id, raw_text="", error="API token not configured")
+                for q in queries
+            ]
+
+        responses: list[LLMResponse] = []
+        for query in queries:
+            try:
+                result = await self._call_api(query)
+                responses.append(result)
+            except Exception as exc:  # noqa: BLE001
+                logger.error("Hugging Face API error for query %s: %s", query.id, exc)
+                responses.append(LLMResponse(id=query.id, raw_text="", error=str(exc)))
+        return responses
+
+    async def _call_api(self, query: LLMQuery) -> LLMResponse:
+        headers = {
+            "Authorization": f"Bearer {self.api_token}",
+            "Content-Type": "application/json",
+        }
+        payload = {
+            "inputs": query.prompt,
+            "parameters": {
+                "temperature": query.temperature,
+                "max_new_tokens": query.max_tokens,
+                "return_full_text": False,
+            },
+        }
+
+        response = await self.client.post(
+            f"{self.base_url}/{self.model}",
+            headers=headers,
+            json=payload,
+        )
+        response.raise_for_status()
+        data = response.json()
+
+        # Inference API can return a list of dicts with "generated_text"
+        if isinstance(data, list) and data and isinstance(data[0], dict):
+            raw_text = data[0].get("generated_text", "")
+        else:
+            raw_text = str(data)
+
+        parsed_json = self._parse_json_response(raw_text)
+        return LLMResponse(id=query.id, raw_text=raw_text, parsed_json=parsed_json)
+
+
 def create_provider(provider_name: str) -> LLMProvider:
     """
     Factory function to create LLM providers.
@@ -295,6 +356,7 @@ def create_provider(provider_name: str) -> LLMProvider:
         "openai_gpt": OpenAIProvider,
         "claude_sonnet": AnthropicProvider,
         "grok": GrokProvider,
+        "huggingface": HuggingFaceProvider,
     }
     
     provider_class = providers.get(provider_name)
