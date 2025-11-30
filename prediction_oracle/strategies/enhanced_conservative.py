@@ -1,15 +1,14 @@
 """
 Enhanced Conservative Strategy with signal confluence scoring.
 """
-import asyncio
 import logging
 from dataclasses import dataclass
-from typing import Optional
 
 from ..config import settings
 from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Market
 from ..risk import BankrollManager
+from .base_strategy import EnhancedStrategy, TradeDecision
 
 logger = logging.getLogger(__name__)
 
@@ -49,7 +48,7 @@ class SignalConfluence:
         return 0.3
 
 
-class EnhancedConservativeStrategy:
+class EnhancedConservativeStrategy(EnhancedStrategy):
     """
     Conservative strategy with signal confluence.
     Only bets when multiple signals agree + LLM shows edge.
@@ -57,8 +56,7 @@ class EnhancedConservativeStrategy:
     
     def __init__(self, config: dict, bankroll_manager: BankrollManager):
         """Initialize strategy."""
-        self.config = config
-        self.bankroll = bankroll_manager
+        super().__init__("conservative", config, bankroll_manager)
         self.oracle = EnhancedOracle(config)
         
         # Strategy settings
@@ -222,6 +220,36 @@ class EnhancedConservativeStrategy:
         )
         
         return recommendations
+
+    def _recommendation_to_decision(self, recommendation: dict) -> TradeDecision | None:
+        """Convert enhanced recommendation to a standardized trade decision."""
+        oracle_result = recommendation.get("oracle_result")
+        market = recommendation.get("market")
+        outcome = recommendation.get("outcome")
+        rationale = recommendation.get("rationale", "")
+        bet_size = recommendation.get("bet_size")
+
+        if not (oracle_result and market and outcome and bet_size):
+            return None
+
+        direction = "BUY" if oracle_result.edge >= 0 else "SELL"
+
+        return TradeDecision(
+            venue=market.venue,
+            market_id=market.market_id,
+            outcome_id=outcome.id,
+            direction=direction,
+            size_usd=float(bet_size),
+            p_true=oracle_result.mean_p_true,
+            implied_p=oracle_result.implied_p,
+            edge=oracle_result.edge,
+            confidence=oracle_result.avg_confidence,
+            inter_model_disagreement=oracle_result.inter_model_disagreement,
+            rule_risks=oracle_result.rule_risks,
+            strategy_name=self.name,
+            rationale=rationale,
+            models_used=oracle_result.models_used,
+        )
     
     def _passes_basic_filters(self, market: Market, result) -> bool:
         """Check basic quality filters."""
