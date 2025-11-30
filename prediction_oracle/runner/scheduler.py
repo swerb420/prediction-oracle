@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
+import hashlib
 import yaml
 
 from ..execution import ExecutionRouter
@@ -13,7 +14,7 @@ from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Venue
 from ..markets.router import MarketRouter
 from ..risk import BankrollManager, RiskManager
-from ..storage import Trade, create_tables, get_session
+from ..storage import LLMEval, MarketSnapshot, Trade, create_tables, get_session
 from ..strategies import ConservativeStrategy, LongshotStrategy
 from ..strategies.base_strategy import EnhancedStrategy
 from ..strategies.enhanced_conservative import EnhancedConservativeStrategy
@@ -150,6 +151,8 @@ class OracleScheduler:
         if not all_markets:
             logger.warning("No markets fetched, skipping iteration")
             return
+
+        await self._log_market_snapshots(all_markets)
         
         # 2. Run strategies
         all_decisions = []
@@ -171,6 +174,7 @@ class OracleScheduler:
                     f"{len(candidate_markets)} markets..."
                 )
                 decisions = await strategy.evaluate(candidate_markets, None)
+                await self._log_llm_evals(strategy._last_oracle_results)
             else:
                 logger.info(
                     f"{strategy.name}: Analyzing {len(candidate_markets)} markets..."
@@ -180,6 +184,8 @@ class OracleScheduler:
                     candidate_markets,
                     model_group=strategy.name,
                 )
+
+                await self._log_llm_evals(oracle_results)
 
                 decisions = await strategy.evaluate(candidate_markets, oracle_results)
             all_decisions.extend(decisions)
@@ -272,3 +278,60 @@ class OracleScheduler:
                     rationale=decision.rationale,
                 )
                 session.add(trade)
+
+    async def _log_market_snapshots(self, markets: list):
+        """Persist market snapshots for backtesting and feature building."""
+        if not markets:
+            return
+
+        async with get_session() as session:
+            for market in markets:
+                prices = {o.id: o.price for o in market.outcomes}
+                volumes = {
+                    o.id: getattr(o, "volume_24h", None) or o.volume_24h
+                    for o in market.outcomes
+                }
+
+                snapshot = MarketSnapshot(
+                    venue=market.venue.value,
+                    market_id=market.market_id,
+                    snapshot_time=datetime.utcnow(),
+                    question=market.question,
+                    prices_json=prices,
+                    volume_json=volumes,
+                    metadata_json={
+                        "rules": market.rules,
+                        "category": market.category,
+                        "close_time": market.close_time.isoformat(),
+                        "tags": market.tags,
+                        "volume_24h": market.volume_24h,
+                    },
+                )
+                session.add(snapshot)
+
+    async def _log_llm_evals(self, oracle_results: dict | None):
+        """Persist oracle outputs for calibration and replay."""
+        if not oracle_results:
+            return
+
+        async with get_session() as session:
+            for market_id, results in oracle_results.items():
+                for result in results:
+                    prompt_hash = hashlib.sha256(
+                        f"{market_id}:{result.outcome_id}:{datetime.utcnow().isoformat()}".encode()
+                    ).hexdigest()
+
+                    eval_record = LLMEval(
+                        venue=getattr(result, "venue", None) or "UNKNOWN",
+                        market_id=market_id,
+                        outcome_id=result.outcome_id,
+                        model_name=",".join(result.models_used) if result.models_used else "ensemble",
+                        p_true=result.mean_p_true,
+                        confidence=result.avg_confidence,
+                        implied_p=result.implied_p,
+                        edge=result.edge,
+                        prompt_hash=prompt_hash,
+                        rule_risks_json=result.rule_risks,
+                        notes="auto-logged from scheduler",
+                    )
+                    session.add(eval_record)

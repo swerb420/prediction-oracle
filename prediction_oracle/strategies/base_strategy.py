@@ -79,6 +79,7 @@ class EnhancedStrategy(BaseStrategy, ABC):
     def __init__(self, name: str, config: dict, bankroll: BankrollManager):
         super().__init__(name, config)
         self.bankroll = bankroll
+        self._last_oracle_results: dict | None = None
 
     async def select_markets(self, all_markets: list[Market]) -> list[Market]:
         """Default enhanced behavior: analyze all provided markets."""
@@ -103,6 +104,10 @@ class EnhancedStrategy(BaseStrategy, ABC):
             decision = self._recommendation_to_decision(recommendation)
             if decision:
                 decisions.append(decision)
+
+        # Allow callers (e.g., scheduler or backtests) to inspect the latest
+        # oracle outputs without forcing another expensive evaluation.
+        self._last_oracle_results = getattr(self, "_oracle_results", None)
 
         return decisions
 

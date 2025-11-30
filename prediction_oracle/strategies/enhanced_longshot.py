@@ -87,6 +87,9 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
             oracle_results = await self.oracle.evaluate_markets_enhanced(
                 markets, model_group="longshot"
             )
+
+        # Expose for downstream logging/backtests
+        self._oracle_results = oracle_results
         
         # Gather signals (focus on news velocity)
         news_signals = {}
