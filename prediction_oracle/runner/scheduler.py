@@ -14,6 +14,7 @@ from ..markets.router import MarketRouter
 from ..risk import BankrollManager, RiskManager
 from ..storage import Trade, create_tables, get_session
 from ..strategies import ConservativeStrategy, LongshotStrategy
+from ..strategies.base_strategy import EnhancedStrategy
 from ..strategies.enhanced_conservative import EnhancedConservativeStrategy
 from ..strategies.enhanced_longshot import EnhancedLongshotStrategy
 from ..config import settings
@@ -149,18 +150,26 @@ class OracleScheduler:
                 logger.info(f"{strategy.name}: No candidate markets")
                 continue
             
-            # Get LLM evaluations
-            logger.info(
-                f"{strategy.name}: Analyzing {len(candidate_markets)} markets..."
-            )
-            
-            oracle_results = await self.oracle.evaluate_markets(
-                candidate_markets,
-                model_group=strategy.name,
-            )
-            
-            # Generate trade decisions
-            decisions = await strategy.evaluate(candidate_markets, oracle_results)
+            decisions: list = []
+
+            # Get evaluations from appropriate oracle source
+            if isinstance(strategy, EnhancedStrategy):
+                logger.info(
+                    f"{strategy.name}: Running enhanced evaluation for "
+                    f"{len(candidate_markets)} markets..."
+                )
+                decisions = await strategy.evaluate(candidate_markets, None)
+            else:
+                logger.info(
+                    f"{strategy.name}: Analyzing {len(candidate_markets)} markets..."
+                )
+
+                oracle_results = await self.oracle.evaluate_markets(
+                    candidate_markets,
+                    model_group=strategy.name,
+                )
+
+                decisions = await strategy.evaluate(candidate_markets, oracle_results)
             all_decisions.extend(decisions)
             
             logger.info(f"{strategy.name}: Generated {len(decisions)} decisions")

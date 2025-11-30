@@ -62,7 +62,9 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
             f"min_news_velocity={self.min_news_velocity}"
         )
     
-    async def evaluate_markets(self, markets: list[Market]) -> list[dict]:
+    async def evaluate_markets(
+        self, markets: list[Market], oracle_results: dict | None
+    ) -> list[dict]:
         """Evaluate markets for longshot opportunities."""
         if not markets:
             return []
@@ -73,8 +75,11 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
         
         logger.info(f"Evaluating {len(markets)} markets for longshots")
         
-        # Get enhanced oracle results
-        oracle_results = await self.oracle.evaluate_markets_enhanced(markets, model_group="longshot")
+        # Get enhanced oracle results when not precomputed
+        if oracle_results is None:
+            oracle_results = await self.oracle.evaluate_markets_enhanced(
+                markets, model_group="longshot"
+            )
         
         # Gather signals (focus on news velocity)
         news_signals = {}

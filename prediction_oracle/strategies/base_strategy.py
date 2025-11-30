@@ -58,14 +58,14 @@ class BaseStrategy(ABC):
     async def evaluate(
         self,
         markets: list[Market],
-        oracle_results: dict,
+        oracle_results: dict | None,
     ) -> list[TradeDecision]:
         """
         Evaluate markets and generate trade decisions.
         
         Args:
             markets: Markets to evaluate
-            oracle_results: Results from LLM oracle
+            oracle_results: Results from oracle (or ``None`` if handled internally)
             
         Returns:
             List of trade decisions
@@ -87,10 +87,16 @@ class EnhancedStrategy(BaseStrategy, ABC):
     async def evaluate(
         self,
         markets: list[Market],
-        oracle_results: dict,
+        oracle_results: dict | None,
     ) -> list[TradeDecision]:
-        """Delegate to enhanced evaluation and map recommendations to decisions."""
-        recommendations = await self.evaluate_markets(markets)
+        """Delegate to enhanced evaluation and map recommendations to decisions.
+
+        The optional ``oracle_results`` parameter lets callers reuse prior
+        enhanced-oracle output instead of forcing each strategy to re-query,
+        keeping the interface compatible with :class:`OracleScheduler` while
+        preventing duplicate work when results are already available.
+        """
+        recommendations = await self.evaluate_markets(markets, oracle_results)
 
         decisions: list[TradeDecision] = []
         for recommendation in recommendations:
@@ -101,7 +107,9 @@ class EnhancedStrategy(BaseStrategy, ABC):
         return decisions
 
     @abstractmethod
-    async def evaluate_markets(self, markets: list[Market]) -> list[dict]:
+    async def evaluate_markets(
+        self, markets: list[Market], oracle_results: dict | None
+    ) -> list[dict]:
         """Enhanced evaluation flow producing recommendation dictionaries."""
 
     @abstractmethod

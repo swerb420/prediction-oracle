@@ -76,21 +76,26 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
             f"min_confluence={self.min_confluence_score}"
         )
     
-    async def evaluate_markets(self, markets: list[Market]) -> list[dict]:
+    async def evaluate_markets(
+        self, markets: list[Market], oracle_results: dict | None
+    ) -> list[dict]:
         """Evaluate markets and return bet recommendations."""
         if not markets:
             return []
         
         logger.info(f"Evaluating {len(markets)} markets with enhanced strategy")
         
-        # Quick filter if enabled
-        if settings.enable_quick_filter and len(markets) > 20:
+        # Quick filter if we need to pull fresh oracle results
+        if oracle_results is None and settings.enable_quick_filter and len(markets) > 20:
             filtered_ids = await self.oracle.quick_filter_markets(markets, top_n=20)
             markets = [m for m in markets if m.market_id in filtered_ids]
             logger.info(f"Quick filter reduced to {len(markets)} markets")
-        
-        # Get enhanced oracle results
-        oracle_results = await self.oracle.evaluate_markets_enhanced(markets, model_group="conservative")
+
+        # Get enhanced oracle results when not precomputed
+        if oracle_results is None:
+            oracle_results = await self.oracle.evaluate_markets_enhanced(
+                markets, model_group="conservative"
+            )
         
         # Gather signals for confluence
         news_signals = {}
