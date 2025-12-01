@@ -3,10 +3,17 @@
 Optimized Batch LLM Analysis with Category-Specific Prompts
 Uses grok-4-1-fast-reasoning for better accuracy at lower cost
 Batches markets by category for efficient processing
+
+Enhanced with a research-heavy prompt contract so paper trading can
+compare LLM performance by category. The prompt enforces decomposition,
+uncertainty ranges, and explicit data-gap handling while keeping the
+output compact for downstream parsing.
 """
 
 import httpx
 import asyncio
+import re
+from datetime import datetime
 from typing import List, Dict, Optional
 from dataclasses import dataclass
 
@@ -71,6 +78,22 @@ Weather forecasts are very accurate <3 days out.""",
 Use 50% when truly uncertain."""
 }
 
+# Research-heavy instructions (kept concise to fit batch prompts)
+RESEARCH_CONTRACT = """Process (do silently before final answer):
+- Declare analysis_as_of time and respect market close horizon.
+- Decompose: base rates → current signals → market context/liquidity → rule risks.
+- Quantify uncertainty: give FAIR ±5-10% range internally; pick central value.
+- Sensitivity: note how a 10-20% swing in top 2 assumptions would move FAIR.
+- Adversarial check: name 2 plausible ways you could be wrong.
+- Missing data: if critical inputs absent, set DIR:SKIP and say what you need.
+
+Output contract (strict):
+- One line per market: N. FAIR:XX% DIR:YES/NO/SKIP CONF:H/M/L because <reason≤18 words>
+- FAIR is your calibrated probability (vig-free vs. market price shown).
+- CONF: H if |edge|>10% with agreement; M if 5-10%; else L.
+- Keep reasoning concise but reference the key driver (injury, poll spread, base rate, etc.).
+"""
+
 @dataclass
 class BatchResult:
     market_id: str
@@ -89,7 +112,8 @@ def get_category_prompt(category: str) -> str:
 def build_batch_prompt(markets: List[Dict], category: str) -> str:
     """Build efficient batch prompt for multiple markets in same category."""
     system = get_category_prompt(category)
-    
+    analysis_time = datetime.utcnow().isoformat()
+
     market_list = []
     for i, m in enumerate(markets, 1):
         extra = ""
@@ -99,8 +123,10 @@ def build_batch_prompt(markets: List[Dict], category: str) -> str:
             f"{i}. {m['question'][:100]}\n"
             f"   YES price: {m['price']:.0%} | Closes: {m['hours_left']:.0f}h{extra}"
         )
-    
+
     return f"""{system}
+{RESEARCH_CONTRACT}
+Analysis as of: {analysis_time} UTC
 
 MARKETS TO ANALYZE:
 {chr(10).join(market_list)}
@@ -113,17 +139,31 @@ Reply with one line per market in EXACTLY this format:
 
 Rules:
 - FAIR = your probability estimate (not the market's)
-- DIR = YES if FAIR > market price, NO if FAIR < market price  
+- DIR = YES if FAIR > market price, NO if FAIR < market price
 - CONF = H (>10% edge), M (5-10% edge), L (<5% edge)
-- Keep reasons under 10 words"""
+- Keep reasons under 18 words and cite the key driver"""
 
 
 def parse_batch_response(text: str, markets: List[Dict]) -> List[BatchResult]:
     """Parse batch response into individual results."""
     results = []
-    lines = [l.strip() for l in text.split('\n') if l.strip() and l[0].isdigit()]
-    
-    for i, market in enumerate(markets):
+    numbered = {}
+    for raw_line in text.split("\n"):
+        line = raw_line.strip()
+        if not line:
+            continue
+        match = re.match(r"^(\d+)\.\s*(.+)$", line)
+        if match:
+            numbered[int(match.group(1))] = match.group(0)
+
+    def clamp_probability(val: float) -> float:
+        return max(0.0, min(1.0, val))
+
+    fair_pattern = re.compile(r"FAIR:\s*([-+]?[0-9]*\.?[0-9]+)\%", re.IGNORECASE)
+    dir_pattern = re.compile(r"DIR:\s*(YES|NO|SKIP)", re.IGNORECASE)
+    conf_pattern = re.compile(r"CONF:\s*([HML])", re.IGNORECASE)
+
+    for i, market in enumerate(markets, 1):
         result = BatchResult(
             market_id=market.get('id', ''),
             fair=market['price'],  # default to market price
@@ -132,39 +172,37 @@ def parse_batch_response(text: str, markets: List[Dict]) -> List[BatchResult]:
             reason='',
             raw_response=''
         )
-        
-        if i < len(lines):
-            line = lines[i]
+
+        if i in numbered:
+            line = numbered[i]
             result.raw_response = line
-            
-            # Parse FAIR:XX%
-            if 'FAIR:' in line.upper():
+
+            fair_match = fair_pattern.search(line)
+            if fair_match:
                 try:
-                    fair_part = line.upper().split('FAIR:')[1].split('%')[0].strip()
-                    result.fair = float(fair_part) / 100
-                except:
+                    result.fair = clamp_probability(float(fair_match.group(1)) / 100)
+                except ValueError:
                     pass
-            
-            # Parse DIR:YES/NO
-            if 'DIR:YES' in line.upper():
-                result.direction = 'YES'
-            elif 'DIR:NO' in line.upper():
-                result.direction = 'NO'
-            
-            # Parse CONF:H/M/L
-            if 'CONF:H' in line.upper():
-                result.confidence = 'HIGH'
-            elif 'CONF:M' in line.upper():
-                result.confidence = 'MEDIUM'
-            else:
-                result.confidence = 'LOW'
-            
-            # Parse reason (after "because")
+
+            dir_match = dir_pattern.search(line)
+            if dir_match:
+                result.direction = dir_match.group(1).upper()
+
+            conf_match = conf_pattern.search(line)
+            if conf_match:
+                conf_letter = conf_match.group(1).upper()
+                result.confidence = {
+                    'H': 'HIGH',
+                    'M': 'MEDIUM',
+                    'L': 'LOW'
+                }.get(conf_letter, 'LOW')
+
             if 'because' in line.lower():
-                result.reason = line.lower().split('because')[1].strip()[:50]
-        
+                reason_part = line.split('because', 1)[1].strip()
+                result.reason = reason_part[:80]
+
         results.append(result)
-    
+
     return results
 
 
@@ -295,48 +333,54 @@ async def analyze_markets_batched(
             for j, market in enumerate(batch):
                 grok = grok_results[j] if j < len(grok_results) else None
                 gpt = gpt_results[j] if j < len(gpt_results) else None
-                
-                # Average fair values
-                fairs = []
-                if grok and grok.fair:
-                    fairs.append(grok.fair)
-                if gpt and gpt.fair:
-                    fairs.append(gpt.fair)
-                
-                avg_fair = sum(fairs) / len(fairs) if fairs else market['price']
-                
+
+                # Average fair values (only if model did not signal SKIP)
+                usable_fairs = []
+                if grok and grok.direction != 'SKIP' and grok.fair is not None:
+                    usable_fairs.append(grok.fair)
+                if gpt and gpt.direction != 'SKIP' and gpt.fair is not None:
+                    usable_fairs.append(gpt.fair)
+
+                avg_fair = sum(usable_fairs) / len(usable_fairs) if usable_fairs else market['price']
+
                 # Calculate edge and direction
-                edge_yes = avg_fair - market['price']
-                edge_no = market['price'] - avg_fair
-                
-                if edge_yes > 0:
-                    direction = 'YES'
-                    edge = edge_yes
+                if usable_fairs:
+                    edge_yes = avg_fair - market['price']
+                    edge_no = market['price'] - avg_fair
+
+                    if edge_yes > 0:
+                        direction = 'YES'
+                        edge = edge_yes
+                    else:
+                        direction = 'NO'
+                        edge = edge_no
                 else:
-                    direction = 'NO'
-                    edge = edge_no
-                
+                    direction = 'SKIP'
+                    edge = 0
+
                 # Confidence from agreement
                 confidences = []
                 if grok:
                     confidences.append(grok.confidence)
                 if gpt:
                     confidences.append(gpt.confidence)
-                
-                if 'HIGH' in confidences and abs(edge) > 0.10:
+
+                if direction == 'SKIP':
+                    confidence = 'LOW'
+                elif 'HIGH' in confidences and abs(edge) > 0.10:
                     confidence = 'HIGH'
                 elif abs(edge) > 0.05:
                     confidence = 'MEDIUM'
                 else:
                     confidence = 'LOW'
-                
+
                 # Best reason
                 reason = ''
                 if grok and grok.reason:
                     reason = grok.reason
                 elif gpt and gpt.reason:
                     reason = gpt.reason
-                
+
                 market['llm_fair'] = avg_fair
                 market['llm_direction'] = direction
                 market['llm_confidence'] = confidence
