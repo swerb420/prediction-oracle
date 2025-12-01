@@ -58,6 +58,10 @@ Optional enrichment helpers (async):
 - `extra_data_sources.fetch_metaculus_questions` – Crowd medians for active Metaculus questions.
 - `extra_data_sources.fetch_hackernews_mentions` – Tech sentiment proxy via HN Algolia search.
 - `extra_data_sources.fetch_calendar_events` – Parse public ICS feeds for macro calendars/holidays.
+- `extra_data_sources.fetch_coingecko_trending` – Spot rising crypto narratives via Coingecko trending coins.
+- `extra_data_sources.fetch_manifold_markets` – Pull free Manifold markets as a sentiment/price drift proxy.
+- `extra_data_sources.fetch_metaforecast` – Query cross-platform consensus from Metaforecast.
+- `extra_data_sources.fetch_rss_feed` – Monitor RSS/Atom feeds for macro or event catalysts.
 - `risk.evaluate_forecasts` – Brier/log-loss calibration utilities for research-mode backtests.
 
 ## Safety

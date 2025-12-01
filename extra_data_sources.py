@@ -6,6 +6,10 @@ augment strategy signals with context from:
 - Metaculus crowd forecasts
 - Macroeconomic calendar feeds published via ICS
 - Hacker News search (as a proxy for tech sentiment)
+- Coingecko trending coins (crypto crowd attention)
+- Manifold markets (prediction-market sentiment proxy)
+- Metaforecast (cross-platform forecast aggregator)
+- RSS/Atom feeds for macro/event monitoring
 
 All functions are async and rely on httpx, matching the rest of the codebase's
 non-blocking design.
@@ -16,6 +20,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Any
 
+import feedparser
 import httpx
 
 UserDict = dict[str, Any]
@@ -224,3 +229,172 @@ async def fetch_calendar_events(
             await client.aclose()
 
     return _parse_ics_events(ics_text)
+
+
+async def fetch_coingecko_trending(
+    *, client: httpx.AsyncClient | None = None
+) -> list[UserDict]:
+    """Fetch trending coins from the free Coingecko API.
+
+    Returns:
+        A list of dictionaries containing coin id, name, symbol, score, and
+        optional market cap rank.
+    """
+
+    close_client = client is None
+    client = client or httpx.AsyncClient(timeout=15.0)
+
+    try:
+        response = await client.get("https://api.coingecko.com/api/v3/search/trending")
+        response.raise_for_status()
+        data = response.json()
+    finally:
+        if close_client:
+            await client.aclose()
+
+    results: list[UserDict] = []
+    for item in data.get("coins", []):
+        coin = item.get("item", {})
+        results.append(
+            {
+                "id": coin.get("id"),
+                "name": coin.get("name"),
+                "symbol": coin.get("symbol"),
+                "market_cap_rank": coin.get("market_cap_rank"),
+                "score": coin.get("score"),
+            }
+        )
+    return results
+
+
+async def fetch_manifold_markets(
+    term: str | None = None,
+    limit: int = 50,
+    *,
+    client: httpx.AsyncClient | None = None,
+) -> list[UserDict]:
+    """Fetch public markets from Manifold as a free sentiment signal.
+
+    Args:
+        term: Optional search term to filter markets.
+        limit: Maximum markets to return.
+        client: Optional shared httpx.AsyncClient.
+
+    Returns:
+        List of market dictionaries with id, question, probability, volume, and url.
+    """
+
+    params = {"limit": limit}
+    if term:
+        params["term"] = term
+
+    close_client = client is None
+    client = client or httpx.AsyncClient(timeout=20.0)
+
+    try:
+        response = await client.get("https://api.manifold.markets/v0/search-markets", params=params)
+        response.raise_for_status()
+        markets = response.json()
+    finally:
+        if close_client:
+            await client.aclose()
+
+    results: list[UserDict] = []
+    for market in markets:
+        results.append(
+            {
+                "id": market.get("id"),
+                "question": market.get("question"),
+                "probability": market.get("probability"),
+                "volume24h": market.get("volume24Hours"),
+                "url": f"https://manifold.markets/{market.get('creatorUsername')}/{market.get('slug')}",
+                "close_time": market.get("closeTime"),
+            }
+        )
+    return results
+
+
+async def fetch_metaforecast(
+    search: str,
+    limit: int = 25,
+    *,
+    client: httpx.AsyncClient | None = None,
+) -> list[UserDict]:
+    """Query Metaforecast for cross-platform forecasts.
+
+    Args:
+        search: Query string.
+        limit: Maximum records to return.
+        client: Optional shared httpx.AsyncClient.
+
+    Returns:
+        List of dictionaries containing title, probability, source, and url.
+    """
+
+    params = {"search": search, "source": "all", "limit": limit}
+    close_client = client is None
+    client = client or httpx.AsyncClient(timeout=20.0)
+
+    try:
+        response = await client.get("https://metaforecast.org/api", params=params)
+        response.raise_for_status()
+        data = response.json() or []
+    finally:
+        if close_client:
+            await client.aclose()
+
+    results: list[UserDict] = []
+    for item in data:
+        results.append(
+            {
+                "title": item.get("title"),
+                "probability": item.get("probability"),
+                "source": item.get("source"),
+                "url": item.get("url"),
+            }
+        )
+    return results
+
+
+async def fetch_rss_feed(
+    url: str,
+    max_items: int = 25,
+    *,
+    client: httpx.AsyncClient | None = None,
+) -> list[UserDict]:
+    """Fetch and parse an RSS/Atom feed for event monitoring.
+
+    Args:
+        url: RSS or Atom feed URL.
+        max_items: Maximum items to return.
+        client: Optional shared httpx.AsyncClient for fetching the feed.
+
+    Returns:
+        List of dictionaries with title, link, published, and summary fields.
+    """
+
+    close_client = client is None
+    client = client or httpx.AsyncClient(timeout=15.0)
+
+    try:
+        response = await client.get(url)
+        response.raise_for_status()
+        feed_text = response.text
+    finally:
+        if close_client:
+            await client.aclose()
+
+    parsed = feedparser.parse(feed_text)
+    entries = parsed.get("entries", [])[:max_items]
+
+    results: list[UserDict] = []
+    for entry in entries:
+        results.append(
+            {
+                "title": entry.get("title"),
+                "url": entry.get("link"),
+                "published": entry.get("published") or entry.get("updated"),
+                "summary": entry.get("summary"),
+            }
+        )
+    return results
