@@ -21,6 +21,7 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from collections import defaultdict
 import logging
+import json as pyjson
 
 from polymarket_apis import PolymarketDataClient
 
@@ -1531,6 +1532,9 @@ def main():
         
         if args.scrape_activity or args.full_scan:
             wi.scrape_all_whale_activity(args.hours)
+
+        if args.backfill_days:
+            wi.backfill_recent_trades(days=args.backfill_days, min_rank=args.limit)
         
         if args.specialists:
             specialists = wi.get_crypto_specialists()
