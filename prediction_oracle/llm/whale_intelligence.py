@@ -965,8 +965,7 @@ class WhaleIntelligence:
                         'up_volume': 0.0,
                         'down_volume': 0.0,
                         'avg_size': 0.0,
-                        'symbols': set(),
-                        'market_types': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
+                        'symbols': set(),                        'market_types': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
                         'last_trade': None,
                     }
                     aggregates[wallet] = profile
@@ -1701,7 +1700,11 @@ def main():
                     
             except KeyboardInterrupt:
                 print("\n\n👋 Monitoring stopped.")
-        
+
+        if args.deep_dive:
+            report = wi.get_wallet_deep_dive(args.deep_dive)
+            wi.print_wallet_deep_dive(report)
+
         if args.dashboard or args.full_scan:
             wi.print_dashboard()
         
@@ -1806,9 +1809,23 @@ def main():
             else:
                 print("\n  ⚠️ No strong signals right now - WAIT for better setup")
         
-        if not any([args.scrape_leaderboards, args.scrape_activity, args.specialists,
-                    args.signals, args.dashboard, args.live, args.full_scan, args.init,
-                    args.elite, args.m15, args.monitor, args.copy]):
+        if not any([
+            args.scrape_leaderboards,
+            args.scrape_activity,
+            args.specialists,
+            args.signals,
+            args.dashboard,
+            args.live,
+            args.full_scan,
+            args.init,
+            args.elite,
+            args.m15,
+            args.monitor,
+            args.copy,
+            args.intraday,
+            args.copytrade,
+            args.deep_dive,
+        ]):
             parser.print_help()
             print("\n💡 Quick start:")
             print("   python whale_intelligence.py --full-scan --hours 48  # Full scrape")
