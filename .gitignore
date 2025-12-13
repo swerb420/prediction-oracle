@@ -22,3 +22,15 @@ venv/
 *.swp
 *.swo
 *~
+
+# Additional security
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+.env*
+config.json
+*_secret*
+*_key*
+api_keys*

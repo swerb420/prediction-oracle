@@ -1,18 +1,27 @@
+# ============================================
+# LLM Configuration - Using FREE providers!
+# Rate Limits (Free Tier):
+#   - Groq: 30 RPM, 1K RPD (llama-3.3-70b-versatile) - DAILY LIMIT HIT
+#   - Gemini: 15 RPM, unlimited tokens (gemini-2.0-flash) - PRIMARY NOW
+# ============================================
 llm_groups:
   conservative:
     providers:
-      - openai_gpt
-      - claude_sonnet
-    batch_size: 10
+      - gemini      # PRIMARY - Gemini has higher daily limit
+      - groq        # Fallback when Gemini is slow
+    batch_size: 5
     cache_ttl_seconds: 600
+    requests_per_minute: 8
   
   longshot:
     providers:
-      - grok
-      - openai_gpt
-    batch_size: 8
+      - gemini      # PRIMARY
+      - groq        # Fallback
+    batch_size: 5
     cache_ttl_seconds: 300
+    requests_per_minute: 8
 
+# Strategy Configuration
 strategies:
   conservative:
     enabled: true
@@ -36,6 +45,7 @@ strategies:
     max_daily_longshot_bets: 10
     max_longshot_exposure_pct: 0.05
 
+# Risk Management
 risk:
   max_open_positions: 20
   max_position_size_pct: 0.01
@@ -43,10 +53,12 @@ risk:
   max_daily_drawdown_pct: 0.05
   max_correlated_positions: 3
   min_time_to_close_hours: 24
+  strategy_daily_allocation_pct: 0.20
 
+# Market Configuration  
 markets:
   kalshi:
-    enabled: true
+    enabled: false  # DISABLED - no API credentials for real data
     min_volume_24h: 100
     excluded_categories: []
   
@@ -55,8 +67,20 @@ markets:
     min_volume_24h: 100
     excluded_tags: []
 
+# Scheduler - Conservative timing to avoid rate limits
+scheduler:
+  scan_interval_minutes: 10  # Scan every 10 minutes
+  max_markets_per_scan: 15   # Reduced to use fewer API calls
+
+# Logging
 logging:
   level: INFO
   file: logs/oracle.log
   max_bytes: 10485760
   backup_count: 5
+
+# Fine-tuning data collection
+finetuning:
+  enabled: true
+  log_all_predictions: true
+  export_format: jsonl

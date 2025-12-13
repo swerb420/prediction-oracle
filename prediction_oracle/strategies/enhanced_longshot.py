@@ -1,6 +1,7 @@
 """
 Enhanced Longshot Strategy with news velocity filtering.
 """
+from typing import Optional
 import logging
 from dataclasses import dataclass
 
@@ -49,11 +50,11 @@ class EnhancedLongshotStrategy(EnhancedStrategy):
         self.oracle = EnhancedOracle(config)
         
         # Strategy settings
-        self.max_price = strategy_config.get("max_price", strategy_config.get("price_range", [0.0, 0.15])[1])
-        self.min_upside = strategy_config.get("min_upside_multiplier", 3.0)
-        self.bet_size = strategy_config.get("bet_size", strategy_config.get("fixed_bet_usd", 5.0))
-        self.max_bets_per_day = strategy_config.get(
-            "max_bets_per_day", strategy_config.get("max_daily_longshot_bets", 3)
+        self.max_price = config.get("max_price", config.get("price_range", [0.0, 0.15])[1])
+        self.min_upside = config.get("min_upside_multiplier", 3.0)
+        self.bet_size = config.get("bet_size", config.get("fixed_bet_usd", 5.0))
+        self.max_bets_per_day = config.get(
+            "max_bets_per_day", config.get("max_daily_longshot_bets", 3)
         )
 
         # Enhanced settings

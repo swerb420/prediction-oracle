@@ -1,0 +1,2 @@
+nohup: ignoring input
+python: can't open file '/root/prediction-oracle/prediction_oracle/smart_signal_trader.py': [Errno 2] No such file or directory

@@ -136,11 +136,13 @@ class EnhancedOracle:
 
         # Query each provider
         for provider_name in provider_names:
+            logger.info(f"Trying provider: {provider_name}")
             if self.daily_spend >= settings.llm_daily_budget:
                 logger.warning("Daily LLM budget reached; skipping remaining providers")
                 break
             provider = self.providers.get(provider_name)
             if not provider:
+                logger.warning(f"Provider {provider_name} not found in initialized providers")
                 continue
             
             try:
@@ -153,14 +155,24 @@ class EnhancedOracle:
 
                 responses = await provider.generate([query])
                 
-                if responses and responses[0].parsed_json:
-                    parsed = self._parse_response(responses[0].parsed_json)
-                    for item in parsed:
-                        item["provider"] = provider_name
-                        market_id = item.get("market_id")
-                        if market_id not in all_results:
-                            all_results[market_id] = []
-                        all_results[market_id].append(item)
+                if responses:
+                    resp = responses[0]
+                    if resp.error:
+                        logger.warning(f"Provider {provider_name} returned error: {resp.error}")
+                    elif resp.parsed_json:
+                        logger.info(f"Provider {provider_name} returned {len(resp.parsed_json) if isinstance(resp.parsed_json, list) else 1} parsed results")
+                        parsed = self._parse_response(resp.parsed_json)
+                        logger.info(f"Parsed {len(parsed)} items from {provider_name}")
+                        for item in parsed:
+                            item["provider"] = provider_name
+                            market_id = item.get("market_id")
+                            if market_id not in all_results:
+                                all_results[market_id] = []
+                            all_results[market_id].append(item)
+                        # Success - break out of provider loop
+                        break
+                    else:
+                        logger.warning(f"Provider {provider_name} returned no parsed JSON, raw length: {len(resp.raw_text) if resp.raw_text else 0}")
 
                 # Track spend heuristically
                 self.daily_spend += settings.max_cost_per_query

@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polymarket_crypto_edge_research"
+version = "0.1.0"
+description = "Production-grade crypto + Polymarket edge research with ML, Grok 4.1 regime detection, and paper trading"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Edge Research Team", email = "research@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+keywords = ["crypto", "polymarket", "trading", "ml", "grok", "paper-trading"]
+
+dependencies = [
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "pandas>=2.1.0",
+    "numpy>=1.26.0",
+    "lightgbm>=4.1.0",
+    "scikit-learn>=1.3.0",
+    "pyarrow>=14.0.0",
+    "httpx>=0.25.0",
+    "websockets>=12.0",
+    "python-dotenv>=1.0.0",
+    "loguru>=0.7.2",
+    "rich>=13.7.0",
+    "aiosqlite>=0.19.0",
+    "orjson>=3.9.0",
+    "tenacity>=8.2.0",
+    "scipy>=1.11.0",
+    "torch>=2.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.12.0",
+    "ruff>=0.1.8",
+    "mypy>=1.7.0",
+]
+
+[project.scripts]
+daily-retrain = "scripts.daily_retrain:main"
+run-paper = "scripts.run_live_paper:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "data*", "features*", "ml*", "llm*", "strategy*", "exec*", "reports*", "scripts*", "examples*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_ignores = true
+strict = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,5209 @@
+nohup: ignoring input
+Starting Strategy Variant Comparison...
+Running 6 strategies in parallel
+  • Conservative (High WR): Only trade ultra-high confidence signals
+  • Ultra Conservative (Max WR): Extreme filters - only the best setups
+  • Balanced (Current): Current working settings - 70% WR
+  • Orderbook Focused: Trade only on extreme orderbook imbalance
+  • Value Entry: Very tight entry prices for max edge
+  • Sniper (Max Selectivity): Only the absolute best setups - targeting 85%+ WR
+  [balanced] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [conservative] ETH/15M DOWN @ 0.495
+  [balanced] ETH/15M DOWN @ 0.495
+  [value_entry] ETH/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.495
+  [value_entry] SOL/15M DOWN @ 0.495
+  [balanced] XRP/15M DOWN @ 0.500
+  [value_entry] XRP/15M DOWN @ 0.500
+  [balanced] BTC/1H DOWN @ 0.535
+  [balanced] SOL/1H DOWN @ 0.530
+  [conservative] XRP/15M DOWN @ 0.500
+  [ultra_conservative] XRP/15M DOWN @ 0.500
+  [ob_focused] XRP/15M DOWN @ 0.500
+  [sniper] XRP/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 39 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $902.50
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 27 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $920.00
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 25 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $606.36
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 24 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $656.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 1 open
+   Capital: $900.00
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 1 open
+   Capital: $880.00
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] XRP/15M DOWN @ 0.500
+  [value_entry] XRP/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 39 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $902.50
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 27 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $920.00
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 26 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $557.85
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 25 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $590.49
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 1 open
+   Capital: $900.00
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 1 open
+   Capital: $880.00
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.500
+  [value_entry] SOL/15M DOWN @ 0.500
+  [conservative] SOL/15M DOWN @ 0.500
+  [ultra_conservative] SOL/15M DOWN @ 0.500
+  [ob_focused] SOL/15M DOWN @ 0.500
+  [sniper] SOL/15M DOWN @ 0.500
+  [ob_focused] SOL/1H DOWN @ 0.535
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 40 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $857.38
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 29 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $778.69
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 28 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $472.16
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 27 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $478.30
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 2 open
+   Capital: $810.00
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 2 open
+   Capital: $774.40
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] XRP/15M DOWN @ 0.495
+  [ultra_conservative] XRP/15M DOWN @ 0.495
+  [ob_focused] XRP/15M DOWN @ 0.495
+  [sniper] XRP/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 41 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $814.51
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 30 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $716.39
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 28 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $472.16
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 27 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $478.30
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 3 open
+   Capital: $729.00
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 3 open
+   Capital: $681.47
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/4H DOWN @ 0.535
+  [conservative] ETH/15M DOWN @ 0.500
+  [ultra_conservative] ETH/15M DOWN @ 0.500
+  [balanced] ETH/15M DOWN @ 0.500
+  [ob_focused] ETH/15M DOWN @ 0.500
+  [value_entry] ETH/15M DOWN @ 0.500
+  [balanced] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [balanced] ETH/15M DOWN @ 0.500
+  [value_entry] ETH/15M DOWN @ 0.500
+  [balanced] SOL/15M DOWN @ 0.500
+  [value_entry] SOL/15M DOWN @ 0.500
+  [balanced] XRP/15M DOWN @ 0.500
+  [value_entry] XRP/15M DOWN @ 0.500
+  [balanced] BTC/1H DOWN @ 0.495
+  [balanced] ETH/1H DOWN @ 0.495
+  [balanced] SOL/1H DOWN @ 0.500
+  [balanced] XRP/1H DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 42 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $773.78
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 31 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $659.08
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 38 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $205.10
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 4 open
+   Capital: $656.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 3 open
+   Capital: $681.47
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] XRP/15M DOWN @ 0.500
+  [ultra_conservative] XRP/15M DOWN @ 0.500
+  [ob_focused] XRP/15M DOWN @ 0.500
+  [conservative] SOL/15M DOWN @ 0.500
+  [ultra_conservative] SOL/15M DOWN @ 0.500
+  [ob_focused] SOL/15M DOWN @ 0.500
+  [sniper] XRP/15M DOWN @ 0.500
+  [conservative] ETH/15M DOWN @ 0.500
+  [ultra_conservative] ETH/15M DOWN @ 0.500
+  [ob_focused] ETH/15M DOWN @ 0.500
+  [sniper] ETH/15M DOWN @ 0.500
+  [sniper] SOL/15M DOWN @ 0.500
+  [conservative] BTC/15M DOWN @ 0.495
+  [ultra_conservative] BTC/15M DOWN @ 0.495
+  [ob_focused] BTC/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $630.25
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 35 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $472.16
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 38 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $205.10
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 8 open
+   Capital: $430.47
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 6 open
+   Capital: $464.40
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $630.25
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 35 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $472.16
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 38 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $205.10
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 8 open
+   Capital: $430.47
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 6 open
+   Capital: $464.40
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/15M DOWN @ 0.495
+  [balanced] ETH/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.500
+  [balanced] XRP/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $630.25
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 35 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $472.16
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 42 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $146.93
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 8 open
+   Capital: $430.47
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 6 open
+   Capital: $464.40
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.475
+  [ob_focused] BTC/15M DOWN @ 0.475
+  [ob_focused] SOL/15M DOWN @ 0.495
+  [ob_focused] XRP/15M DOWN @ 0.495
+  [ob_focused] ETH/15M DOWN @ 0.475
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 47 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $598.74
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 39 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $338.25
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 42 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $146.93
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 8 open
+   Capital: $430.47
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 6 open
+   Capital: $464.40
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/15M DOWN @ 0.485
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 47 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $598.74
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 39 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $338.25
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 43 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $135.18
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 32 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $282.43
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 8 open
+   Capital: $430.47
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 6 open
+   Capital: $464.40
+
+══════════════════════════════════════════════════════════════════════
+  [value_entry] BTC/15M DOWN @ 0.485
+  [balanced] ETH/15M DOWN @ 0.495
+  [value_entry] ETH/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.500
+  [value_entry] SOL/15M DOWN @ 0.500
+  [balanced] XRP/15M DOWN @ 0.495
+  [value_entry] XRP/15M DOWN @ 0.495
+  [conservative] ETH/15M DOWN @ 0.495
+  [ultra_conservative] ETH/15M DOWN @ 0.495
+  [ob_focused] ETH/15M DOWN @ 0.495
+  [sniper] ETH/15M DOWN @ 0.495
+  [conservative] XRP/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 49 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $540.36
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 40 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $311.19
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 46 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $105.26
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 36 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $185.30
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 9 open
+   Capital: $387.42
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 7 open
+   Capital: $408.68
+
+══════════════════════════════════════════════════════════════════════
+  [ob_focused] SOL/15M DOWN @ 0.495
+  [ob_focused] BTC/15M DOWN @ 0.485
+  [ob_focused] XRP/15M DOWN @ 0.465
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 49 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $540.36
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 43 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $242.32
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 46 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $105.26
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 36 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $185.30
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 9 open
+   Capital: $387.42
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 7 open
+   Capital: $408.68
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [balanced] ETH/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.495
+  [balanced] XRP/15M DOWN @ 0.500
+  [value_entry] ETH/15M DOWN @ 0.495
+  [value_entry] SOL/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 49 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $540.36
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 43 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $242.32
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 50 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $75.41
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 39 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $135.09
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 9 open
+   Capital: $387.42
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 7 open
+   Capital: $408.68
+
+══════════════════════════════════════════════════════════════════════
+Polymarket fetch error for SOL: 
+No Polymarket data for SOL/4H
+  [conservative] ETH/15M DOWN @ 0.495
+  [ultra_conservative] ETH/15M DOWN @ 0.495
+  [ob_focused] ETH/15M DOWN @ 0.495
+  [conservative] XRP/15M DOWN @ 0.485
+  [sniper] ETH/15M DOWN @ 0.495
+  [ultra_conservative] XRP/15M DOWN @ 0.485
+  [ob_focused] XRP/15M DOWN @ 0.485
+  [sniper] XRP/15M DOWN @ 0.485
+  [ob_focused] BTC/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 51 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $487.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $188.69
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 50 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $75.41
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 39 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $135.09
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 11 open
+   Capital: $313.81
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 9 open
+   Capital: $316.48
+
+══════════════════════════════════════════════════════════════════════
+  [balanced] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [balanced] ETH/15M DOWN @ 0.495
+  [balanced] SOL/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 51 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $487.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $188.69
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 40 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $121.58
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 11 open
+   Capital: $313.81
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 9 open
+   Capital: $316.48
+
+══════════════════════════════════════════════════════════════════════
+  [value_entry] ETH/15M DOWN @ 0.495
+  [value_entry] SOL/15M DOWN @ 0.500
+  [value_entry] XRP/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 51 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $487.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 46 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $188.69
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 43 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $88.63
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 11 open
+   Capital: $313.81
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 9 open
+   Capital: $316.48
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] SOL/15M DOWN @ 0.490
+  [ultra_conservative] SOL/15M DOWN @ 0.490
+  [ob_focused] SOL/15M DOWN @ 0.490
+  [sniper] SOL/15M DOWN @ 0.490
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 52 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $463.29
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 47 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $173.60
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 43 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $88.63
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 12 open
+   Capital: $282.43
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 10 open
+   Capital: $278.50
+
+══════════════════════════════════════════════════════════════════════
+  [value_entry] BTC/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 52 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $463.29
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 47 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $173.60
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 44 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $79.77
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 12 open
+   Capital: $282.43
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 10 open
+   Capital: $278.50
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] ETH/15M DOWN @ 0.495
+  [ultra_conservative] ETH/15M DOWN @ 0.495
+  [conservative] SOL/15M DOWN @ 0.490
+  [ultra_conservative] SOL/15M DOWN @ 0.490
+  [ob_focused] SOL/15M DOWN @ 0.490
+  [conservative] XRP/15M DOWN @ 0.500
+  [ob_focused] ETH/15M DOWN @ 0.495
+  [sniper] ETH/15M DOWN @ 0.495
+  [sniper] SOL/15M DOWN @ 0.490
+  [ultra_conservative] XRP/15M DOWN @ 0.500
+  [ob_focused] XRP/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 55 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $397.21
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 50 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $135.18
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 44 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $79.77
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 15 open
+   Capital: $205.89
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 12 open
+   Capital: $215.67
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 55 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $397.21
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 50 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $135.18
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 44 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $79.77
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 15 open
+   Capital: $205.89
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 12 open
+   Capital: $215.67
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.495
+  [ultra_conservative] BTC/15M DOWN @ 0.495
+  [ob_focused] BTC/15M DOWN @ 0.495
+  [conservative] SOL/15M DOWN @ 0.500
+  [ob_focused] SOL/15M DOWN @ 0.500
+  [value_entry] BTC/15M DOWN @ 0.495
+  [value_entry] ETH/15M DOWN @ 0.495
+  [value_entry] SOL/15M DOWN @ 0.485
+  [ob_focused] ETH/15M DOWN @ 0.495
+  [sniper] BTC/15M DOWN @ 0.495
+  [conservative] ETH/15M DOWN @ 0.495
+  [ultra_conservative] ETH/15M DOWN @ 0.495
+  [conservative] XRP/15M DOWN @ 0.505
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 59 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $323.53
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 53 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $105.26
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 47 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $58.15
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 17 open
+   Capital: $166.77
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 13 open
+   Capital: $189.79
+
+══════════════════════════════════════════════════════════════════════
+  [ob_focused] XRP/15M DOWN @ 0.505
+  [ob_focused] XRP/1H DOWN @ 0.420
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 59 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $323.53
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 55 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $89.09
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 47 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $58.15
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 17 open
+   Capital: $166.77
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 13 open
+   Capital: $189.79
+
+══════════════════════════════════════════════════════════════════════
+  [ob_focused] BTC/15M DOWN @ 0.495
+  [value_entry] BTC/15M DOWN @ 0.495
+  [ob_focused] SOL/15M DOWN @ 0.500
+  [value_entry] SOL/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 59 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $323.53
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 57 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $75.41
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 17 open
+   Capital: $166.77
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 13 open
+   Capital: $189.79
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.495
+  [ultra_conservative] BTC/15M DOWN @ 0.495
+  [conservative] SOL/15M DOWN @ 0.505
+  [sniper] BTC/15M DOWN @ 0.495
+  [ultra_conservative] SOL/15M DOWN @ 0.505
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 61 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $291.99
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 57 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $75.41
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 19 open
+   Capital: $135.09
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+  [ob_focused] BTC/1H DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 61 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $291.99
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 58 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $69.38
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 19 open
+   Capital: $135.09
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 61 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $291.99
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 58 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $69.38
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 19 open
+   Capital: $135.09
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 61 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $291.99
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 58 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $69.38
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 19 open
+   Capital: $135.09
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 61 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $291.99
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 58 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $69.38
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 19 open
+   Capital: $135.09
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] ETH/15M DOWN @ 0.495
+  [conservative] SOL/15M DOWN @ 0.505
+  [ultra_conservative] SOL/15M DOWN @ 0.505
+  [ob_focused] SOL/15M DOWN @ 0.505
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 63 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $263.52
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 59 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $63.83
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 20 open
+   Capital: $121.58
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 14 open
+   Capital: $167.02
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.500
+  [ultra_conservative] BTC/15M DOWN @ 0.500
+  [ob_focused] BTC/15M DOWN @ 0.500
+  [sniper] BTC/15M DOWN @ 0.500
+  [conservative] XRP/15M DOWN @ 0.520
+  [ultra_conservative] XRP/15M DOWN @ 0.520
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 65 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $237.83
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 22 open
+   Capital: $98.48
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 15 open
+   Capital: $146.97
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 65 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $237.83
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 22 open
+   Capital: $98.48
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 15 open
+   Capital: $146.97
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] ETH/15M DOWN @ 0.500
+  [ultra_conservative] ETH/15M DOWN @ 0.500
+  [conservative] SOL/15M DOWN @ 0.505
+  [ultra_conservative] SOL/15M DOWN @ 0.505
+  [conservative] BTC/15M UP @ 0.495
+  [ultra_conservative] BTC/15M UP @ 0.495
+  [conservative] XRP/15M UP @ 0.495
+  [sniper] XRP/15M UP @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 69 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $193.71
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 25 open
+   Capital: $71.79
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 16 open
+   Capital: $129.34
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 69 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $193.71
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 25 open
+   Capital: $71.79
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 16 open
+   Capital: $129.34
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 69 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $193.71
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 25 open
+   Capital: $71.79
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 16 open
+   Capital: $129.34
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.500
+  [ultra_conservative] BTC/15M DOWN @ 0.500
+  [sniper] BTC/15M DOWN @ 0.500
+  [conservative] ETH/15M DOWN @ 0.495
+  [ultra_conservative] ETH/15M DOWN @ 0.495
+  [sniper] ETH/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 71 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $174.82
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 27 open
+   Capital: $58.15
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 71 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $174.82
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 27 open
+   Capital: $58.15
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 71 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $174.82
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 27 open
+   Capital: $58.15
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 71 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $174.82
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 27 open
+   Capital: $58.15
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.510
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 72 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $166.08
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 27 open
+   Capital: $58.15
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] ETH/15M DOWN @ 0.510
+  [ultra_conservative] ETH/15M DOWN @ 0.510
+  [conservative] SOL/15M DOWN @ 0.515
+  [ultra_conservative] SOL/15M DOWN @ 0.515
+  [conservative] XRP/15M DOWN @ 0.515
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 75 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $142.40
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 75 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $142.40
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] ETH/15M DOWN @ 0.495
+  [conservative] SOL/15M DOWN @ 0.505
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 77 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $128.51
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.505
+  [conservative] XRP/15M DOWN @ 0.515
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 79 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $115.98
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 79 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $115.98
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.505
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 80 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $110.18
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] XRP/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 81 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $104.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 18 open
+   Capital: $100.16
+
+══════════════════════════════════════════════════════════════════════
+  [sniper] SOL/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 81 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $104.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 19 open
+   Capital: $88.14
+
+══════════════════════════════════════════════════════════════════════
+  [sniper] ETH/15M DOWN @ 0.490
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 81 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $104.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 20 open
+   Capital: $77.56
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 81 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $104.67
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 20 open
+   Capital: $77.56
+
+══════════════════════════════════════════════════════════════════════
+  [conservative] BTC/15M DOWN @ 0.485
+  [sniper] SOL/15M DOWN @ 0.460
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 21 open
+   Capital: $68.26
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 21 open
+   Capital: $68.26
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 21 open
+   Capital: $68.26
+
+══════════════════════════════════════════════════════════════════════
+  [sniper] XRP/15M DOWN @ 0.485
+  [sniper] BTC/15M DOWN @ 0.495
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 23 open
+   Capital: $52.86
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 23 open
+   Capital: $52.86
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 23 open
+   Capital: $52.86
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 23 open
+   Capital: $52.86
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 23 open
+   Capital: $52.86
+
+══════════════════════════════════════════════════════════════════════
+Polymarket fetch error for XRP: 
+No Polymarket data for XRP/15M
+  [sniper] BTC/15M DOWN @ 0.495
+  [sniper] ETH/15M DOWN @ 0.500
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge
+   Trades: 9 resolved, 49 open
+   Record: 4W / 5L (44.4% WR)
+   P&L: $+62.28
+   Capital: $47.10
+
+📊 Ultra Conservative (Max WR)
+   Extreme filters - only the best setups
+   Trades: 0 resolved, 29 open
+   Capital: $47.10
+
+📊 Sniper (Max Selectivity)
+   Only the absolute best setups - targeting 85%+ WR
+   Trades: 0 resolved, 25 open
+   Capital: $40.93
+
+══════════════════════════════════════════════════════════════════════
+
+══════════════════════════════════════════════════════════════════════
+         STRATEGY VARIANT COMPARISON
+══════════════════════════════════════════════════════════════════════
+
+📊 Conservative (High WR)
+   Only trade ultra-high confidence signals
+   Trades: 8 resolved, 82 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+110.69
+   Capital: $99.44
+
+📊 Orderbook Focused
+   Trade only on extreme orderbook imbalance
+   Trades: 8 resolved, 60 open
+   Record: 5W / 3L (62.5% WR)
+   P&L: $+184.21
+   Capital: $58.72
+
+📊 Balanced (Current)
+   Current working settings - 70% WR
+   Trades: 15 resolved, 53 open
+   Record: 9W / 6L (60.0% WR)
+   P&L: $+354.77
+   Capital: $58.72
+
+📊 Value Entry
+   Very tight entry prices for max edge

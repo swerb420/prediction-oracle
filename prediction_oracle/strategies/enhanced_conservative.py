@@ -1,6 +1,7 @@
 """
 Enhanced Conservative Strategy with signal confluence scoring.
 """
+from typing import Optional
 import logging
 from dataclasses import dataclass
 
@@ -65,14 +66,14 @@ class EnhancedConservativeStrategy(EnhancedStrategy):
         self.oracle = EnhancedOracle(config)
         
         # Strategy settings
-        self.min_edge = strategy_config.get("min_edge", 0.04)
-        prob_range = strategy_config.get("min_prob_range", [0.3, 0.8])
+        self.min_edge = config.get("min_edge", 0.04)
+        prob_range = config.get("min_prob_range", [0.3, 0.8])
         self.min_prob = prob_range[0]
         self.max_prob = prob_range[1]
-        self.min_liquidity = strategy_config.get(
-            "min_liquidity", strategy_config.get("min_liquidity_usd", 500)
+        self.min_liquidity = config.get(
+            "min_liquidity", config.get("min_liquidity_usd", 500)
         )
-        self.max_spread = strategy_config.get("max_spread", 0.05)
+        self.max_spread = config.get("max_spread", 0.05)
 
         # Enhanced settings
         self.min_confluence_score = 0.15  # Must have positive confluence

@@ -1,6 +1,20 @@
-"""Storage layer for persistence."""
+"""Storage and database utilities."""
 
-from .db import create_tables, get_session, init_db
-from .models import Base, LLMEval, MarketSnapshot, Trade
+from .db import init_db, create_tables, get_session
+from .models import Base, MarketSnapshot, LLMEval, Trade, LLMFineTuningData, TrainingExport
+from .finetuning_logger import FineTuningLogger, get_finetuning_logger, init_finetuning_logger
 
-__all__ = ["Base", "MarketSnapshot", "LLMEval", "Trade", "init_db", "get_session", "create_tables"]
+__all__ = [
+    "init_db",
+    "create_tables",
+    "get_session", 
+    "Base",
+    "MarketSnapshot",
+    "LLMEval",
+    "Trade",
+    "LLMFineTuningData",
+    "TrainingExport",
+    "FineTuningLogger",
+    "get_finetuning_logger",
+    "init_finetuning_logger",
+]

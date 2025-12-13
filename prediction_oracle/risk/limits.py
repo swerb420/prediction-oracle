@@ -2,9 +2,12 @@
 
 import logging
 from collections import defaultdict
+from typing import TYPE_CHECKING
 
-from ..strategies import TradeDecision
 from .bankroll import BankrollManager
+
+if TYPE_CHECKING:
+    from ..strategies import TradeDecision
 
 logger = logging.getLogger(__name__)
 
@@ -47,8 +50,8 @@ class RiskManager:
 
     def validate_decisions(
         self,
-        decisions: list[TradeDecision],
-    ) -> list[tuple[TradeDecision, str | None]]:
+        decisions: list["TradeDecision"],
+    ) -> list[tuple["TradeDecision", str | None]]:
         """
         Validate trade decisions against risk limits.
         
@@ -120,7 +123,7 @@ class RiskManager:
         
         return results
 
-    def record_position_opened(self, decision: TradeDecision) -> None:
+    def record_position_opened(self, decision: "TradeDecision") -> None:
         """Record that a position was opened."""
         venue_key = decision.venue.value
         self.venue_exposure[venue_key] += decision.size_usd
@@ -131,7 +134,7 @@ class RiskManager:
             f"Position opened: {venue_key} exposure now ${self.venue_exposure[venue_key]:.2f}"
         )
 
-    def record_position_closed(self, decision: TradeDecision) -> None:
+    def record_position_closed(self, decision: "TradeDecision") -> None:
         """Record that a position was closed."""
         venue_key = decision.venue.value
         self.venue_exposure[venue_key] = max(

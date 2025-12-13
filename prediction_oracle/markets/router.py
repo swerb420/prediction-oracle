@@ -5,52 +5,48 @@ from typing import Any
 
 from . import Venue
 from .base_client import BaseMarketClient
-from .kalshi_client import KalshiClient
-from .polymarket_client import PolymarketClient
+from .real_polymarket import RealPolymarketClient
 
 logger = logging.getLogger(__name__)
 
 
 class MarketRouter:
     """
-    Routes market operations to the appropriate venue client.
+    Routes market operations to the appropriate venue clients.
     
-    Provides a unified interface for interacting with multiple prediction markets.
+    ONLY uses venues with REAL market data available.
+    - Polymarket: Free public API, no credentials needed ✅
+    - Kalshi: DISABLED (requires API credentials we don't have)
     """
 
     def __init__(self, mock_mode: bool = False):
         """
-        Initialize market router.
+        Initialize market router with REAL clients only.
         
         Args:
-            mock_mode: If True, all clients will use mock data
+            mock_mode: IGNORED - we always use real data
         """
-        self.mock_mode = mock_mode
         self._clients: dict[Venue, BaseMarketClient] = {}
         
-        # Initialize clients
-        self._clients[Venue.KALSHI] = KalshiClient(mock_mode=mock_mode)
-        self._clients[Venue.POLYMARKET] = PolymarketClient(mock_mode=mock_mode)
+        # ONLY Polymarket - it's free and has real data!
+        self._clients[Venue.POLYMARKET] = RealPolymarketClient(mock_mode=False)
         
-        logger.info(f"MarketRouter initialized (mock_mode={mock_mode})")
+        # Kalshi disabled - we don't have API credentials
+        # To enable Kalshi, add KALSHI_API_KEY and KALSHI_API_SECRET to .env
+        
+        logger.info("MarketRouter initialized - Polymarket ONLY (real data)")
 
     def get_client(self, venue: Venue) -> BaseMarketClient:
-        """
-        Get the client for a specific venue.
-        
-        Args:
-            venue: The venue to get the client for
-            
-        Returns:
-            The market client for that venue
-            
-        Raises:
-            ValueError: If venue is not supported
-        """
+        """Get the client for a specific venue."""
         client = self._clients.get(venue)
         if not client:
-            raise ValueError(f"No client configured for venue: {venue}")
+            logger.warning(f"No client configured for venue: {venue} - skipping")
+            return None
         return client
+    
+    def get_active_venues(self) -> list[Venue]:
+        """Get list of venues with active clients."""
+        return list(self._clients.keys())
 
     async def close_all(self) -> None:
         """Close all venue clients."""
