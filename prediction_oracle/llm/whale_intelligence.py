@@ -904,7 +904,6 @@ class WhaleIntelligence:
         windows: Optional[List[int]] = None,
         min_trades: int = 2,
         top_n: int = 20,
-        symbol_filter: Optional[str] = None,
     ) -> Dict[str, List[Dict[str, Any]]]:
         """
         Build intraday dashboards for active whales across multiple windows.
@@ -947,9 +946,6 @@ class WhaleIntelligence:
             aggregates: Dict[str, Dict[str, Any]] = {}
 
             for row in rows:
-                if symbol_filter and row['symbol'] != symbol_filter:
-                    continue
-
                 wallet = row['whale_wallet']
                 profile = aggregates.get(wallet)
 
@@ -970,15 +966,8 @@ class WhaleIntelligence:
                         'up_volume': 0.0,
                         'down_volume': 0.0,
                         'avg_size': 0.0,
-                        'symbols': set(),
-                        'symbol_breakdown': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
-                        'market_types': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
+                        'symbols': set(),                        'market_types': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
                         'last_trade': None,
-                        'volume_velocity': 0.0,
-                        'trade_rate': 0.0,
-                        'top_symbol': None,
-                        'top_symbol_share': None,
-                        'dominant_market_type': None,
                     }
                     aggregates[wallet] = profile
 
@@ -986,10 +975,6 @@ class WhaleIntelligence:
                 profile['trade_count'] += 1
                 profile['total_volume'] += volume
                 profile['symbols'].add(row['symbol'])
-
-                symbol_stats = profile['symbol_breakdown'][row['symbol']]
-                symbol_stats['trades'] += 1
-                symbol_stats['volume'] += volume
 
                 direction = row['direction'] or 'UNKNOWN'
                 if direction == 'UP':
@@ -1016,30 +1001,14 @@ class WhaleIntelligence:
                     continue
 
                 profile['avg_size'] = profile['total_volume'] / profile['trade_count'] if profile['trade_count'] else 0.0
-                profile['volume_velocity'] = profile['total_volume'] / minutes if minutes else 0.0
-                profile['trade_rate'] = profile['trade_count'] / minutes if minutes else 0.0
                 total_dir_vol = profile['up_volume'] + profile['down_volume']
                 profile['direction_bias'] = (profile['up_volume'] / total_dir_vol) if total_dir_vol else None
                 profile['net_flow'] = profile['up_volume'] - profile['down_volume']
                 profile['symbols'] = sorted(profile['symbols'])
-                profile['symbol_breakdown'] = {
-                    sym: stats
-                    for sym, stats in sorted(
-                        profile['symbol_breakdown'].items(), key=lambda x: -x[1]['volume']
-                    )
-                }
-                if profile['symbol_breakdown']:
-                    top_sym, top_stats = next(iter(profile['symbol_breakdown'].items()))
-                    profile['top_symbol'] = top_sym
-                    profile['top_symbol_share'] = (
-                        (top_stats['volume'] / profile['total_volume']) if profile['total_volume'] else None
-                    )
                 profile['market_types'] = {
                     mt: stats
                     for mt, stats in sorted(profile['market_types'].items(), key=lambda x: -x[1]['volume'])
                 }
-                if profile['market_types']:
-                    profile['dominant_market_type'] = next(iter(profile['market_types'].keys()))
 
                 if profile['last_trade']:
                     profile['last_trade'] = profile['last_trade'].isoformat()
@@ -1090,14 +1059,6 @@ class WhaleIntelligence:
                     f"    PnL: 30d ${entry['pnl_30d']:,.0f} | All ${entry['pnl_all']:,.0f} "
                     f"| Focus {entry['crypto_focus_ratio']*100:.0f}%"
                 )
-                print(
-                    f"    Pace: {entry['trade_rate']:.2f} trades/min | ${entry['volume_velocity']:,.0f} vol/min"
-                )
-                if entry.get('top_symbol'):
-                    share = entry['top_symbol_share'] * 100 if entry['top_symbol_share'] is not None else 0
-                    print(
-                        f"    Concentration: {entry['top_symbol']} {share:.0f}% | Dominant type: {entry.get('dominant_market_type') or '?'}"
-                    )
                 if entry.get('rank_30d_profit'):
                     print(f"    Leaderboard: 30d PnL #{entry['rank_30d_profit']} | All #{entry.get('rank_all_profit') or '?'}")
                 print(f"    Markets: {', '.join(entry['symbols'][:5])}")
@@ -1105,383 +1066,6 @@ class WhaleIntelligence:
                     print(f"    Types: {' | '.join(market_summary)}")
                 if entry.get('last_trade'):
                     print(f"    Last trade: {entry['last_trade']}")
-
-    def rank_copytrade_candidates(
-        self,
-        min_pnl_30d: float = 30000,
-        min_focus_ratio: float = 0.6,
-        min_trades: int = 50,
-        lookback_days: int = 7,
-        limit: int = 15,
-    ) -> List[Dict[str, Any]]:
-        """Surface whales worth copy-trading based on PnL, focus, and recent velocity."""
-
-        cutoff = (datetime.now(UTC) - timedelta(days=lookback_days)).isoformat()
-        cursor = self.conn.cursor()
-
-        cursor.execute(
-            '''
-            SELECT
-                wp.wallet,
-                wp.name,
-                wp.pseudonym,
-                wp.pnl_30d,
-                wp.pnl_all,
-                wp.crypto_focus_ratio,
-                wp.crypto_trade_count,
-                wp.is_crypto_specialist,
-                wp.rank_30d_profit,
-                wp.rank_all_profit,
-                COUNT(ct.id) as trades_lookback,
-                SUM(ct.usdc_value) as volume_lookback,
-                SUM(CASE WHEN ct.direction = 'UP' THEN ct.usdc_value ELSE 0 END) as up_volume,
-                SUM(CASE WHEN ct.direction = 'DOWN' THEN ct.usdc_value ELSE 0 END) as down_volume,
-                COUNT(DISTINCT ct.symbol) as symbol_count,
-                MAX(ct.timestamp) as last_trade
-            FROM whale_profiles wp
-            LEFT JOIN crypto_trades ct
-                ON ct.whale_wallet = wp.wallet AND ct.timestamp >= ?
-            WHERE wp.pnl_30d >= ?
-              AND wp.crypto_focus_ratio >= ?
-              AND wp.crypto_trade_count >= ?
-            GROUP BY wp.wallet
-            ORDER BY wp.pnl_30d DESC, volume_lookback DESC
-            LIMIT ?
-            ''',
-            (cutoff, min_pnl_30d, min_focus_ratio, min_trades, limit),
-        )
-
-        candidates: List[Dict[str, Any]] = []
-        for row in cursor.fetchall():
-            total_dir_vol = (row['up_volume'] or 0) + (row['down_volume'] or 0)
-            direction_bias = (row['up_volume'] or 0) / total_dir_vol if total_dir_vol else None
-
-            candidates.append(
-                {
-                    'wallet': row['wallet'],
-                    'name': row['name'] or row['pseudonym'] or row['wallet'][:12],
-                    'pnl_30d': row['pnl_30d'] or 0,
-                    'pnl_all': row['pnl_all'] or 0,
-                    'focus': row['crypto_focus_ratio'] or 0,
-                    'total_trades': row['crypto_trade_count'] or 0,
-                    'is_specialist': bool(row['is_crypto_specialist']),
-                    'rank_30d_profit': row['rank_30d_profit'],
-                    'rank_all_profit': row['rank_all_profit'],
-                    'trades_lookback': row['trades_lookback'] or 0,
-                    'volume_lookback': row['volume_lookback'] or 0,
-                    'direction_bias': direction_bias,
-                    'symbol_count': row['symbol_count'] or 0,
-                    'last_trade': row['last_trade'],
-                }
-            )
-
-        return candidates
-
-    def backfill_recent_trades(
-        self,
-        days: int = 30,
-        min_rank: int = 150,
-        max_wallets: int = 200,
-    ) -> int:
-        """Backfill historical trades for ranked whales over a configurable window."""
-
-        hours_back = days * 24
-        cursor = self.conn.cursor()
-        cursor.execute(
-            '''
-            SELECT wallet, name, pseudonym, COALESCE(pnl_30d, pnl_7d, pnl_1d, 0) AS pnl
-            FROM whale_profiles
-            WHERE rank_1d_profit <= ? OR rank_7d_profit <= ? OR rank_30d_profit <= ? OR rank_all_profit <= ?
-               OR rank_1d_volume <= ? OR rank_7d_volume <= ? OR rank_30d_volume <= ? OR rank_all_volume <= ?
-            ORDER BY pnl DESC
-            LIMIT ?
-            ''',
-            (min_rank,) * 8 + (max_wallets,),
-        )
-
-        whales = cursor.fetchall()
-        logger.info(
-            "🗄️ Backfilling historical trades for %s whales over the last %sd",
-            len(whales),
-            days,
-        )
-
-        total = 0
-        for row in whales:
-            total += self.scrape_whale_crypto_activity(row['wallet'], hours_back=hours_back)
-        return total
-
-    def backtest_copytrade_strategy(
-        self,
-        lookback_days: int = 30,
-        top_k: int = 15,
-        min_focus_ratio: float = 0.4,
-    ) -> Dict[str, Any]:
-        """Estimate copy-trade performance using historical flow and whale edge."""
-
-        cutoff = (datetime.now(UTC) - timedelta(days=lookback_days)).isoformat()
-        cursor = self.conn.cursor()
-        cursor.execute(
-            '''
-            SELECT wallet, name, pseudonym, pnl_30d, pnl_all,
-                   crypto_trade_count, crypto_focus_ratio, is_crypto_specialist
-            FROM whale_profiles
-            WHERE crypto_trade_count > 0 AND crypto_focus_ratio >= ?
-            ORDER BY pnl_30d DESC
-            LIMIT ?
-            ''',
-            (min_focus_ratio, top_k),
-        )
-
-        wallets = cursor.fetchall()
-        wallet_results: List[Dict[str, Any]] = []
-        total_expected = 0.0
-
-        for row in wallets:
-            cursor.execute(
-                '''
-                SELECT symbol, direction, usdc_value, market_type, timestamp
-                FROM crypto_trades
-                WHERE whale_wallet = ? AND timestamp >= ?
-            ''',
-                (row['wallet'], cutoff),
-            )
-            trades = cursor.fetchall()
-            if not trades:
-                continue
-
-            edge_per_trade = (row['pnl_30d'] or 0) / max(1.0, row['crypto_trade_count'] or 1)
-            expected_pnl = 0.0
-            symbol_breakdown: Dict[str, Dict[str, float]] = defaultdict(lambda: {'volume': 0.0, 'expected_pnl': 0.0, 'trades': 0})
-
-            for trade in trades:
-                direction_weight = 1.0 if trade['direction'] == 'UP' else -1.0 if trade['direction'] == 'DOWN' else 0.0
-                contribution = edge_per_trade * direction_weight * (trade['usdc_value'] or 0.0)
-                expected_pnl += contribution
-
-                sb = symbol_breakdown[trade['symbol']]
-                sb['volume'] += trade['usdc_value'] or 0.0
-                sb['expected_pnl'] += contribution
-                sb['trades'] += 1
-
-            total_expected += expected_pnl
-            wallet_results.append(
-                {
-                    'wallet': row['wallet'],
-                    'name': row['name'] or row['pseudonym'] or row['wallet'][:12],
-                    'pnl_30d': row['pnl_30d'] or 0,
-                    'pnl_all': row['pnl_all'] or 0,
-                    'is_specialist': bool(row['is_crypto_specialist']),
-                    'edge_per_trade': edge_per_trade,
-                    'expected_pnl': expected_pnl,
-                    'trade_count': len(trades),
-                    'symbol_breakdown': symbol_breakdown,
-                }
-            )
-
-        wallet_results.sort(key=lambda x: x['expected_pnl'], reverse=True)
-        return {
-            'cutoff': cutoff,
-            'total_expected_pnl': total_expected,
-            'wallets': wallet_results,
-        }
-
-    def export_ml_training_data(self, lookback_days: int = 30) -> List[Dict[str, Any]]:
-        """Export trade-level feature rows for downstream ML ranking models."""
-
-        cutoff = (datetime.now(UTC) - timedelta(days=lookback_days)).isoformat()
-        cursor = self.conn.cursor()
-        cursor.execute(
-            '''
-            SELECT ct.*, wp.pnl_30d, wp.crypto_trade_count, wp.crypto_focus_ratio, wp.is_crypto_specialist
-            FROM crypto_trades ct
-            JOIN whale_profiles wp ON wp.wallet = ct.whale_wallet
-            WHERE ct.timestamp >= ?
-        ''',
-            (cutoff,),
-        )
-
-        rows = cursor.fetchall()
-        features: List[Dict[str, Any]] = []
-
-        for row in rows:
-            try:
-                ts = datetime.fromisoformat(row['timestamp'])
-            except Exception:
-                ts = datetime.now(UTC)
-
-            quality = (row['pnl_30d'] or 0) / max(1.0, row['crypto_trade_count'] or 1)
-
-            features.append(
-                {
-                    'wallet': row['whale_wallet'],
-                    'symbol': row['symbol'],
-                    'market_type': row['market_type'],
-                    'direction': row['direction'],
-                    'side': row['side'],
-                    'size': row['size'],
-                    'price': row['price'],
-                    'usdc_value': row['usdc_value'],
-                    'hour': ts.hour,
-                    'focus_ratio': row['crypto_focus_ratio'],
-                    'is_specialist': bool(row['is_crypto_specialist']),
-                    'quality_score': quality,
-                }
-            )
-
-        return features
-
-    def get_wallet_deep_dive(
-        self,
-        wallet: str,
-        lookback_hours: int = 24,
-        limit: int = 80,
-    ) -> Optional[Dict[str, Any]]:
-        """Return a deep-dive report for a single whale."""
-
-        cursor = self.conn.cursor()
-        cursor.execute(
-            '''
-            SELECT * FROM whale_profiles WHERE wallet = ?
-            ''',
-            (wallet,),
-        )
-        profile_row = cursor.fetchone()
-        if not profile_row:
-            return None
-
-        cutoff = (datetime.now(UTC) - timedelta(hours=lookback_hours)).isoformat()
-        cursor.execute(
-            '''
-            SELECT *
-            FROM crypto_trades
-            WHERE whale_wallet = ? AND timestamp >= ?
-            ORDER BY timestamp DESC
-            LIMIT ?
-            ''',
-            (wallet, cutoff, limit),
-        )
-
-        trades = cursor.fetchall()
-        symbol_breakdown: Dict[str, Dict[str, float]] = defaultdict(lambda: {'trades': 0, 'volume': 0.0})
-        market_breakdown: Dict[str, Dict[str, float]] = defaultdict(lambda: {'trades': 0, 'volume': 0.0})
-        up_volume = down_volume = total_volume = 0.0
-
-        for trade in trades:
-            volume = trade['usdc_value'] or 0.0
-            total_volume += volume
-            symbol_stats = symbol_breakdown[trade['symbol']]
-            symbol_stats['trades'] += 1
-            symbol_stats['volume'] += volume
-
-            mt_stats = market_breakdown[trade['market_type'] or 'UNKNOWN']
-            mt_stats['trades'] += 1
-            mt_stats['volume'] += volume
-
-            if trade['direction'] == 'UP':
-                up_volume += volume
-            elif trade['direction'] == 'DOWN':
-                down_volume += volume
-
-        total_dir = up_volume + down_volume
-        direction_bias = (up_volume / total_dir) if total_dir else None
-
-        summary = {
-            'total_trades': len(trades),
-            'total_volume': total_volume,
-            'up_volume': up_volume,
-            'down_volume': down_volume,
-            'net_flow': up_volume - down_volume,
-            'direction_bias': direction_bias,
-            'symbol_breakdown': {
-                sym: stats
-                for sym, stats in sorted(symbol_breakdown.items(), key=lambda x: -x[1]['volume'])
-            },
-            'market_breakdown': {
-                mt: stats
-                for mt, stats in sorted(market_breakdown.items(), key=lambda x: -x[1]['volume'])
-            },
-        }
-
-        profile = dict(profile_row)
-        return {
-            'profile': profile,
-            'summary': summary,
-            'recent_trades': [dict(t) for t in trades],
-        }
-
-    def print_copytrade_candidates(self, candidates: List[Dict[str, Any]]):
-        if not candidates:
-            print("\n⚠️ No copy-trade candidates met the thresholds.")
-            return
-
-        print("\n" + "=" * 90)
-        print("🤝 COPYTRADE CANDIDATES (risk-adjusted short list)")
-        print("=" * 90)
-        for idx, c in enumerate(candidates, 1):
-            bias = c['direction_bias']
-            if bias is None:
-                bias_text = "—"
-            elif bias > 0.55:
-                bias_text = f"UP {bias*100:.0f}%"
-            elif bias < 0.45:
-                bias_text = f"DOWN {(1-bias)*100:.0f}%"
-            else:
-                bias_text = "Mixed"
-
-            print(
-                f"{idx:2d}. {c['name'][:18]:18} | 30d ${c['pnl_30d']:>10,.0f} | "
-                f"{c['trades_lookback']:>3} trades / ${c['volume_lookback']:>9,.0f} | Focus {c['focus']*100:>3.0f}%"
-            )
-            print(
-                f"    Rank: 30d #{c.get('rank_30d_profit') or '?'} | All #{c.get('rank_all_profit') or '?'} | "
-                f"Symbols: {c['symbol_count']} | Bias: {bias_text}"
-            )
-            if c.get('last_trade'):
-                print(f"    Last trade: {c['last_trade']}")
-
-    def print_wallet_deep_dive(self, report: Dict[str, Any]):
-        if not report:
-            print("\n⚠️ Wallet not found.")
-            return
-
-        profile = report['profile']
-        summary = report['summary']
-
-        print("\n" + "=" * 90)
-        print(f"🔍 WALLET DEEP DIVE - {profile.get('name') or profile.get('wallet')}")
-        print("=" * 90)
-        print(
-            f"PnL 30d: ${profile.get('pnl_30d') or 0:,.0f} | All: ${profile.get('pnl_all') or 0:,.0f} | "
-            f"Focus: {(profile.get('crypto_focus_ratio') or 0)*100:.0f}% | Trades: {profile.get('crypto_trade_count') or 0}"
-        )
-        bias = summary.get('direction_bias')
-        if bias is None:
-            bias_text = "—"
-        elif bias > 0.55:
-            bias_text = f"UP {bias*100:.0f}%"
-        elif bias < 0.45:
-            bias_text = f"DOWN {(1-bias)*100:.0f}%"
-        else:
-            bias_text = "Mixed"
-        print(
-            f"Recent: {summary['total_trades']} trades | ${summary['total_volume']:,.0f} vol | Net ${summary['net_flow']:,.0f} | Bias: {bias_text}"
-        )
-
-        if summary['symbol_breakdown']:
-            top_sym, top_stats = next(iter(summary['symbol_breakdown'].items()))
-            share = (top_stats['volume'] / summary['total_volume']) if summary['total_volume'] else 0
-            print(
-                f"Top symbol: {top_sym} {share*100:.0f}% | Markets: {', '.join(list(summary['market_breakdown'].keys())[:3])}"
-            )
-
-        print("\nLast trades:")
-        for t in report['recent_trades'][:10]:
-            ts = str(t['timestamp'])
-            emoji = '🟢' if t['direction'] == 'UP' else ('🔴' if t['direction'] == 'DOWN' else '⚪')
-            print(
-                f"  {ts} | {emoji} {t['symbol']:4} {t['side']:4} ${t['usdc_value']:>8,.0f} | {t['market_type'] or '?'} | {t['market_title'][:40]}"
-            )
     
     def get_15m_whale_signals(self, minutes_back: int = 15) -> Dict[str, Any]:
         """
@@ -1932,14 +1516,7 @@ def main():
     parser.add_argument('--monitor', action='store_true', help='Continuous monitoring mode (refresh every 5 min)')
     parser.add_argument('--copy', action='store_true', help='Copy trade recommendations from elite whales')
     parser.add_argument('--intraday', action='store_true', help='Show 15m/1h/4h active whale dashboards')
-    parser.add_argument('--symbol-filter', type=str, help='Limit intraday dashboards to a specific symbol (e.g., BTC)')
-    parser.add_argument('--copytrade', action='store_true', help='Show curated copy-trade candidates')
-    parser.add_argument('--deep-dive', dest='deep_dive', type=str, help='Deep dive for a wallet address')
     parser.add_argument('--top', type=int, default=15, help='Number of wallets to display per dashboard')
-    parser.add_argument('--backfill-days', type=int, help='Backfill ranked whale trades over N days')
-    parser.add_argument('--backtest-copytrade', action='store_true', help='Estimate copy-trade PnL over a window')
-    parser.add_argument('--backtest-lookback', type=int, default=30, help='Days to include in copy-trade backtests and ML exports')
-    parser.add_argument('--export-ml', type=Path, help='Write ML-ready trade features to a JSON file')
     
     args = parser.parse_args()
 
@@ -2057,38 +1634,8 @@ def main():
                 print(f"  {mtype:<15} | {stats['trades']:>6} trades | ${stats['volume']:>12,.0f} | {stats['whales']} whales | Avg PnL: ${stats['avg_whale_pnl']:>10,.0f}")
 
         if args.intraday:
-            dashboards = wi.get_intraday_wallet_dashboards(
-                top_n=args.top, symbol_filter=args.symbol_filter.upper() if args.symbol_filter else None
-            )
+            dashboards = wi.get_intraday_wallet_dashboards(top_n=args.top)
             wi.print_intraday_dashboards(dashboards, top_n=args.top)
-
-        if args.copytrade:
-            candidates = wi.rank_copytrade_candidates()
-            wi.print_copytrade_candidates(candidates)
-
-        if args.backtest_copytrade:
-            backtest = wi.backtest_copytrade_strategy(lookback_days=args.backtest_lookback)
-            print("\n🧪 COPY-TRADE BACKTEST")
-            print("=" * 70)
-            print(f"Window start: {backtest['cutoff']}")
-            print(f"Total expected PnL (model): ${backtest['total_expected_pnl']:,.0f}\n")
-            for idx, wallet in enumerate(backtest['wallets'], 1):
-                best_symbol = None
-                if wallet['symbol_breakdown']:
-                    best_symbol = max(
-                        wallet['symbol_breakdown'].items(),
-                        key=lambda x: x[1]['expected_pnl'],
-                    )[0]
-                print(
-                    f"{idx:2d}. {wallet['name'][:18]:18} | expected ${wallet['expected_pnl']:>10,.0f} "
-                    f"| edge/trade ${wallet['edge_per_trade']:>8,.0f} | trades {wallet['trade_count']}")
-                if best_symbol:
-                    print(f"    Best symbol: {best_symbol} | symbols: {', '.join(wallet['symbol_breakdown'].keys())}")
-
-        if args.export_ml:
-            ml_rows = wi.export_ml_training_data(lookback_days=args.backtest_lookback)
-            args.export_ml.write_text(pyjson.dumps(ml_rows, indent=2))
-            print(f"\n📦 Wrote {len(ml_rows)} ML feature rows to {args.export_ml}")
 
         # ═══════════════════════════════════════════════════════════════════════
         # 15M LIVE SIGNALS
