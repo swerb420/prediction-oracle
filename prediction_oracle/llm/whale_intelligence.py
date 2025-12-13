@@ -1219,6 +1219,98 @@ class WhaleIntelligence:
         candidates.sort(key=lambda c: c['quality_score'], reverse=True)
         return candidates
 
+    def rank_intraday_copytrade_targets(
+        self,
+        windows: List[int] = INTRADAY_WINDOWS,
+        min_trades: int = 3,
+        symbol_filter: Optional[str] = None,
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """Rank short-horizon copy-trade targets by bias, velocity, and freshness."""
+
+        now = datetime.now(UTC)
+        cursor = self.conn.cursor()
+        results: Dict[str, List[Dict[str, Any]]] = {}
+
+        for window in windows:
+            cutoff = (now - timedelta(minutes=window)).isoformat()
+            label = f"{window}m" if window < 60 else f"{window // 60}h"
+
+            query = [
+                """
+                SELECT
+                    ct.whale_wallet,
+                    wp.name,
+                    wp.pseudonym,
+                    wp.pnl_30d,
+                    wp.pnl_all,
+                    wp.crypto_focus_ratio,
+                    wp.is_crypto_specialist,
+                    wp.crypto_trade_count,
+                    COUNT(*) as trades,
+                    SUM(ct.usdc_value) as volume,
+                    SUM(CASE WHEN ct.direction = 'UP' THEN ct.usdc_value ELSE 0 END) as up_volume,
+                    SUM(CASE WHEN ct.direction = 'DOWN' THEN ct.usdc_value ELSE 0 END) as down_volume,
+                    MAX(ct.timestamp) as last_trade,
+                    COUNT(DISTINCT ct.symbol) as symbols
+                FROM crypto_trades ct
+                JOIN whale_profiles wp ON wp.wallet = ct.whale_wallet
+                WHERE ct.timestamp >= ?
+                """,
+            ]
+
+            params: List[Any] = [cutoff]
+            if symbol_filter:
+                query.append(" AND ct.symbol = ?")
+                params.append(symbol_filter.upper())
+
+            query.append(" GROUP BY ct.whale_wallet HAVING trades >= ? ORDER BY volume DESC")
+            params.append(min_trades)
+
+            cursor.execute("".join(query), params)
+            window_results: List[Dict[str, Any]] = []
+
+            for row in cursor.fetchall():
+                total_dir_vol = (row['up_volume'] or 0) + (row['down_volume'] or 0)
+                direction_bias = (row['up_volume'] or 0) / total_dir_vol if total_dir_vol else 0.5
+                bias_strength = abs(direction_bias - 0.5) * 2  # 0 to 1
+                direction = 'UP' if direction_bias >= 0.5 else 'DOWN'
+
+                focus_boost = self._focus_multiplier(row['crypto_focus_ratio'] or 0.0)
+                consistency = self._compute_consistency(row['pnl_30d'] or 0.0, row['pnl_all'] or 0.0)
+                recency = self._recency_multiplier(row['last_trade'])
+
+                volume_velocity = (row['volume'] or 0.0) / max(1, window)
+                trade_rate = (row['trades'] or 0) / max(1, window)
+
+                quality_score = bias_strength * (volume_velocity + trade_rate) * focus_boost * (1.0 + consistency) * recency
+
+                window_results.append(
+                    {
+                        'wallet': row['whale_wallet'],
+                        'name': row['name'] or row['pseudonym'] or row['whale_wallet'][:12],
+                        'direction': direction,
+                        'direction_bias': direction_bias,
+                        'bias_strength': bias_strength,
+                        'trades': row['trades'] or 0,
+                        'volume': row['volume'] or 0.0,
+                        'volume_velocity': volume_velocity,
+                        'trade_rate': trade_rate,
+                        'symbol_count': row['symbols'] or 0,
+                        'focus_multiplier': focus_boost,
+                        'consistency': consistency,
+                        'recency_multiplier': recency,
+                        'quality_score': quality_score,
+                        'last_trade': row['last_trade'],
+                        'is_specialist': bool(row['is_crypto_specialist']),
+                        'edge_per_trade': (row['pnl_30d'] or 0.0) / max(1.0, row['crypto_trade_count'] or 1),
+                    }
+                )
+
+            window_results.sort(key=lambda r: r['quality_score'], reverse=True)
+            results[label] = window_results
+
+        return results
+
     def backfill_recent_trades(
         self,
         days: int = 30,
@@ -1498,6 +1590,29 @@ class WhaleIntelligence:
             )
             if c.get('last_trade'):
                 print(f"    Last trade: {c['last_trade']}")
+
+    def print_intraday_copytrade_targets(self, rankings: Dict[str, List[Dict[str, Any]]], top_n: int = 10):
+        print("\n⚡ INTRADAY COPY-TRADE TARGETS")
+        print("=" * 70)
+        for window, entries in rankings.items():
+            print(f"\n⏱️  Window: {window}")
+            print("-" * 70)
+            for idx, entry in enumerate(entries[:top_n], 1):
+                emoji = '🟢' if entry['direction'] == 'UP' else '🔴'
+                print(
+                    f"{idx:2d}. {emoji} {entry['name'][:18]:18} | "
+                    f"{entry['direction']} bias {entry['direction_bias']*100:>5.1f}% | "
+                    f"score {entry['quality_score']:.2f}"
+                )
+                print(
+                    f"    Trades {entry['trades']} | ${entry['volume']:,.0f} vol | "
+                    f"vel {entry['volume_velocity']:.1f}/m | rate {entry['trade_rate']:.2f}/m"
+                )
+                print(
+                    f"    Focus x{entry['focus_multiplier']:.2f} | Consistency {entry['consistency']:.2f} | Recency x{entry['recency_multiplier']:.2f}"
+                )
+                if entry.get('symbol_count'):
+                    print(f"    Symbols traded: {entry['symbol_count']} | Last trade: {entry['last_trade']}")
 
     def print_wallet_deep_dive(self, report: Dict[str, Any]):
         if not report:
@@ -1991,6 +2106,7 @@ def main():
     parser.add_argument('--monitor', action='store_true', help='Continuous monitoring mode (refresh every 5 min)')
     parser.add_argument('--copy', action='store_true', help='Copy trade recommendations from elite whales')
     parser.add_argument('--intraday', action='store_true', help='Show 15m/1h/4h active whale dashboards')
+    parser.add_argument('--intraday-copytrade', action='store_true', help='Rank intraday copy-trade targets from recent flow')
     parser.add_argument('--symbol-filter', type=str, help='Limit intraday dashboards to a specific symbol (e.g., BTC)')
     parser.add_argument('--copytrade', action='store_true', help='Show curated copy-trade candidates')
     parser.add_argument('--deep-dive', dest='deep_dive', type=str, help='Deep dive for a wallet address')
@@ -2120,6 +2236,12 @@ def main():
                 top_n=args.top, symbol_filter=args.symbol_filter.upper() if args.symbol_filter else None
             )
             wi.print_intraday_dashboards(dashboards, top_n=args.top)
+
+        if args.intraday_copytrade:
+            rankings = wi.rank_intraday_copytrade_targets(
+                symbol_filter=args.symbol_filter.upper() if args.symbol_filter else None
+            )
+            wi.print_intraday_copytrade_targets(rankings, top_n=args.top)
 
         if args.copytrade:
             candidates = wi.rank_copytrade_candidates()

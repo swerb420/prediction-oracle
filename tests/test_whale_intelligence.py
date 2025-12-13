@@ -195,6 +195,20 @@ def test_backtest_copytrade_strategy_uses_edge(seeded_whale_db):
     assert results["wallets"][0]["risk_adjusted_expected_pnl"] >= results["wallets"][0]["expected_pnl"] * 0.4
 
 
+def test_intraday_copytrade_targets_prioritize_bias_and_velocity(seeded_whale_db):
+    db_path, _ = seeded_whale_db
+
+    with WhaleIntelligence(db_path=db_path) as wi:
+        rankings = wi.rank_intraday_copytrade_targets(windows=[15], min_trades=2)
+
+    assert "15m" in rankings
+    top = rankings["15m"][0]
+    assert top["wallet"] == "w1"  # heavily long BTC in last 15m
+    assert top["direction"] == "UP"
+    assert top["bias_strength"] > 0.5
+    assert top["volume_velocity"] > 150  # $/min momentum
+
+
 def test_export_ml_training_data_builds_feature_rows(seeded_whale_db):
     db_path, _ = seeded_whale_db
 
