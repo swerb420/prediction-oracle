@@ -6,6 +6,7 @@ from typing import Literal
 from ..markets import OrderRequest, OrderResult, OrderSide, OrderType
 from ..markets.router import MarketRouter
 from ..strategies import TradeDecision
+from .rl_policy import RLExecutionPolicy
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +22,7 @@ class ExecutionRouter:
         self,
         market_router: MarketRouter,
         mode: Literal["research", "paper", "live"] = "research",
+        policy: RLExecutionPolicy | None = None,
     ):
         """
         Initialize execution router.
@@ -31,6 +33,7 @@ class ExecutionRouter:
         """
         self.market_router = market_router
         self.mode = mode
+        self.policy = policy
         
         # Paper trading simulation
         self.paper_fills: dict[str, OrderResult] = {}
@@ -52,7 +55,11 @@ class ExecutionRouter:
         """
         results = []
         
-        for decision in decisions:
+        adjusted_decisions = (
+            self.policy.act(decisions) if self.policy else list(decisions)
+        )
+
+        for decision in adjusted_decisions:
             if self.mode == "research":
                 result = self._execute_research(decision)
             elif self.mode == "paper":
