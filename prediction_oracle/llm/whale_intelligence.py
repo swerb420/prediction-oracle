@@ -39,6 +39,7 @@ DB_PATH = Path(__file__).parent / 'data' / 'whale_intelligence.db'
 LEADERBOARD_WINDOWS = ['1d', '7d', '30d', 'all']
 LEADERBOARD_METRICS = ['profit', 'volume']
 LEADERBOARD_TAGS = ['', 'crypto']  # '' = general, 'crypto' = crypto-specific
+INTRADAY_WINDOWS = [15, 60, 240]  # 15m, 1h, 4h
 
 # Crypto detection patterns
 CRYPTO_PATTERNS = {
@@ -893,8 +894,177 @@ class WhaleIntelligence:
         # Convert sets to lists for JSON serialization
         for profile in results['elite_15m_whales']:
             profile['symbols'] = list(profile['symbols'])
-        
+
         return results
+
+    def get_intraday_wallet_dashboards(
+        self,
+        windows: Optional[List[int]] = None,
+        min_trades: int = 2,
+        top_n: int = 20,
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        Build intraday dashboards for active whales across multiple windows.
+
+        This is optimized for spotting short-horizon specialists (15m/1h/4h) and
+        combining them with longer-term quality signals (30d PnL, rankings).
+        """
+        cursor = self.conn.cursor()
+
+        windows = windows or INTRADAY_WINDOWS
+        now = datetime.now(UTC)
+        dashboards: Dict[str, List[Dict[str, Any]]] = {}
+
+        for minutes in windows:
+            cutoff = (now - timedelta(minutes=minutes)).isoformat()
+
+            cursor.execute('''
+                SELECT
+                    ct.whale_wallet,
+                    wp.name,
+                    wp.pseudonym,
+                    wp.pnl_30d,
+                    wp.pnl_all,
+                    wp.crypto_focus_ratio,
+                    wp.crypto_trade_count,
+                    wp.is_crypto_specialist,
+                    wp.rank_30d_profit,
+                    wp.rank_all_profit,
+                    ct.symbol,
+                    ct.market_type,
+                    ct.direction,
+                    ct.usdc_value,
+                    ct.timestamp
+                FROM crypto_trades ct
+                JOIN whale_profiles wp ON ct.whale_wallet = wp.wallet
+                WHERE ct.timestamp >= ?
+            ''', (cutoff,))
+
+            rows = cursor.fetchall()
+            aggregates: Dict[str, Dict[str, Any]] = {}
+
+            for row in rows:
+                wallet = row['whale_wallet']
+                profile = aggregates.get(wallet)
+
+                if profile is None:
+                    name = row['name'] or row['pseudonym'] or wallet[:12]
+                    profile = {
+                        'wallet': wallet,
+                        'name': name,
+                        'pnl_30d': row['pnl_30d'] or 0,
+                        'pnl_all': row['pnl_all'] or 0,
+                        'crypto_focus_ratio': row['crypto_focus_ratio'] or 0,
+                        'crypto_trade_count': row['crypto_trade_count'] or 0,
+                        'is_crypto_specialist': bool(row['is_crypto_specialist']),
+                        'rank_30d_profit': row['rank_30d_profit'],
+                        'rank_all_profit': row['rank_all_profit'],
+                        'trade_count': 0,
+                        'total_volume': 0.0,
+                        'up_volume': 0.0,
+                        'down_volume': 0.0,
+                        'avg_size': 0.0,
+                        'symbols': set(),
+                        'market_types': defaultdict(lambda: {'trades': 0, 'volume': 0.0}),
+                        'last_trade': None,
+                    }
+                    aggregates[wallet] = profile
+
+                volume = row['usdc_value'] or 0.0
+                profile['trade_count'] += 1
+                profile['total_volume'] += volume
+                profile['symbols'].add(row['symbol'])
+
+                direction = row['direction'] or 'UNKNOWN'
+                if direction == 'UP':
+                    profile['up_volume'] += volume
+                elif direction == 'DOWN':
+                    profile['down_volume'] += volume
+
+                market_type = row['market_type'] or 'UNKNOWN'
+                mt = profile['market_types'][market_type]
+                mt['trades'] += 1
+                mt['volume'] += volume
+
+                try:
+                    ts = datetime.fromisoformat(str(row['timestamp']))
+                except Exception:
+                    ts = None
+
+                if ts and (profile['last_trade'] is None or ts > profile['last_trade']):
+                    profile['last_trade'] = ts
+
+            ranked_profiles = []
+            for profile in aggregates.values():
+                if profile['trade_count'] < min_trades:
+                    continue
+
+                profile['avg_size'] = profile['total_volume'] / profile['trade_count'] if profile['trade_count'] else 0.0
+                total_dir_vol = profile['up_volume'] + profile['down_volume']
+                profile['direction_bias'] = (profile['up_volume'] / total_dir_vol) if total_dir_vol else None
+                profile['net_flow'] = profile['up_volume'] - profile['down_volume']
+                profile['symbols'] = sorted(profile['symbols'])
+                profile['market_types'] = {
+                    mt: stats
+                    for mt, stats in sorted(profile['market_types'].items(), key=lambda x: -x[1]['volume'])
+                }
+
+                if profile['last_trade']:
+                    profile['last_trade'] = profile['last_trade'].isoformat()
+
+                ranked_profiles.append(profile)
+
+            ranked_profiles.sort(key=lambda x: (-x['total_volume'], -x['trade_count'], -(x['pnl_30d'] or 0)))
+            dashboards[f"{minutes}m"] = ranked_profiles[:top_n]
+
+        return dashboards
+
+    def print_intraday_dashboards(self, dashboards: Dict[str, List[Dict[str, Any]]], top_n: int = 15):
+        """Pretty-print intraday dashboards for multiple time windows."""
+        if not dashboards:
+            print("\n⚠️ No intraday data available. Run --scrape-activity first.")
+            return
+
+        for window in sorted(dashboards.keys(), key=lambda w: int(w.rstrip('m'))):
+            entries = dashboards[window][:top_n]
+            print("\n" + "=" * 90)
+            print(f"⏱️  TOP ACTIVE WHALES - last {window}")
+            print("=" * 90)
+
+            if not entries:
+                print("  (no qualifying whales in this window)")
+                continue
+
+            for idx, entry in enumerate(entries, 1):
+                bias = entry.get('direction_bias')
+                if bias is None:
+                    bias_text = "No bias"
+                elif bias > 0.55:
+                    bias_text = f"UP {bias*100:.0f}%"
+                elif bias < 0.45:
+                    bias_text = f"DOWN {(1-bias)*100:.0f}%"
+                else:
+                    bias_text = "Mixed"
+
+                market_summary = [
+                    f"{mt}: {stats['trades']}t/${stats['volume']:,.0f}"
+                    for mt, stats in list(entry['market_types'].items())[:3]
+                ]
+
+                print(f"{idx:2d}. {entry['name'][:18]:18} | ${entry['total_volume']:>10,.0f} vol | "
+                      f"{entry['trade_count']:>3} trades | avg ${entry['avg_size']:>8,.0f} | {bias_text}")
+                print(f"    Wallet: {entry['wallet']}")
+                print(
+                    f"    PnL: 30d ${entry['pnl_30d']:,.0f} | All ${entry['pnl_all']:,.0f} "
+                    f"| Focus {entry['crypto_focus_ratio']*100:.0f}%"
+                )
+                if entry.get('rank_30d_profit'):
+                    print(f"    Leaderboard: 30d PnL #{entry['rank_30d_profit']} | All #{entry.get('rank_all_profit') or '?'}")
+                print(f"    Markets: {', '.join(entry['symbols'][:5])}")
+                if market_summary:
+                    print(f"    Types: {' | '.join(market_summary)}")
+                if entry.get('last_trade'):
+                    print(f"    Last trade: {entry['last_trade']}")
     
     def get_15m_whale_signals(self, minutes_back: int = 15) -> Dict[str, Any]:
         """
@@ -1343,6 +1513,8 @@ def main():
     parser.add_argument('--15m', dest='m15', action='store_true', help='Show 15-minute market specialists')
     parser.add_argument('--monitor', action='store_true', help='Continuous monitoring mode (refresh every 5 min)')
     parser.add_argument('--copy', action='store_true', help='Copy trade recommendations from elite whales')
+    parser.add_argument('--intraday', action='store_true', help='Show 15m/1h/4h active whale dashboards')
+    parser.add_argument('--top', type=int, default=15, help='Number of wallets to display per dashboard')
     
     args = parser.parse_args()
     
@@ -1453,7 +1625,11 @@ def main():
             print("-"*60)
             for mtype, stats in sorted(elite['market_type_stats'].items(), key=lambda x: -x[1]['trades']):
                 print(f"  {mtype:<15} | {stats['trades']:>6} trades | ${stats['volume']:>12,.0f} | {stats['whales']} whales | Avg PnL: ${stats['avg_whale_pnl']:>10,.0f}")
-        
+
+        if args.intraday:
+            dashboards = wi.get_intraday_wallet_dashboards(top_n=args.top)
+            wi.print_intraday_dashboards(dashboards, top_n=args.top)
+
         # ═══════════════════════════════════════════════════════════════════════
         # 15M LIVE SIGNALS
         # ═══════════════════════════════════════════════════════════════════════
