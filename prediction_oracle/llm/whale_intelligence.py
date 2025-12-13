@@ -370,6 +370,37 @@ class WhaleIntelligence:
     def __exit__(self, *args):
         if self.conn:
             self.conn.close()
+
+    @staticmethod
+    def _compute_consistency(pnl_30d: float, pnl_all: float) -> float:
+        """Estimate how repeatable a whale's edge is (avoids one-hit wonders)."""
+        denominator = max(1.0, abs(pnl_all))
+        return max(0.1, pnl_30d / denominator)
+
+    @staticmethod
+    def _recency_multiplier(last_trade: Optional[str]) -> float:
+        """Boost active whales; decay stale wallets to avoid copying cold hands."""
+        if not last_trade:
+            return 1.0
+
+        try:
+            last_dt = datetime.fromisoformat(last_trade)
+        except Exception:
+            return 1.0
+
+        hours_since = (datetime.now(UTC) - last_dt).total_seconds() / 3600
+        # Full credit if trading within 24h, then decay linearly with a floor.
+        if hours_since <= 24:
+            return 1.15
+        if hours_since >= 240:  # 10 days stale
+            return 0.4
+        decay = max(0.4, 1.15 - (hours_since - 24) * 0.004)
+        return round(decay, 3)
+
+    @staticmethod
+    def _focus_multiplier(focus_ratio: float) -> float:
+        """Reward clear specialization; discourage dabblers."""
+        return 0.6 + 0.6 * min(1.0, max(0.0, focus_ratio))
     
     def scrape_all_leaderboards(self, limit: int = 100) -> Dict[str, List]:
         """Scrape all leaderboards and identify unique whales."""
