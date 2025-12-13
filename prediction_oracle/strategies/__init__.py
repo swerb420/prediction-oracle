@@ -5,6 +5,7 @@ from .conservative import ConservativeStrategy
 from .longshot import LongshotStrategy
 from .enhanced_conservative import EnhancedConservativeStrategy
 from .enhanced_longshot import EnhancedLongshotStrategy
+from .alpha_edges import AlphaEdgesStrategy
 
 __all__ = [
     "BaseStrategy",
@@ -13,4 +14,5 @@ __all__ = [
     "LongshotStrategy",
     "EnhancedConservativeStrategy",
     "EnhancedLongshotStrategy",
+    "AlphaEdgesStrategy",
 ]

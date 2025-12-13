@@ -8,14 +8,22 @@ from pathlib import Path
 import hashlib
 import yaml
 
-from ..execution import ExecutionRouter
+from ..execution import ExecutionRouter, RLExecutionPolicy
 from ..llm import LLMOracle
 from ..llm.enhanced_oracle import EnhancedOracle
 from ..markets import Venue
 from ..markets.router import MarketRouter
-from ..risk import BankrollManager, RiskManager
+from ..monitoring import DriftMonitor, ResolutionGuard
+from ..risk import (
+    AdaptiveKellySizer,
+    BankrollManager,
+    RiskManager,
+    RiskParityAllocator,
+    ToxicityModel,
+)
+from ..signals import MetaEnsemble, MicrostructureAnalyzer, RegimeClassifier
 from ..storage import LLMEval, MarketSnapshot, Trade, create_tables, get_session
-from ..strategies import ConservativeStrategy, LongshotStrategy
+from ..strategies import AlphaEdgesStrategy, ConservativeStrategy, LongshotStrategy
 from ..strategies.base_strategy import EnhancedStrategy
 from ..strategies.enhanced_conservative import EnhancedConservativeStrategy
 from ..strategies.enhanced_longshot import EnhancedLongshotStrategy
@@ -48,27 +56,32 @@ class OracleScheduler:
         """
         self.mode = mode
         self.mock_mode = mock_mode
-        
+
         # Load configuration
         with open(config_path) as f:
             self.config = yaml.safe_load(f)
-        
+
         logger.info(f"OracleScheduler initialized in {mode} mode (mock={mock_mode})")
 
     async def initialize(self):
         """Initialize all components."""
         # Database
         await create_tables()
-        
+
         # Markets
         self.market_router = MarketRouter(mock_mode=self.mock_mode)
-        
+        self.resolution_guard = ResolutionGuard()
+        self.regime_classifier = RegimeClassifier()
+        self.microstructure = MicrostructureAnalyzer()
+        self.drift_monitor = DriftMonitor()
+        self.meta_ensemble = MetaEnsemble()
+
         # LLM Oracle
         if settings.enable_enhanced_strategies:
             self.oracle = EnhancedOracle(self.config)
         else:
             self.oracle = LLMOracle(self.config)
-        
+
         # Strategies (use enhanced if enabled)
         self.strategies = []
         
@@ -78,7 +91,10 @@ class OracleScheduler:
             self.config.get("risk", {}),
             self.bankroll,
         )
-        
+        self.bet_sizer = AdaptiveKellySizer(self.bankroll)
+        self.risk_parity_allocator = RiskParityAllocator()
+        self.toxicity_model = ToxicityModel(self.config.get("toxicity_penalties", {}))
+
         # Initialize strategies
         if self.config.get("strategies", {}).get("conservative", {}).get("enabled"):
             if settings.enable_enhanced_strategies:
@@ -111,10 +127,21 @@ class OracleScheduler:
                 self.strategies.append(
                     LongshotStrategy(self.config["strategies"]["longshot"])
                 )
-        
+
+        if self.config.get("strategies", {}).get("alpha_edges", {}).get("enabled", True):
+            logger.info("Using AlphaEdgesStrategy for serious edges")
+            self.strategies.append(
+                AlphaEdgesStrategy(self.config.get("strategies", {}).get("alpha_edges", {}))
+            )
+
         # Execution
-        self.executor = ExecutionRouter(self.market_router, mode=self.mode)
-        
+        self.rl_policy = RLExecutionPolicy()
+        self.executor = ExecutionRouter(
+            self.market_router,
+            mode=self.mode,
+            policy=self.rl_policy,
+        )
+
         logger.info(
             f"Initialized with {len(self.strategies)} strategies, "
             f"bankroll ${self.bankroll.current:.2f}"
@@ -147,13 +174,27 @@ class OracleScheduler:
                 logger.info(f"Fetched {len(poly_markets)} Polymarket markets")
             except Exception as e:
                 logger.error(f"Error fetching Polymarket markets: {e}")
-        
+
         if not all_markets:
             logger.warning("No markets fetched, skipping iteration")
             return
 
+        all_markets = self.resolution_guard.filter_markets(all_markets)
+        drift_signal = self.drift_monitor.update(all_markets)
+        regime_context = await self.regime_classifier.classify(all_markets)
+        microstructure = self.microstructure.analyze(all_markets)
+        logger.info(
+            "Regime=%s vol=%.4f liq=%.1f skew=%.3f | drift psi=%.4f volume_shift=%.2f",
+            regime_context.label,
+            regime_context.volatility,
+            regime_context.liquidity,
+            regime_context.crowd_skew,
+            drift_signal.feature_psi,
+            drift_signal.volume_shift,
+        )
+
         await self._log_market_snapshots(all_markets)
-        
+
         # 2. Run strategies
         all_decisions = []
         
@@ -189,15 +230,23 @@ class OracleScheduler:
 
                 decisions = await strategy.evaluate(candidate_markets, oracle_results)
             all_decisions.extend(decisions)
-            
+
             logger.info(f"{strategy.name}: Generated {len(decisions)} decisions")
-        
+
         if not all_decisions:
             logger.info("No trade decisions generated")
             return
-        
+
+        # 2.5 Apply meta-learning fusion and microstructure-aware tweaks
+        fused = self.meta_ensemble.fuse(all_decisions, regime_context.label)
+        toxicity_adjusted = self.toxicity_model.adjust(fused)
+        sized = self.bet_sizer.resize(
+            toxicity_adjusted, risk_multiplier=regime_context.risk_multiplier()
+        )
+        balanced_decisions = self.risk_parity_allocator.rebalance(sized)
+
         # 3. Risk management
-        validated = self.risk_manager.validate_decisions(all_decisions)
+        validated = self.risk_manager.validate_decisions(balanced_decisions)
         
         approved_decisions = [d for d, reason in validated if reason is None]
         rejected_decisions = [(d, reason) for d, reason in validated if reason is not None]
