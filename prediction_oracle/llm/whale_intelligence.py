@@ -32,7 +32,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Database path
+# Database path (can be overridden for testing or alternative deployments)
 DB_PATH = Path(__file__).parent / 'data' / 'whale_intelligence.db'
 
 # Leaderboard configurations
@@ -143,10 +143,10 @@ class CryptoTrade:
     confidence: float = 0.0  # Based on position size relative to avg
 
 
-def init_database():
+def init_database(db_path: Path = DB_PATH):
     """Initialize comprehensive whale intelligence database."""
-    DB_PATH.parent.mkdir(exist_ok=True)
-    conn = sqlite3.connect(DB_PATH)
+    db_path.parent.mkdir(exist_ok=True)
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
     # Whale profiles - comprehensive trader data
@@ -295,7 +295,7 @@ def init_database():
     
     conn.commit()
     conn.close()
-    logger.info(f"✅ Database initialized at {DB_PATH}")
+    logger.info(f"✅ Database initialized at {db_path}")
 
 
 def detect_crypto(text: str) -> Tuple[bool, Optional[str]]:
@@ -356,12 +356,13 @@ def detect_direction(title: str, outcome: str, side: str) -> str:
 class WhaleIntelligence:
     """Main whale intelligence system."""
     
-    def __init__(self):
+    def __init__(self, db_path: Path | str = DB_PATH):
         self.client = PolymarketDataClient()
         self.conn = None
+        self.db_path = Path(db_path)
         
     def __enter__(self):
-        self.conn = sqlite3.connect(DB_PATH)
+        self.conn = sqlite3.connect(self.db_path)
         self.conn.row_factory = sqlite3.Row
         return self
     
@@ -1500,6 +1501,7 @@ class WhaleIntelligence:
 def main():
     parser = argparse.ArgumentParser(description='Whale Intelligence System')
     parser.add_argument('--init', action='store_true', help='Initialize database')
+    parser.add_argument('--db-path', type=Path, default=DB_PATH, help='Override database path')
     parser.add_argument('--scrape-leaderboards', action='store_true', help='Scrape all leaderboards')
     parser.add_argument('--scrape-activity', action='store_true', help='Scrape whale crypto activity')
     parser.add_argument('--hours', type=int, default=48, help='Hours of activity to scrape')
@@ -1517,12 +1519,14 @@ def main():
     parser.add_argument('--top', type=int, default=15, help='Number of wallets to display per dashboard')
     
     args = parser.parse_args()
-    
+
+    db_path: Path = Path(args.db_path)
+
     # Initialize database if needed
-    if not DB_PATH.exists() or args.init:
-        init_database()
-    
-    with WhaleIntelligence() as wi:
+    if not db_path.exists() or args.init:
+        init_database(db_path)
+
+    with WhaleIntelligence(db_path=db_path) as wi:
         if args.scrape_leaderboards or args.full_scan:
             wi.scrape_all_leaderboards(args.limit)
         
