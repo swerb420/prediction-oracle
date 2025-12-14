@@ -39,19 +39,7 @@ dev = [
 oracle = "prediction_oracle.cli:app"
 
 [tool.setuptools]
-packages = [
-    "prediction_oracle",
-    "prediction_oracle.backtest",
-    "prediction_oracle.execution",
-    "prediction_oracle.llm",
-    "prediction_oracle.markets",
-    "prediction_oracle.risk",
-    "prediction_oracle.runner",
-    "prediction_oracle.services",
-    "prediction_oracle.signals",
-    "prediction_oracle.storage",
-    "prediction_oracle.strategies",
-]
+packages = ["prediction_oracle", "prediction_oracle.backtest", "prediction_oracle.execution", "prediction_oracle.llm", "prediction_oracle.markets", "prediction_oracle.metrics", "prediction_oracle.risk", "prediction_oracle.runner", "prediction_oracle.signals", "prediction_oracle.storage", "prediction_oracle.strategies"]
 
 [tool.black]
 line-length = 100
