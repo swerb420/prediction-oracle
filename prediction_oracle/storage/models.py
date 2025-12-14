@@ -1,8 +1,8 @@
 """Database models for tracking markets, evaluations, and trades."""
 
-from datetime import datetime
+from datetime import date, datetime
 
-from sqlalchemy import JSON, Column, DateTime, Float, Integer, String, Text, Boolean
+from sqlalchemy import Boolean, JSON, Column, Date, DateTime, Float, Integer, String, Text
 from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
@@ -143,3 +143,21 @@ class TrainingExport(Base):
     filters_json = Column(JSON)  # What filters were applied
     file_path = Column(String(500))
     notes = Column(Text)
+
+
+class TraderLongshotScore(Base):
+    """Daily longshot scoring snapshot for a trader."""
+
+    __tablename__ = "trader_longshot_scores"
+
+    id = Column(Integer, primary_key=True)
+    trader_id = Column(String(200), nullable=False, index=True)
+    as_of_date = Column(Date, nullable=False, index=True)
+
+    bucket_stats_json = Column(JSON, nullable=False)
+    average_lift = Column(Float)
+    stability = Column(Float)
+    longshot_edge_score = Column(Float)
+    decayed_recent_score = Column(Float)
+
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow)
