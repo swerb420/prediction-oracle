@@ -1,0 +1,61 @@
+# Superset export for Prediction Oracle monitoring
+version: 1.0.0
+metadata:
+  name: Prediction Oracle: Scores, Signals, Fills
+  description: |
+    Time-series dashboard that mirrors Grafana coverage for core trading telemetry.
+  owners:
+    - team: trading-ops
+charts:
+  - slice_name: Rolling model score
+    viz_type: line
+    datasource_name: prediction_oracle_metrics
+    params:
+      metrics:
+        - expressionType: SIMPLE
+          column: model_score
+          aggregate: AVG
+      time_range: No filter
+      row_limit: 10000
+      x_axis_format: smart_date
+      y_axis_format: .,.
+      annotation_layers: []
+    description: Rolling average score by timestamp.
+  - slice_name: Signals per minute
+    viz_type: line
+    datasource_name: prediction_oracle_metrics
+    params:
+      metrics:
+        - expressionType: SIMPLE
+          column: signals_total
+          aggregate: SUM
+      resample_method: sum
+      resample_rule: 1T
+      time_range: No filter
+      row_limit: 10000
+      x_axis_format: smart_date
+    description: Emitted signals resampled per minute.
+  - slice_name: Fill latency p95
+    viz_type: line
+    datasource_name: prediction_oracle_metrics
+    params:
+      metrics:
+        - expressionType: SIMPLE
+          column: fill_latency_p95
+          aggregate: MAX
+      time_range: No filter
+      row_limit: 10000
+      x_axis_format: smart_date
+      y_axis_format: ,.2f
+    description: P95 fill latency in seconds.
+layout:
+  # Simple three-row layout referencing the charts above
+  - row: 0
+    children:
+      - slice_name: Rolling model score
+  - row: 1
+    children:
+      - slice_name: Signals per minute
+  - row: 2
+    children:
+      - slice_name: Fill latency p95
