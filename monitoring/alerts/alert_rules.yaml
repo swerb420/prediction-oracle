@@ -1,0 +1,59 @@
+# Prometheus alert rules for the prediction oracle
+# Update the `webhook_configs` and `api_url` fields to point to your Slack/App receiver.
+
+route:
+  receiver: trading-slack
+  group_by: ['deployment']
+  group_interval: 5m
+  repeat_interval: 30m
+
+receivers:
+  - name: trading-slack
+    slack_configs:
+      - channel: '#prediction-alerts'
+        send_resolved: true
+        api_url: https://hooks.slack.com/services/T000/B000/PLACEHOLDER
+        title: '{{ .CommonAnnotations.summary }}'
+        text: '{{ .CommonAnnotations.description }}'
+    webhook_configs:
+      - url: https://alert-router.internal/hooks/prediction-oracle
+        send_resolved: true
+
+inhibit_rules:
+  - source_matchers: [severity = 'critical']
+    target_matchers: [severity = 'warning']
+    equal: ['alertname', 'deployment']
+
+groups:
+  - name: prediction-oracle-health
+    interval: 30s
+    rules:
+      - alert: ModelScoreDegraded
+        expr: avg_over_time(prediction_oracle_model_score{deployment="prod"}[10m]) < 0.25
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Model score degraded"
+          description: |
+            Rolling model score dropped below 0.25 for 10m. Check upstream signals and retraining health.
+
+      - alert: SignalsDropped
+        expr: rate(prediction_oracle_signals_total{deployment="prod"}[10m]) < 1
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Signal emission stalled"
+          description: |
+            Signal throughput fell below 1/min for 5m. Investigate ingestion pipelines and exchange connectivity.
+
+      - alert: FillsSlow
+        expr: histogram_quantile(0.95, sum(rate(prediction_oracle_fill_latency_seconds_bucket{deployment="prod"}[10m])) by (le)) > 4
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Fill latency elevated"
+          description: |
+            P95 fill latency exceeded 4s for 5m. Review broker latency and order sizing.
