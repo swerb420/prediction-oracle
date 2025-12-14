@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.27.0",
+    "duckdb>=1.0.0",
     "pydantic>=2.5.0",
     "pydantic-settings>=2.1.0",
     "sqlalchemy>=2.0.0",
@@ -38,7 +39,19 @@ dev = [
 oracle = "prediction_oracle.cli:app"
 
 [tool.setuptools]
-packages = ["prediction_oracle", "prediction_oracle.backtest", "prediction_oracle.execution", "prediction_oracle.llm", "prediction_oracle.markets", "prediction_oracle.risk", "prediction_oracle.runner", "prediction_oracle.signals", "prediction_oracle.storage", "prediction_oracle.strategies"]
+packages = [
+    "prediction_oracle",
+    "prediction_oracle.backtest",
+    "prediction_oracle.execution",
+    "prediction_oracle.llm",
+    "prediction_oracle.markets",
+    "prediction_oracle.risk",
+    "prediction_oracle.runner",
+    "prediction_oracle.services",
+    "prediction_oracle.signals",
+    "prediction_oracle.storage",
+    "prediction_oracle.strategies",
+]
 
 [tool.black]
 line-length = 100
